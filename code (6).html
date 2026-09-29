@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>AuraLuxe — Accessible Luxury</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#0b1c30", "on-primary-container": "#7c839b", "on-secondary-fixed-variant": "#6e3900", "outline": "#76777d", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005236", "surface-variant": "#d3e4fe", "secondary": "#904d00", "surface-container-high": "#dce9ff", "surface-dim": "#cbdbf5", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002113", "surface-container-low": "#eff4ff", "on-surface": "#0b1c30", "error": "#ba1a1a", "surface": "#f8f9ff", "primary-container": "#131b2e", "on-tertiary-container": "#009668", "surface-container-lowest": "#ffffff", "surface-container": "#e5eeff", "on-surface-variant": "#45464d", "secondary-fixed": "#ffdcc3", "secondary-fixed-dim": "#ffb77d", "on-primary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-tertiary": "#ffffff", "primary-fixed": "#dae2fd", "on-secondary-fixed": "#2f1500", "inverse-surface": "#213145", "secondary-container": "#fe932c", "surface-tint": "#565e74", "on-error": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-secondary-container": "#663500", "primary": "#000000", "background": "#f8f9ff", "tertiary": "#000000", "tertiary-container": "#002113", "tertiary-fixed": "#6ffbbe", "inverse-primary": "#bec6e0", "tertiary-fixed-dim": "#4edea3", "on-primary-fixed": "#131b2e", "primary-fixed-dim": "#bec6e0", "on-primary-fixed-variant": "#3f465c", "surface-bright": "#f8f9ff", "outline-variant": "#c6c6cd" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-desktop": "3rem", "margin-mobile": "1rem", "space-xl": "2rem", "margin": "2rem" }, "fontFamily": { "headline-md": ["Outfit"], "headline-lg": ["Outfit"], "display-hero": ["Outfit"], "body-lg": ["Inter"], "label-md": ["Inter"], "display-hero-mobile": ["Outfit"], "price-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-xl": ["Outfit"], "title-lg": ["Outfit"], "label-sm": ["Inter"], "headline-sm": ["Outfit"], "headline-xl-mobile": ["Outfit"], "price-lg": ["Inter"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "price-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "500" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "price-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-surface px-margin-mobile lg:px-margin-desktop py-space-xs text-center"><div class="max-w-7xl mx-auto flex items-center justify-between text-label-sm font-label-sm"><span class="hidden sm:inline-block text-on-primary-container tracking-wide">GUATEMALA &amp; GLOBAL SHIPPING</span><p class="w-full sm:w-auto text-center font-medium tracking-wide text-surface">Envíos gratis en compras &gt; Q.500 | Cuotas sin interés Visa / Mastercard</p><div class="hidden sm:flex items-center gap-space-sm text-on-primary-container"><span class="material-symbols-outlined text-label-sm">verified</span><span>Autenticidad &amp; Certificados COA</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="inicio" href="/inicio"><img alt="AuraLuxe Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XbYWKTtgfAhpa_stWrBkJNd2KJ_OhkoLxbCx0GmyoKnxqJpoqSpgzNYdiAi479I0Hu4t7aiRsRexiZImhDfvdcFInYVZDG64aTehaHxImc_6_iaM0D2nv3YL6V-j6Q_NFm8ewuUH5EZLjJLO9Cskzvy2PrBG4ftWE68UqGfwyVEogphwfvwh4a_l17w4HzNsUSCu-2gXoC-pEOpQccapJTmhncn5P4dNNT5bJZMcc3oEjbmBOJAtxKPt0"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">AuraLuxe</span></a></div><div class="hidden md:flex flex-1 max-w-md mx-space-lg relative"><div class="w-full flex items-center bg-surface-container-low rounded-lg px-space-md py-space-xs transition-all focus-within:ring-2 focus-within:ring-secondary/40 focus-within:bg-surface-container-lowest"><span class="material-symbols-outlined text-outline text-headline-sm mr-space-xs">search</span><input autocomplete="off" class="w-full bg-transparent text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none" id="global-search-input" placeholder="Buscar joyas, accesorios de lujo, bolsos..." type="search"/></div><div class="hidden absolute left-0 right-0 top-full mt-2 bg-surface-container-lowest rounded-lg shadow-[0_10px_15px_-3px_rgba(15,23,42,0.06),0_20px_25px_-5px_rgba(15,23,42,0.08)] p-space-md z-50" id="search-dropdown"><div class="text-label-sm font-label-sm text-outline mb-space-xs uppercase tracking-wider">Búsquedas populares</div><div class="flex flex-col gap-space-xs"><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Collar Diamante Aura Solitario (Q.1,850)</a><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Reloj Cronógrafo Imperial Gold (USD $420)</a><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="garantias-y-certificados" href="/garantias-y-certificados">Certificados COA &amp; Autenticidad Digital</a></div></div></div><div class="flex items-center gap-space-md"><div class="relative inline-block text-left"><select class="appearance-none bg-surface-container-low text-on-surface text-label-sm font-label-sm py-1.5 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none hover:bg-surface-container transition-colors" id="currency-selector"><option selected="" value="GTQ">GTQ (Q)</option><option value="USD">USD ($)</option></select><span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-outline text-body-sm">expand_more</span></div><a class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="lista-de-deseos" href="/lista-de-deseos" title="Lista de Deseos &amp; Comparador"><span class="material-symbols-outlined text-headline-sm">favorite</span><span class="absolute top-1 right-1 bg-secondary text-on-secondary text-[10px] font-bold rounded-full h-4.5 w-4.5 min-w-[18px] flex items-center justify-center px-1" id="wishlist-badge">2</span></a><button class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" id="cart-open-btn" title="Carrito" type="button"><span class="material-symbols-outlined text-headline-sm">shopping_bag</span><span class="absolute top-1 right-1 bg-primary text-on-primary text-[10px] font-bold rounded-full h-4.5 w-4.5 min-w-[18px] flex items-center justify-center px-1" id="cart-badge">3</span></button><div class="relative group"><button aria-expanded="false" aria-haspopup="true" class="flex items-center gap-space-xs p-1 rounded-full hover:ring-2 hover:ring-secondary/40 transition-all focus:outline-none" id="user-menu-btn" type="button"><img alt="Alejandro Castillo" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUS7PY6UFwgghzGuUJm3Qjna2wydJu5dtmWPh-jvkHfklF6UipRg6rePOdzH2zUkXw01IrqX93uRtbPbDvh6NtUPk84oOqTdmX4ZmgI2gSET91psD187WaR4LPh0Nci-bZuBfFKNB_3Vu-60RDCQIVTo0dBPRIWPztA489rbeXF4_bWvQ6n5XhHfxkl3g5KqiFduKsEYFiLX99dfxYGqJZesYW7gobid-D75n2sKXxLK65q4QBV4VsWA"/><span class="hidden xl:inline-block text-label-sm font-label-sm text-on-surface font-medium pl-1">Alejandro C.</span><span class="material-symbols-outlined text-outline text-label-sm hidden xl:inline-block">expand_more</span></button><div class="hidden group-hover:block hover:block absolute right-0 top-full pt-2 w-72 z-50"><div class="bg-surface-container-lowest rounded-xl shadow-[0_10px_15px_-3px_rgba(15,23,42,0.06),0_20px_25px_-5px_rgba(15,23,42,0.08)] border border-surface-container-low p-space-sm flex flex-col gap-1"><div class="px-3 py-2 border-b border-surface-container-low"><p class="font-label-md text-label-md text-on-surface font-semibold">Alejandro Castillo</p><p class="font-label-sm text-label-sm text-secondary font-medium flex items-center gap-1 mt-0.5"><span class="material-symbols-outlined text-label-sm">verified</span> Socio VIP Privé</p></div><a class="flex items-center justify-between px-3 py-2 rounded-lg text-body-sm font-body-sm text-on-surface hover:bg-surface-container-low transition-colors" data-path="mi-cuenta" href="/mi-cuenta"><span>Resumen de Cuenta</span><span class="material-symbols-outlined text-outline text-body-sm">person</span></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-body-sm font-body-sm text-on-surface bg-surface-container-low/60 hover:bg-surface-container-high transition-colors font-medium text-secondary" data-path="garantias-y-certificados" href="/garantias-y-certificados"><span>Garantías &amp; Certificados COA</span><span class="material-symbols-outlined text-secondary text-body-sm">workspace_premium</span></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-body-sm font-body-sm text-on-surface hover:bg-surface-container-low transition-colors" data-path="lista-de-deseos" href="/lista-de-deseos"><span>Lista de Deseos</span><span class="material-symbols-outlined text-outline text-body-sm">favorite</span></a><a class="flex items-center justify-between px-3 py-2 rounded-lg text-body-sm font-body-sm text-on-surface hover:bg-surface-container-low transition-colors" data-path="faq" href="/faq"><span>Soporte &amp; Concierge</span><span class="material-symbols-outlined text-outline text-body-sm">support_agent</span></a></div></div></div></div></div><div class="bg-surface-container-lowest/80 border-t border-surface-container-low px-margin-mobile lg:px-margin-desktop"><div class="max-w-7xl mx-auto flex items-center justify-between"><nav class="flex items-center gap-space-lg overflow-x-auto py-2.5" data-active-classes="text-on-surface font-title-lg font-semibold"><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="inicio" href="/inicio">Inicio</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="shop" href="/shop">Colecciones</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="lista-de-deseos" href="/lista-de-deseos">Lista de Deseos</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="garantias-y-certificados" href="/garantias-y-certificados">Garantías &amp; Certificados</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="mi-cuenta" href="/mi-cuenta">Mi Cuenta</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="carrito" href="/carrito">Carrito</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="faq" href="/faq">Envíos &amp; FAQ</a></nav><div class="hidden lg:flex items-center gap-space-md text-label-sm font-label-sm text-secondary"><span class="material-symbols-outlined text-label-md">workspace_premium</span><span>Certificados de Autenticidad Registrados</span></div></div></div></header><div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" id="cart-drawer-overlay"></div><aside class="fixed top-0 right-0 h-full w-full sm:w-96 max-w-full bg-surface-container-lowest shadow-[0_25px_50px_-12px_rgba(15,23,42,0.22)] z-50 flex flex-col translate-x-full transition-transform duration-300 ease-out" id="cart-drawer"><div class="p-space-lg flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-on-surface">shopping_bag</span><span class="font-headline-sm text-headline-sm text-on-surface">Tu Carrito (<span id="drawer-cart-count">3</span>)</span></div><button class="p-1 text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" id="cart-close-btn" type="button"><span class="material-symbols-outlined">close</span></button></div><div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-md"><div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg"><div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-outline">save_as</span></div><div class="flex-1 min-w-0"><h4 class="font-title-lg text-title-lg text-on-surface truncate">Collar Constelación Solis</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Oro Vermeil 18K • Certificado COA Incluido</p><div class="font-price-md text-price-md text-secondary mt-1">Q.1,450.00</div></div></div><div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg"><div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-outline">watch</span></div><div class="flex-1 min-w-0"><h4 class="font-title-lg text-title-lg text-on-surface truncate">Reloj Crono Midnight</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Edición Limitada • Garantía Extendida</p><div class="font-price-md text-price-md text-secondary mt-1">Q.2,890.00</div></div></div></div><div class="p-space-lg bg-surface-container-low flex flex-col gap-space-md"><div class="flex justify-between items-center"><span class="font-body-md text-body-md text-on-surface-variant">Subtotal estimado</span><span class="font-headline-sm text-headline-sm text-on-surface">Q.4,340.00</span></div><div class="flex gap-space-sm"><a class="flex-1 text-center py-3 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" data-path="carrito" href="/carrito">Ver Carrito</a><a class="flex-1 text-center py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" data-path="checkout" href="/checkout">Pagar</a></div></div></aside><main class="w-full pt-36 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & User Context Sub-Bar -->
+<div class="w-full bg-surface-container-low/70 py-space-sm px-margin-mobile lg:px-margin-desktop">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-xs">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<a class="hover:text-secondary transition-colors" data-path="inicio" href="/inicio">Inicio</a>
+<span class="material-symbols-outlined text-outline text-label-sm">chevron_right</span>
+<a class="hover:text-secondary transition-colors" data-path="mi-cuenta" href="/mi-cuenta">Mi Cuenta Privé</a>
+<span class="material-symbols-outlined text-outline text-label-sm">chevron_right</span>
+<span class="text-on-surface font-semibold">Garantías Oficiales &amp; Certificados COA</span>
+</nav>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-sm">shield_person</span>
+          Titular: <strong class="text-on-surface font-medium">Alejandro Castillo V.</strong>
+</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-semibold px-2 py-0.5 rounded-full text-[11px] tracking-wide uppercase">
+          Black Tier Elite (#AP-90412)
+        </span>
+</div>
+</div>
+</div>
+<!-- Account Navigation Tabs -->
+<div class="w-full bg-surface-container-lowest shadow-sm px-margin-mobile lg:px-margin-desktop">
+<div class="max-w-7xl mx-auto flex items-center gap-space-md overflow-x-auto py-3">
+<a class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface py-1.5 px-3 rounded-lg hover:bg-surface-container transition-colors whitespace-nowrap" data-path="mi-cuenta" href="/mi-cuenta">
+<span class="material-symbols-outlined text-body-md">shopping_bag</span>
+        Mis Órdenes &amp; Compras
+      </a>
+<a class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface py-1.5 px-3 rounded-lg hover:bg-surface-container transition-colors whitespace-nowrap" data-path="mi-cuenta" href="/mi-cuenta">
+<span class="material-symbols-outlined text-body-md">pin_drop</span>
+        Direcciones Guardadas
+      </a>
+<a class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface py-1.5 px-3 rounded-lg hover:bg-surface-container transition-colors whitespace-nowrap" data-path="mi-cuenta" href="/mi-cuenta">
+<span class="material-symbols-outlined text-body-md">lock</span>
+        Métodos de Pago &amp; Vault
+      </a>
+<a class="flex items-center gap-2 font-label-md text-label-md font-semibold text-secondary bg-secondary-fixed/50 py-1.5 px-3.5 rounded-lg transition-colors whitespace-nowrap shadow-sm" data-path="garantias-y-certificados" href="/garantias-y-certificados">
+<span class="material-symbols-outlined text-body-md">verified_user</span>
+        Garantías &amp; Certificados COA
+        <span class="bg-secondary text-on-secondary text-[11px] font-bold px-2 py-0.2 rounded-full ml-1">3 Protegidas</span>
+</a>
+<a class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant hover:text-on-surface py-1.5 px-3 rounded-lg hover:bg-surface-container transition-colors whitespace-nowrap" data-path="lista-de-deseos" href="/lista-de-deseos">
+<span class="material-symbols-outlined text-body-md">favorite</span>
+        Lista de Deseos &amp; Comparador
+      </a>
+</div>
+</div>
+<!-- Main Content Container -->
+<div class="max-w-7xl mx-auto w-full px-margin-mobile lg:px-margin-desktop py-space-xl flex flex-col gap-space-xl">
+<!-- Vault Banner & Overview Metric Bar -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-lg lg:p-space-xl shadow-xl relative overflow-hidden">
+<div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-10 bg-gradient-to-l from-secondary to-transparent pointer-events-none"></div>
+<div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg relative z-10">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs text-secondary-container font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-sm">security</span>
+            Bóveda Criptográfica Ledger AuraLuxe
+          </div>
+<h1 class="font-headline-lg text-headline-lg text-surface tracking-tight">
+            Bóveda de Autenticidad y Salvaguarda
+          </h1>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+            Custodia documental y registro oficial de garantías para sus piezas de alta joyería, orfebrería y manufactura suiza. Certificados COA verificados en ledger inmutable de Guatemala para avalúo y trazabilidad patrimonial.
+          </p>
+</div>
+<!-- Call to Action Buttons -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm shrink-0 w-full lg:w-auto">
+<button class="px-space-md py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:bg-secondary/90 transition-all flex items-center justify-center gap-2 shadow-md hover:shadow-lg" onclick="document.getElementById('register-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+            Registrar Pieza / Certificado
+          </button>
+<a class="px-space-md py-3 rounded-lg bg-surface/10 text-surface hover:bg-surface/20 font-label-md text-label-md font-medium transition-all flex items-center justify-center gap-2 backdrop-blur-sm" href="#taller-agenda">
+<span class="material-symbols-outlined text-lg">build_circle</span>
+            Atelier Zona 10
+          </a>
+</div>
+</div>
+<!-- Live Vault Metrics Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md mt-space-lg pt-space-lg border-t border-surface/10">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container">Piezas con COA Foliado</span>
+<span class="font-headline-md text-headline-md text-surface font-semibold flex items-center gap-1">
+            03 <span class="text-xs text-tertiary-fixed font-normal bg-tertiary-container px-2 py-0.5 rounded-full">100% Activo</span>
+</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container">Avalúo Patrimonial Bóveda</span>
+<span class="font-headline-md text-headline-md text-surface font-semibold">Q. 42,850.00</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container">Servicios Disponibles 2025</span>
+<span class="font-headline-md text-headline-md text-secondary-fixed font-semibold">2 Cortesía VIP</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container">Estatus de Cobertura Global</span>
+<span class="font-headline-md text-headline-md text-tertiary-fixed-dim font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-base">verified</span> Protegido
+          </span>
+</div>
+</div>
+</div>
+<!-- Main Grid: Items with COA on Left (8 cols) & Live High-End Certificate Preview on Right (4 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Catalog of Active Certificates (8 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Colección Registrada en Bóveda</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Haga clic en cualquier pieza para proyectar el certificado foliado original.</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">3 Certificados Validados</span>
+</div>
+<!-- Card 1: Cronógrafo Imperial (Primary Watch) -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md border-l-4 border-l-secondary relative">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex gap-space-md items-start">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-lg overflow-hidden bg-surface-container-low shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Close up photograph of a luxury 18K rose gold chronograph watch with deep midnight blue sunray dial, anti-reflective sapphire crystal, intricate sub-dials, high-contrast luxury commercial lighting on dark slate velvet, ultra-sharp craftsmanship detail." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQex4Fwsx2-Rwy22leKYQJ0Ko_24W_192Qo-0I0PXUyrl4RSR20k8GCpap_XTelcY6H5C7BR3soMpOOjRK_rUwIoTSVaC9pFLIL72UI7BRccJAENf2N2T-_CyiFDnyyFO38eDufVDdxwm_bqEGfU4A87_FaZQHCTi8WyNRzOZKGMs4gboet7-681r0fYFuI7YhTxAeMqK1I1j9_vkwxiov23xVkhbYnDDGJJVdAhXrOKrwBqumrSMJ-g"/>
+<span class="absolute bottom-1 right-1 bg-primary text-on-primary text-[10px] font-bold px-1.5 py-0.5 rounded">42MM</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="bg-secondary-fixed text-on-secondary-fixed text-[11px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Alta Relojería</span>
+<span class="bg-surface-container-high text-on-surface-variant text-[11px] font-medium px-2 py-0.5 rounded-full">Calibre AL-320</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Cronógrafo Imperial Oro Rosa 18K Sapphire 42mm</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-mono">Foliado: #COA-AUR-892401-GT</p>
+<div class="flex items-center gap-1.5 mt-1 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+<span class="text-on-surface font-mono text-xs">Hash: 0x8f4d...3b9c</span>
+<span class="bg-surface-container-high text-on-surface text-[10px] px-1.5 py-0.5 rounded">Ledger Verificado</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:items-end gap-1 shrink-0">
+<span class="inline-flex items-center gap-1 text-[12px] font-semibold text-tertiary bg-tertiary-fixed/30 text-on-tertiary-fixed-variant px-2.5 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
+                Garantía Activa • 5 Años
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vigencia hasta: <strong class="text-on-surface">14 Feb 2030</strong></span>
+</div>
+</div>
+<!-- Specifications Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 bg-surface-container-low rounded-lg p-3 text-body-sm font-body-sm">
+<div>
+<span class="block text-outline text-[11px] uppercase tracking-wider">Emisión</span>
+<span class="font-medium text-on-surface">14 Feb 2025</span>
+</div>
+<div>
+<span class="block text-outline text-[11px] uppercase tracking-wider">Maestro Relojero</span>
+<span class="font-medium text-on-surface">Jean-Luc Meyer</span>
+</div>
+<div>
+<span class="block text-outline text-[11px] uppercase tracking-wider">Hermeticidad</span>
+<span class="font-medium text-on-surface">100 Metros / 10 ATM</span>
+</div>
+<div>
+<span class="block text-outline text-[11px] uppercase tracking-wider">Precisión</span>
+<span class="font-medium text-on-surface">+0.0 s/d COSC</span>
+</div>
+</div>
+<!-- Included Coverages Tag Cloud -->
+<div class="flex flex-wrap items-center gap-1.5 font-label-sm text-label-sm">
+<span class="text-outline text-xs mr-1">Coberturas vigentes:</span>
+<span class="bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full flex items-center gap-1 text-xs">
+<span class="material-symbols-outlined text-xs text-secondary">check</span> Pulido Ultrasónico Anual
+            </span>
+<span class="bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full flex items-center gap-1 text-xs">
+<span class="material-symbols-outlined text-xs text-secondary">check</span> Calibración Calibre AL-320
+            </span>
+<span class="bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full flex items-center gap-1 text-xs">
+<span class="material-symbols-outlined text-xs text-secondary">check</span> Salvaguarda en Tránsito Blindado
+            </span>
+</div>
+<!-- Interactive Action Controls -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs border-t border-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors flex items-center gap-1.5" onclick="selectCertificate('reloj')">
+<span class="material-symbols-outlined text-base">visibility</span>
+                Ver en Inspector COA
+              </button>
+<button class="px-3 py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors flex items-center gap-1" onclick="showDownloadToast('Cronógrafo Imperial #COA-AUR-892401-GT')" title="Descargar PDF Foliado">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+<span class="hidden sm:inline">PDF Oficial</span>
+</button>
+</div>
+<a class="text-secondary hover:text-on-secondary-container font-label-md text-label-md font-semibold flex items-center gap-1 transition-colors" href="#taller-agenda">
+<span class="material-symbols-outlined text-base">history_edu</span>
+              Solicitar Taller / Mantenimiento →
+            </a>
+</div>
+</article>
+<!-- Card 2: Collar Constelación Solis (Fine Jewelry) -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md border-l-4 border-l-secondary-container">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex gap-space-md items-start">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-lg overflow-hidden bg-surface-container-low shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="High-end fine jewelry pendant necklace, 18K vermeil gold celestial constellation circular medallion holding a brilliant cut solitaire round diamond 0.35ct in centre, studio macro photography with radiant dispersion and clean luxury shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHqnDOMdn0vSAqMEmVKGJjd_Wr6S4DCOJ44L0stvYTgrRs45hMEwdnZjN0cdufoxWRaUjEgdmpAPEfxULg-iMHnZ4XVDpoUlEHMcEFHVjkRtfFa6O5UaP1LKoiV37P4HN62-wzsEVxbYxcssFHH3m55VfCl7rQxxikFWn59bgnLs6OCn1dRd4yOYQ0rrlyY9wENqpaa8w6IAWAUpW9OWdnqPKoFJlMwPNDOG0AGzDj_wbVoetB8rD8GA"/>
+<span class="absolute bottom-1 right-1 bg-secondary text-on-secondary text-[10px] font-bold px-1.5 py-0.5 rounded">0.35ct</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="bg-secondary-fixed text-on-secondary-fixed text-[11px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Alta Joyería Fina</span>
+<span class="bg-surface-container-high text-on-surface-variant text-[11px] font-medium px-2 py-0.5 rounded-full">GIA Graded VS1</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Collar Constelación Solis Oro Vermeil 18K</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-mono">Foliado: #COA-AUR-741029-DIA</p>
+<div class="flex items-center gap-1.5 mt-1 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">diamond</span>
+<span class="text-xs text-on-surface-variant">Diamante Central 0.35ct • Color F • Pureza VS1 • Micro-grabado Láser</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:items-end gap-1 shrink-0">
+<span class="inline-flex items-center gap-1 text-[12px] font-semibold text-tertiary bg-tertiary-fixed/30 text-on-tertiary-fixed-variant px-2.5 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+                Garantía Activa • 3 Años
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vigencia hasta: <strong class="text-on-surface">20 Ene 2028</strong></span>
+</div>
+</div>
+<!-- Specifications Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 bg-surface-container-low rounded-lg p-3 text-body-sm font-body-sm">
+<div>
+<span class="block text-outline text-[11px] uppercase tracking-wider">Talla / Corte</span>
+<span class="font-medium text-on-surface">Brillante Redondo (Triple Ex)</span>
+</div>
+<div>
+<span class="block text-outline text-[11px] uppercase tracking-wider">Laboratorio Gemológico</span>
+<span class="font-medium text-on-surface">AuraLuxe Gem Lab &amp; GIA</span>
+</div>
+<div>
+<span class="block text-outline text-[11px] uppercase tracking-wider">Metal Noble</span>
+<span class="font-medium text-on-surface">Oro Vermeil 18K (2.5 micras)</span>
+</div>
+<div>
+<span class="block text-outline text-[11px] uppercase tracking-wider">Engaste</span>
+<span class="font-medium text-on-surface">Bisel Micro-Pavé Cero Defectos</span>
+</div>
+</div>
+<!-- Action Controls -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs border-t border-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-colors flex items-center gap-1.5" onclick="selectCertificate('collar')">
+<span class="material-symbols-outlined text-base">visibility</span>
+                Inspeccionar COA
+              </button>
+<button class="px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors flex items-center gap-1" onclick="showDownloadToast('Collar Constelación Solis #COA-AUR-741029-DIA')">
+<span class="material-symbols-outlined text-base">download</span>
+                PDF Foliado
+              </button>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" onclick="document.getElementById('transfer-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-base">swap_horizontal_circle</span>
+              Transferir Titularidad Digital
+            </button>
+</div>
+</article>
+<!-- Card 3: Bolso Tote Piel Siena Florencia (Leather Luxury) -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md border-l-4 border-l-outline-variant">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div class="flex gap-space-md items-start">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-lg overflow-hidden bg-surface-container-low shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Artisanal Italian leather tote bag in warm terracotta cognac hue, handcrafted vegetable tanned leather with brushed brass hardware accents, resting gracefully in an architectural minimalism studio with natural soft daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjGrSJ6aFKH7BRcOBZJWXDrwUXCahZE1wXekuLSeDUTk0IzgheLkGJw4fwgJKFkLcbVRiVTtwHk-VH1wESDIo_nT0PCGyLXu1gpqiqLwdTQrMaMDySiZth9vvZR_1FfwO8dHumiSVSySGRvuo0qzWL6CSHVqA2oKqtEBp0VaB-0Az6HH_8zsOa-szG8gIPal8-we9KdL9NCoG63kllnCrWgehZklager6dJTMAsVPHAlgtJYXUy91hsg"/>
+<span class="absolute bottom-1 right-1 bg-surface-container-high text-on-surface text-[10px] font-semibold px-1.5 py-0.5 rounded">Toscana</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="bg-surface-container-high text-on-surface text-[11px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Marroquinería Fina</span>
+<span class="bg-surface-container-low text-on-surface-variant text-[11px] font-medium px-2 py-0.5 rounded-full">Curtido 100% Vegetal</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Bolso Tote Piel Siena Florencia Artesanal</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant font-mono">Foliado: #COA-AUR-551980-LEA</p>
+<div class="flex items-center gap-1.5 mt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">spa</span>
+<span class="text-xs">Certificado de Origen Santa Croce sull'Arno • Pátina Natural Garantizada</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:items-end gap-1 shrink-0">
+<span class="inline-flex items-center gap-1 text-[12px] font-semibold text-on-surface-variant bg-surface-container-high px-2.5 py-1 rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Garantía Activa • 2 Años
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vigencia hasta: <strong class="text-on-surface">10 Nov 2026</strong></span>
+</div>
+</div>
+<!-- Specifications Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 bg-surface-container-low rounded-lg p-3 text-body-sm font-body-sm">
+<div>
+<span class="block text-outline text-[11px] uppercase tracking-wider">Herrajes</span>
+<span class="font-medium text-on-surface">Latón Macizo Bañado al Oro</span>
+</div>
+<div>
+<span class="block text-outline text-[11px] uppercase tracking-wider">Costuras</span>
+<span class="font-medium text-on-surface">Pespunte a dos agujas sellado a cera</span>
+</div>
+<div>
+<span class="block text-outline text-[11px] uppercase tracking-wider">Nutrición de Piel</span>
+<span class="font-medium text-secondary">1 Tratamiento Anual Libre</span>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs border-t border-surface-container-low">
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-colors flex items-center gap-1.5" onclick="selectCertificate('bolso')">
+<span class="material-symbols-outlined text-base">visibility</span>
+                Ver Ficha de Autenticidad
+              </button>
+<button class="px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors" onclick="showDownloadToast('Bolso Tote Siena #COA-AUR-551980-LEA')">
+<span class="material-symbols-outlined text-base">download</span>
+</button>
+</div>
+<button class="text-secondary hover:text-on-secondary-container font-label-md text-label-md font-semibold flex items-center gap-1" onclick="alert('Tratamiento de nutrición y bálsamo artesanal programado para recolectar por Valija Segura.')">
+<span class="material-symbols-outlined text-base">auto_fix_high</span>
+              Solicitar Nutrición de Piel de Cortesía
+            </button>
+</div>
+</article>
+</div>
+<!-- Right Column (5 Cols): Live High-End Interactive Certificate Inspector / COA Visualizer -->
+<div class="lg:col-span-5 flex flex-col gap-space-md sticky top-24">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-base">workspace_premium</span>
+            Visor Documental COA en Detalle
+          </span>
+<span class="text-xs bg-surface-container-high px-2 py-0.5 rounded-full text-on-surface font-mono">Foliado Activo</span>
+</div>
+<!-- The Stylized COA Document Display with Guilloché Pattern, Watermark & Seal -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-xl relative overflow-hidden transition-all duration-300" id="coa-document-card">
+<!-- Guilloché Decorative Frame & Watermark Effect -->
+<div class="absolute inset-2 pointer-events-none rounded-lg bg-gradient-to-b from-secondary/5 via-transparent to-secondary/5"></div>
+<div class="absolute inset-0 pointer-events-none flex items-center justify-center opacity-[0.03]">
+<span class="material-symbols-outlined text-[320px] text-secondary select-none">verified</span>
+</div>
+<!-- Document Header -->
+<div class="relative z-10 flex flex-col items-center text-center pb-space-sm border-b border-surface-container-high">
+<div class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-secondary mb-1">
+<span class="material-symbols-outlined text-2xl">diamond</span>
+</div>
+<span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-bold uppercase">AuraLuxe</span>
+<span class="text-[10px] font-label-sm uppercase tracking-[0.25em] text-secondary font-semibold">Certificado Oficial de Autenticidad (COA)</span>
+<span class="font-mono text-xs text-on-surface-variant mt-1" id="coa-viewer-folio">FOLIO: #COA-AUR-892401-GT</span>
+</div>
+<!-- Document Core Details Body -->
+<div class="relative z-10 py-space-md flex flex-col gap-space-sm text-body-sm font-body-sm">
+<div class="text-center mb-1">
+<span class="text-[11px] uppercase tracking-wider text-outline block">Pieza Registrada &amp; Garantizada</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold" id="coa-viewer-title">Cronógrafo Imperial Oro Rosa 18K</h4>
+<span class="text-xs text-secondary font-medium" id="coa-viewer-sub">Calibre Manufactura AL-320 • Sapphire Crystal</span>
+</div>
+<!-- Detail Matrix -->
+<div class="bg-surface-container-low/60 rounded-lg p-space-sm flex flex-col gap-2 font-label-sm text-label-sm">
+<div class="flex justify-between items-center py-0.5 border-b border-surface-container-high/60">
+<span class="text-on-surface-variant">Titular Registrado:</span>
+<span class="font-semibold text-on-surface font-mono">Alejandro Castillo V.</span>
+</div>
+<div class="flex justify-between items-center py-0.5 border-b border-surface-container-high/60">
+<span class="text-on-surface-variant">Estatus de Vault:</span>
+<span class="text-on-tertiary-container font-semibold flex items-center gap-1" id="coa-viewer-status">
+<span class="material-symbols-outlined text-xs">lock</span> Custodiado en Ledger Privado
+                </span>
+</div>
+<div class="flex justify-between items-center py-0.5 border-b border-surface-container-high/60">
+<span class="text-on-surface-variant">Garantía Integral:</span>
+<span class="font-medium text-on-surface" id="coa-viewer-warranty">5 Años Internacional (Vence 2030)</span>
+</div>
+<div class="flex justify-between items-center py-0.5">
+<span class="text-on-surface-variant">Firma de Emisión:</span>
+<span class="font-medium text-on-surface italic" id="coa-viewer-expert">Jean-Luc Meyer (Maestro Relojero)</span>
+</div>
+</div>
+<!-- Ledger Hash & Verification Tool -->
+<div class="p-space-xs rounded-lg bg-surface-container text-on-surface font-mono text-[11px] flex items-center justify-between">
+<span class="truncate pr-2" id="coa-viewer-hash">Hash: 0x8f4d912e77ba01...3b9c</span>
+<button class="text-secondary hover:underline shrink-0 flex items-center gap-0.5" onclick="navigator.clipboard.writeText('0x8f4d912e77ba01ca9023b9c'); alert('Hash de autenticidad copiado al portapapeles.');">
+<span class="material-symbols-outlined text-xs">content_copy</span> Copiar
+              </button>
+</div>
+<!-- Visual Security Elements: Wax Seal + Verification QR -->
+<div class="flex items-center justify-between pt-space-xs px-2">
+<!-- Golden Lacquer Wax Seal -->
+<div class="flex items-center gap-2">
+<div class="w-14 h-14 rounded-full bg-gradient-to-tr from-secondary via-secondary-container to-secondary-fixed flex items-center justify-center shadow-md border-2 border-secondary-fixed p-1 text-on-secondary relative">
+<div class="w-full h-full rounded-full border border-on-secondary/40 flex items-center justify-center flex-col text-center">
+<span class="material-symbols-outlined text-base">verified</span>
+<span class="text-[7px] tracking-tighter uppercase font-bold">AuraLuxe</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] uppercase tracking-wider text-outline">Sello de Lacre</span>
+<span class="text-xs font-semibold text-on-surface">COA Digital Genuino</span>
+</div>
+</div>
+<!-- Live Scalable QR Code Generator for Customs / Auction Houses -->
+<div class="flex flex-col items-center">
+<div class="p-1.5 bg-surface-container-lowest rounded-lg shadow-sm">
+<!-- Clean SVG QR Simulation -->
+<svg class="w-14 h-14 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<rect height="30" rx="4" width="30" x="0" y="0"></rect>
+<rect fill="#ffffff" height="20" width="20" x="5" y="5"></rect>
+<rect height="10" width="10" x="10" y="10"></rect>
+<rect height="30" rx="4" width="30" x="70" y="0"></rect>
+<rect fill="#ffffff" height="20" width="20" x="75" y="5"></rect>
+<rect height="10" width="10" x="80" y="10"></rect>
+<rect height="30" rx="4" width="30" x="0" y="70"></rect>
+<rect fill="#ffffff" height="20" width="20" x="5" y="75"></rect>
+<rect height="10" width="10" x="10" y="80"></rect>
+<rect height="20" width="10" x="40" y="10"></rect>
+<rect height="10" width="10" x="55" y="0"></rect>
+<rect height="20" width="20" x="40" y="40"></rect>
+<rect height="15" width="15" x="70" y="45"></rect>
+<rect height="15" width="15" x="10" y="45"></rect>
+<rect height="20" width="10" x="40" y="70"></rect>
+<rect height="10" width="30" x="60" y="75"></rect>
+<rect height="10" width="10" x="80" y="65"></rect>
+</svg>
+</div>
+<span class="text-[9px] text-outline font-mono mt-0.5">Escanear para Verificación</span>
+</div>
+</div>
+</div>
+<!-- Document Utility Footer -->
+<div class="relative z-10 pt-space-sm border-t border-surface-container-high flex flex-col gap-2">
+<button class="w-full py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-2" onclick="openFullCOAModal()">
+<span class="material-symbols-outlined text-base">fullscreen</span>
+              Inspeccionar Certificado a Pantalla Completa
+            </button>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant px-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-secondary">lock</span> COA Cifrado AES-256
+              </span>
+<a class="text-secondary hover:underline" href="javascript:void(0)" onclick="prompt('Enlace de validación pública para aduanas o casas de subasta:', 'https://auraluxe.com/verify/COA-AUR-892401-GT')">Compartir Link Público</a>
+</div>
+</div>
+</div>
+<!-- Quick Help Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">help_center</span>
+</div>
+<div class="flex flex-col text-body-sm font-body-sm">
+<span class="font-semibold text-on-surface">¿Necesitas un avalúo físico con sello notarial?</span>
+<span class="text-on-surface-variant">Nuestro concierge coordina peritajes gemológicos para seguros patrimoniales en Guatemala.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Maintenance & Service History in Certified Atelier (Zona 10) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg lg:p-space-xl shadow-sm flex flex-col gap-space-lg" id="taller-agenda">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md border-b border-surface-container pb-space-md">
+<div>
+<span class="text-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Taller Oficial AuraLuxe — Atelier Zona 10</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Historial de Mantenimientos &amp; Revisiones Cronométricas</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Monitoreo de calibraciones COSC, pulidos y pruebas de estanqueidad de por vida para socios Black Tier.</p>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors flex items-center gap-1.5" onclick="document.getElementById('appointment-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-base">calendar_month</span>
+            Agendar Cita en Atelier Zona 10
+          </button>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container-highest transition-colors flex items-center gap-1.5" onclick="alert('Solicitud enviada: La Valija Blindada AuraLuxe se coordinará en su domicilio en las próximas 4 horas hábiles.')">
+<span class="material-symbols-outlined text-base">local_shipping</span>
+            Retiro Blindado a Domicilio
+          </button>
+</div>
+</div>
+<!-- Timeline Records -->
+<div class="flex flex-col gap-space-md">
+<!-- Event 1: Recent Finished Service -->
+<div class="flex flex-col sm:flex-row items-start gap-space-md p-space-md bg-surface-container-low/60 rounded-xl hover:bg-surface-container-low transition-colors">
+<div class="w-12 h-12 rounded-lg bg-surface-container text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">check_circle</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col gap-1">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">
+                Inspección previa a entrega y calibración cronométrica COSC
+              </h3>
+<span class="bg-tertiary-fixed/40 text-on-tertiary-fixed-variant text-xs font-semibold px-2.5 py-0.5 rounded-full">Completado con Éxito</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Cronógrafo Imperial Oro Rosa 18K (#COA-AUR-892401-GT) • Ajuste de espiral de volante y prueba de hermeticidad de 10 ATM aprobada con 0 bar de fuga. Desviación registrada: <strong>+0.0 s/día</strong>.
+            </p>
+<div class="flex flex-wrap items-center gap-space-md text-label-sm font-label-sm text-outline mt-1">
+<span><strong class="text-on-surface">Fecha:</strong> 10 Feb 2025</span>
+<span><strong class="text-on-surface">Ubicación:</strong> Atelier Central, Zona 10 (Edificio Sixtino II)</span>
+<span><strong class="text-on-surface">Técnico a cargo:</strong> Jean-Luc Meyer</span>
+<a class="text-secondary hover:underline flex items-center gap-0.5 ml-auto" href="javascript:void(0)" onclick="alert('Descargando reporte cronométrico COSC digitalizado...')">
+<span class="material-symbols-outlined text-sm">attachment</span> Ver Reporte Técnico
+              </a>
+</div>
+</div>
+</div>
+<!-- Event 2: Scheduled Upcoming Maintenance -->
+<div class="flex flex-col sm:flex-row items-start gap-space-md p-space-md bg-surface-container-lowest border-l-4 border-l-secondary rounded-xl shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">event_upcoming</span>
+</div>
+<div class="flex-1 min-w-0 flex flex-col gap-1">
+<div class="flex flex-wrap items-center justify-between gap-2">
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">
+                Próximo Mantenimiento Recomendado: Pulido Anual y Reacondicionamiento
+              </h3>
+<span class="bg-secondary-fixed-dim/40 text-on-secondary-fixed-variant text-xs font-semibold px-2.5 py-0.5 rounded-full">Programado en Calendario VIP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Revisión preventiva anual incluida en la membresía Black Tier. Incluye sustitución de juntas de estanqueidad, lubricación de rubíes sintéticos y pulido ultrasónico de caja y brazalete.
+            </p>
+<div class="flex flex-wrap items-center justify-between gap-space-md text-label-sm font-label-sm text-outline mt-1">
+<span><strong class="text-on-surface">Fecha Sugerida:</strong> Febrero 2026 (Sin costo para socio AP-90412)</span>
+<button class="px-3 py-1 bg-surface-container rounded-lg text-on-surface hover:bg-surface-container-high transition-colors font-medium" onclick="alert('Recordatorio sincronizado con Google Calendar &amp; Apple Calendar.')">
+                Recordarme en mi Calendario
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 5: Black Tier Exclusive Warranty Privileges -->
+<div class="bg-gradient-to-br from-primary-container to-surface-container-lowest text-on-primary rounded-xl p-space-lg lg:p-space-xl shadow-lg relative overflow-hidden">
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<span class="text-secondary-container font-label-sm text-label-sm uppercase tracking-widest font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">stars</span> Beneficios de Garantía Black Tier Aura Privé
+        </span>
+<h2 class="font-headline-md text-headline-md text-surface">Protección Integral Sin Fricciones</h2>
+<p class="font-body-md text-body-md text-on-primary-container max-w-3xl">
+          Como titular Black Tier Elite, sus piezas disfrutan del estándar de salvaguarda más riguroso de la región centroamericana, equiparable a las firmas de Ginebra y París.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface/5 backdrop-blur-md rounded-lg p-space-md flex flex-col gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl">published_with_changes</span>
+<h4 class="font-title-lg text-title-lg text-surface font-semibold">Reemplazo Inmediato</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+            Sustitución directa por pieza nueva idéntica en caso de cualquier defecto estructural o mecánico no subsanable durante los primeros 24 meses.
+          </p>
+</div>
+<div class="bg-surface/5 backdrop-blur-md rounded-lg p-space-md flex flex-col gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl">support_agent</span>
+<h4 class="font-title-lg text-title-lg text-surface font-semibold">Relojero de Cabecera 24/7</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+            Línea privada de WhatsApp con el maestro relojero jefe para consultas técnicas, ajustes de husos horarios y protocolos de viaje.
+          </p>
+</div>
+<div class="bg-surface/5 backdrop-blur-md rounded-lg p-space-md flex flex-col gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl">electric_car</span>
+<h4 class="font-title-lg text-title-lg text-surface font-semibold">Atelier Móvil VIP</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+            Servicio a domicilio en Ciudad de Guatemala, Antigua Guatemala y Carretera a El Salvador para cambios de correa y pruebas de hermeticidad.
+          </p>
+</div>
+<div class="bg-surface/5 backdrop-blur-md rounded-lg p-space-md flex flex-col gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl">family_restroom</span>
+<h4 class="font-title-lg text-title-lg text-surface font-semibold">Transferible a Legado</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+            Los certificados COA y garantías pueden transferirse formalmente a herederos o terceros sin perder antigüedad ni coberturas activas.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Modal 1: Register New Piece or Physical Certificate -->
+<div class="fixed inset-0 bg-inverse-surface/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4" id="register-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-2xl flex flex-col gap-space-md relative animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">add_moderator</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Vincular Nueva Pieza a Bóveda</h3>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface" onclick="document.getElementById('register-modal').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Ingrese el número de serie grabado en su pieza o el código foliado en la tarjeta de garantía física recibida en boutique.
+      </p>
+<form class="flex flex-col gap-space-sm" onsubmit="event.preventDefault(); handleNewRegistration();">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-medium mb-1">Folio de Garantía o Serie Grabada *</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface font-mono text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" id="input-folio" placeholder="Ej: COA-AUR-XXXXXX-GT o Serie de Calibre" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-medium mb-1">Categoría de la Pieza</label>
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50">
+<option>Alta Relojería Suiza</option>
+<option>Joyería Fina con Diamante / Gemas</option>
+<option>Orfebrería en Oro Vermeil o Plata 925</option>
+<option>Marroquinería Artesanal &amp; Cuero Toscano</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-medium mb-1">Fecha de Adquisición</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" type="date" value="2025-02-14"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-medium mb-1">Lugar de Compra</label>
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50">
+<option>Boutique Flagship AuraLuxe — Zona 14, Ciudad de Guatemala</option>
+<option>AuraLuxe Online Privé Store</option>
+<option>Atelier Internacional Autorizado (Ginebra / Milán)</option>
+<option>Adquisición por Herencia / Reventa Certificada</option>
+</select>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="document.getElementById('register-modal').classList.add('hidden')" type="button">
+            Cancelar
+          </button>
+<button class="flex-1 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors shadow-md" type="submit">
+            Verificar &amp; Registrar
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Interactive Modal 2: Transfer Ownership / Reassign Legacy -->
+<div class="fixed inset-0 bg-inverse-surface/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4" id="transfer-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-2xl flex flex-col gap-space-md relative animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">swap_horizontal_circle</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Transferir Titularidad Digital COA</h3>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface" onclick="document.getElementById('transfer-modal').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center gap-3 text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-secondary text-2xl">info</span>
+<span>Transfiriendo: <strong>Collar Constelación Solis</strong> (#COA-AUR-741029-DIA). La garantía activa de 3 años continuará vigente a nombre del nuevo titular.</span>
+</div>
+<form class="flex flex-col gap-space-sm" onsubmit="event.preventDefault(); alert('Solicitud de traspaso generada. Se ha enviado un enlace criptográfico de aceptación al correo del nuevo titular.'); document.getElementById('transfer-modal').classList.add('hidden');">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-medium mb-1">Nombre Completo del Nuevo Titular *</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" placeholder="Ej: Sofía Castillo Villagrán" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-medium mb-1">Correo Electrónico del Receptor *</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" placeholder="destinatario@ejemplo.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-medium mb-1">Motivo de Traspaso</label>
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50">
+<option>Regalo / Obsequio Familiar</option>
+<option>Legado Patrimonial / Herencia</option>
+<option>Venta en Mercado Secundario / Subasta</option>
+</select>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="document.getElementById('transfer-modal').classList.add('hidden')" type="button">
+            Cancelar
+          </button>
+<button class="flex-1 py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:bg-secondary/90 transition-colors shadow-md" type="submit">
+            Confirmar Traspaso Seguro
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Interactive Modal 3: Agenda Cita Atelier Zona 10 -->
+<div class="fixed inset-0 bg-inverse-surface/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4" id="appointment-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-2xl flex flex-col gap-space-md relative animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">watch</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Cita en Taller Privado Zona 10</h3>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface" onclick="document.getElementById('appointment-modal').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Reserve un espacio de cortesía exclusivo con el maestro relojero Jean-Luc Meyer en nuestro atelier de Zona 10 (Edificio Sixtino II).
+      </p>
+<form class="flex flex-col gap-space-sm" onsubmit="event.preventDefault(); alert('Cita reservada con éxito en Atelier Zona 10. Su concierge VIP le enviará el pase de estacionamiento privado.'); document.getElementById('appointment-modal').classList.add('hidden');">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-medium mb-1">Pieza para Revisión</label>
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50">
+<option>Cronógrafo Imperial Oro Rosa 18K (#COA-AUR-892401-GT)</option>
+<option>Collar Constelación Solis (#COA-AUR-741029-DIA)</option>
+<option>Bolso Tote Piel Florencia (#COA-AUR-551980-LEA)</option>
+<option>Otra pieza antigua de la colección personal</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-medium mb-1">Fecha Preferida</label>
+<input class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50" type="date" value="2025-02-28"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-medium mb-1">Hora</label>
+<select class="w-full px-space-md py-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50">
+<option>10:30 AM (Privé)</option>
+<option>02:30 PM (Privé)</option>
+<option>04:30 PM (Privé)</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-medium mb-1">Servicio Solicitado</label>
+<div class="grid grid-cols-1 gap-1 text-label-sm">
+<label class="flex items-center gap-2 p-2 bg-surface-container-low rounded-lg cursor-pointer">
+<input checked="" class="accent-secondary" name="srv-type" type="radio"/>
+<span>Ajuste de brazalete / eslabones de oro rosa y calibración</span>
+</label>
+<label class="flex items-center gap-2 p-2 bg-surface-container-low rounded-lg cursor-pointer">
+<input class="accent-secondary" name="srv-type" type="radio"/>
+<span>Limpieza ultrasónica y test de estanqueidad 100M</span>
+</label>
+<label class="flex items-center gap-2 p-2 bg-surface-container-low rounded-lg cursor-pointer">
+<input class="accent-secondary" name="srv-type" type="radio"/>
+<span>Peritaje gemológico para avalúo de póliza de seguro</span>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="document.getElementById('appointment-modal').classList.add('hidden')" type="button">
+            Cancelar
+          </button>
+<button class="flex-1 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-colors shadow-md" type="submit">
+            Confirmar Reservación VIP
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Toast Notification Simulator -->
+<div class="fixed bottom-6 right-6 z-50 bg-primary text-on-primary px-space-md py-3 rounded-xl shadow-2xl flex items-center gap-3 transition-all transform translate-y-24 opacity-0 pointer-events-none duration-300" id="toast-notify">
+<span class="material-symbols-outlined text-secondary-fixed">download_done</span>
+<div class="flex flex-col">
+<span class="font-semibold text-body-sm" id="toast-title">Descarga Iniciada</span>
+<span class="text-xs text-on-primary-container" id="toast-sub">Generando documento oficial de alta resolución.</span>
+</div>
+</div>
+</div>
+<!-- Inline JavaScript for Visual Certificate Switching & Interaction -->
+<script>
+  const certificateData = {
+    reloj: {
+      folio: "FOLIO: #COA-AUR-892401-GT",
+      title: "Cronógrafo Imperial Oro Rosa 18K",
+      sub: "Calibre Manufactura AL-320 • Sapphire Crystal 42mm",
+      status: "Custodiado en Ledger Privado",
+      warranty: "5 Años Internacional (Vence 14 Feb 2030)",
+      expert: "Jean-Luc Meyer (Maestro Relojero)",
+      hash: "Hash: 0x8f4d912e77ba01ca9023b9c"
+    },
+    collar: {
+      folio: "FOLIO: #COA-AUR-741029-DIA",
+      title: "Collar Constelación Solis",
+      sub: "Oro Vermeil 18K • Diamante Central 0.35ct VS1 / F",
+      status: "Certificación GIA & Ledger Activa",
+      warranty: "3 Años de Cobertura Fina (Vence 20 Ene 2028)",
+      expert: "Dra. Elena Rossi (Gemóloga Certificada GIA)",
+      hash: "Hash: 0x3c99a812bf0082...da14"
+    },
+    bolso: {
+      folio: "FOLIO: #COA-AUR-551980-LEA",
+      title: "Bolso Tote Piel Siena Florencia",
+      sub: "Cuero Curtido Vegetal Toscano • Herrajes Baño Oro",
+      status: "Trazabilidad de Piel Certificada",
+      warranty: "2 Años en Herrajes y Costuras (Vence 10 Nov 2026)",
+      expert: "Matteo Bellini (Maestro Talabartero)",
+      hash: "Hash: 0xaa201e99fc3108...771e"
+    }
+  };
+
+  function selectCertificate(type) {
+    const data = certificateData[type];
+    if (!data) return;
+
+    const viewer = document.getElementById('coa-document-card');
+    viewer.classList.add('opacity-50', 'scale-[0.99]');
+
+    setTimeout(() => {
+      document.getElementById('coa-viewer-folio').textContent = data.folio;
+      document.getElementById('coa-viewer-title').textContent = data.title;
+      document.getElementById('coa-viewer-sub').textContent = data.sub;
+      document.getElementById('coa-viewer-warranty').textContent = data.warranty;
+      document.getElementById('coa-viewer-expert').textContent = data.expert;
+      document.getElementById('coa-viewer-hash').textContent = data.hash;
+      viewer.classList.remove('opacity-50', 'scale-[0.99]');
+    }, 150);
+  }
+
+  function showDownloadToast(itemName) {
+    const toast = document.getElementById('toast-notify');
+    document.getElementById('toast-title').textContent = 'Descargando COA Foliado';
+    document.getElementById('toast-sub').textContent = itemName + ' en PDF 300DPI listo.';
+    
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 3500);
+  }
+
+  function openFullCOAModal() {
+    const folio = document.getElementById('coa-viewer-folio').textContent;
+    alert('Abriendo vista documental COA de seguridad máxima para ' + folio + '. Documento apto para presentación consular o seguro internacional.');
+  }
+
+  function handleNewRegistration() {
+    const folioVal = document.getElementById('input-folio').value;
+    alert('¡Pieza ' + folioVal + ' vinculada exitosamente con firma digital! Su bóveda se ha actualizado.');
+    document.getElementById('register-modal').classList.add('hidden');
+  }
+</script></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-xl pb-space-lg"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase font-semibold">AuraLuxe</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Lujo accesible diseñado para trascender. Artesanía contemporánea, piedras de origen ético con certificación COA garantizada y envíos seguros a toda Guatemala e internacionalmente.</p><div class="flex items-center gap-space-md text-on-surface-variant"><span class="material-symbols-outlined cursor-pointer hover:text-on-surface" title="Certificación Auténtica">verified</span><span class="material-symbols-outlined cursor-pointer hover:text-on-surface" title="Garantía Extendida">workspace_premium</span><span class="material-symbols-outlined cursor-pointer hover:text-on-surface" title="Soporte Privé">support_agent</span><span class="material-symbols-outlined cursor-pointer hover:text-on-surface" title="Pagos Seguros">credit_card</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Explorar Shop</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Nueva Colección</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Alta Joyería Fina</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="lista-de-deseos" href="/lista-de-deseos">Mi Lista de Deseos &amp; Comparador</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Ofertas de Temporada</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Mi Cuenta &amp; Respaldo</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="mi-cuenta" href="/mi-cuenta">Panel de Cliente VIP</a><a class="font-body-sm text-body-sm text-on-surface hover:text-secondary font-medium transition-colors flex items-center gap-1" data-path="garantias-y-certificados" href="/garantias-y-certificados"><span class="material-symbols-outlined text-body-sm text-secondary">workspace_premium</span> Garantías &amp; Certificados COA</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="mi-cuenta" href="/mi-cuenta">Rastrear Mi Orden</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Preguntas Frecuentes &amp; Pólizas</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Aura Privé</span><p class="font-body-sm text-body-sm text-on-surface-variant">Suscríbete para recibir un 10% de descuento en tu primera compra y acceso exclusivo a prelanzamientos y certificados conmemorativos.</p><form class="flex flex-col gap-space-xs mt-space-xs" onsubmit="event.preventDefault(); alert('¡Gracias por unirte a Aura Privé!');"><input class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50 placeholder:text-outline" placeholder="Ingresa tu correo electrónico" required="" type="email"/><button class="px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" type="submit">Suscribirme</button></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="font-body-sm text-body-sm text-outline">© 2025 AuraLuxe Guatemala S.A. Todos los derechos reservados. Certificados de Autenticidad (COA) avalados internacionalmente.</div><div class="flex items-center gap-space-md text-label-sm font-label-sm text-outline"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-body-sm">verified</span> COA Verificado</span><span>|</span><span class="flex items-center gap-1"><span class="material-symbols-outlined text-body-sm">lock</span> Checkout Seguro SSL</span><span>|</span><span>Visa Cuotas</span><span>|</span><span>Mastercard</span></div></div></div></footer><script>const cartBtn = document.getElementById('cart-open-btn'); const cartDrawer = document.getElementById('cart-drawer'); const cartOverlay = document.getElementById('cart-drawer-overlay'); const cartClose = document.getElementById('cart-close-btn'); function openCart() { cartOverlay.classList.remove('hidden'); setTimeout(() => { cartOverlay.classList.remove('opacity-0'); cartDrawer.classList.remove('translate-x-full'); }, 10); } function closeCart() { cartDrawer.classList.add('translate-x-full'); cartOverlay.classList.add('opacity-0'); setTimeout(() => { cartOverlay.classList.add('hidden'); }, 300); } if (cartBtn) cartBtn.addEventListener('click', openCart); if (cartClose) cartClose.addEventListener('click', closeCart); if (cartOverlay) cartOverlay.addEventListener('click', closeCart); const searchInput = document.getElementById('global-search-input'); const searchDropdown = document.getElementById('search-dropdown'); if (searchInput && searchDropdown) { searchInput.addEventListener('focus', () => searchDropdown.classList.remove('hidden')); searchInput.addEventListener('blur', () => setTimeout(() => searchDropdown.classList.add('hidden'), 200)); }</script></body></html>

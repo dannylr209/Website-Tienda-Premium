@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>AuraLuxe — Accessible Luxury</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#0b1c30", "on-primary-container": "#7c839b", "on-secondary-fixed-variant": "#6e3900", "outline": "#76777d", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005236", "surface-variant": "#d3e4fe", "secondary": "#904d00", "surface-container-high": "#dce9ff", "surface-dim": "#cbdbf5", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002113", "surface-container-low": "#eff4ff", "on-surface": "#0b1c30", "error": "#ba1a1a", "surface": "#f8f9ff", "primary-container": "#131b2e", "on-tertiary-container": "#009668", "surface-container-lowest": "#ffffff", "surface-container": "#e5eeff", "on-surface-variant": "#45464d", "secondary-fixed": "#ffdcc3", "secondary-fixed-dim": "#ffb77d", "on-primary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-tertiary": "#ffffff", "primary-fixed": "#dae2fd", "on-secondary-fixed": "#2f1500", "inverse-surface": "#213145", "secondary-container": "#fe932c", "surface-tint": "#565e74", "on-error": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-secondary-container": "#663500", "primary": "#000000", "background": "#f8f9ff", "tertiary": "#000000", "tertiary-container": "#002113", "tertiary-fixed": "#6ffbbe", "inverse-primary": "#bec6e0", "tertiary-fixed-dim": "#4edea3", "on-primary-fixed": "#131b2e", "primary-fixed-dim": "#bec6e0", "on-primary-fixed-variant": "#3f465c", "surface-bright": "#f8f9ff", "outline-variant": "#c6c6cd" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-desktop": "3rem", "margin-mobile": "1rem", "space-xl": "2rem", "margin": "2rem" }, "fontFamily": { "headline-md": ["Outfit"], "headline-lg": ["Outfit"], "display-hero": ["Outfit"], "body-lg": ["Inter"], "label-md": ["Inter"], "display-hero-mobile": ["Outfit"], "price-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-xl": ["Outfit"], "title-lg": ["Outfit"], "label-sm": ["Inter"], "headline-sm": ["Outfit"], "headline-xl-mobile": ["Outfit"], "price-lg": ["Inter"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "price-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "500" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "price-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-surface px-margin-mobile lg:px-margin-desktop py-space-xs text-center"><div class="max-w-7xl mx-auto flex items-center justify-between text-label-sm font-label-sm"><span class="hidden sm:inline-block text-on-primary-container tracking-wide">GUATEMALA &amp; GLOBAL SHIPPING</span><p class="w-full sm:w-auto text-center font-medium tracking-wide text-surface">Envíos gratis en compras &gt; Q.500 | Cuotas sin interés Visa / Mastercard</p><div class="hidden sm:flex items-center gap-space-sm text-on-primary-container"><span class="material-symbols-outlined text-label-sm">verified</span><span>Autenticidad Garantizada</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="inicio" href="/inicio"><img alt="AuraLuxe Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XbYWKTtgfAhpa_stWrBkJNd2KJ_OhkoLxbCx0GmyoKnxqJpoqSpgzNYdiAi479I0Hu4t7aiRsRexiZImhDfvdcFInYVZDG64aTehaHxImc_6_iaM0D2nv3YL6V-j6Q_NFm8ewuUH5EZLjJLO9Cskzvy2PrBG4ftWE68UqGfwyVEogphwfvwh4a_l17w4HzNsUSCu-2gXoC-pEOpQccapJTmhncn5P4dNNT5bJZMcc3oEjbmBOJAtxKPt0"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">AuraLuxe</span></a></div><div class="hidden md:flex flex-1 max-w-md mx-space-lg relative"><div class="w-full flex items-center bg-surface-container-low rounded-lg px-space-md py-space-xs transition-all focus-within:ring-2 focus-within:ring-secondary/40 focus-within:bg-surface-container-lowest"><span class="material-symbols-outlined text-outline text-headline-sm mr-space-xs">search</span><input autocomplete="off" class="w-full bg-transparent text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none" id="global-search-input" placeholder="Buscar joyas, accesorios de lujo, bolsos..." type="search"/></div><div class="hidden absolute left-0 right-0 top-full mt-2 bg-surface-container-lowest rounded-lg shadow-[0_10px_15px_-3px_rgba(15,23,42,0.06),0_20px_25px_-5px_rgba(15,23,42,0.08)] p-space-md z-50" id="search-dropdown"><div class="text-label-sm font-label-sm text-outline mb-space-xs uppercase tracking-wider">Búsquedas populares</div><div class="flex flex-col gap-space-xs"><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Collar Diamante Aura Solitario (Q.1,850)</a><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Reloj Cronógrafo Imperial Gold (USD $420)</a><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Brazalete Velvet Silver 925</a></div></div></div><div class="flex items-center gap-space-md"><div class="relative inline-block text-left"><select class="appearance-none bg-surface-container-low text-on-surface text-label-sm font-label-sm py-1.5 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none hover:bg-surface-container transition-colors" id="currency-selector"><option value="GTQ">GTQ (Q)</option><option value="USD">USD ($)</option></select><span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-outline text-body-sm">expand_more</span></div><a class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="wishlist" href="/wishlist" title="Lista de Deseos"><span class="material-symbols-outlined text-headline-sm">favorite</span><span class="absolute top-1 right-1 bg-secondary text-on-secondary text-[10px] font-bold rounded-full h-4.5 w-4.5 min-w-[18px] flex items-center justify-center px-1" id="wishlist-badge">2</span></a><button class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" id="cart-open-btn" title="Carrito" type="button"><span class="material-symbols-outlined text-headline-sm">shopping_bag</span><span class="absolute top-1 right-1 bg-primary text-on-primary text-[10px] font-bold rounded-full h-4.5 w-4.5 min-w-[18px] flex items-center justify-center px-1" id="cart-badge">3</span></button><a class="flex items-center gap-space-xs p-1 rounded-full hover:ring-2 hover:ring-secondary/40 transition-all" data-path="mi-cuenta" href="/mi-cuenta" title="Mi Perfil"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUS7PY6UFwgghzGuUJm3Qjna2wydJu5dtmWPh-jvkHfklF6UipRg6rePOdzH2zUkXw01IrqX93uRtbPbDvh6NtUPk84oOqTdmX4ZmgI2gSET91psD187WaR4LPh0Nci-bZuBfFKNB_3Vu-60RDCQIVTo0dBPRIWPztA489rbeXF4_bWvQ6n5XhHfxkl3g5KqiFduKsEYFiLX99dfxYGqJZesYW7gobid-D75n2sKXxLK65q4QBV4VsWA"/></a></div></div><div class="bg-surface-container-lowest/80 border-t border-surface-container-low px-margin-mobile lg:px-margin-desktop"><div class="max-w-7xl mx-auto flex items-center justify-between"><nav class="flex items-center gap-space-lg overflow-x-auto py-2.5" data-active-classes="text-on-surface font-title-lg font-semibold"><a aria-current="page" class="transition-colors whitespace-nowrap text-on-surface font-title-lg font-semibold" data-path="inicio" href="/inicio">Inicio</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="shop" href="/shop">Colecciones</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="shop" href="/shop">Novedades</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="shop" href="/shop">Ofertas</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="faq" href="/faq">Envíos &amp; FAQ</a></nav><div class="hidden lg:flex items-center gap-space-md text-label-sm font-label-sm text-secondary"><span class="material-symbols-outlined text-label-md">local_shipping</span><span>Entrega express en 24h Ciudad de Guatemala</span></div></div></div></header><div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" id="cart-drawer-overlay"></div><aside class="fixed top-0 right-0 h-full w-full sm:w-96 max-w-full bg-surface-container-lowest shadow-[0_25px_50px_-12px_rgba(15,23,42,0.22)] z-50 flex flex-col translate-x-full transition-transform duration-300 ease-out" id="cart-drawer"><div class="p-space-lg flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-on-surface">shopping_bag</span><span class="font-headline-sm text-headline-sm text-on-surface">Tu Carrito (<span id="drawer-cart-count">3</span>)</span></div><button class="p-1 text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" id="cart-close-btn" type="button"><span class="material-symbols-outlined">close</span></button></div><div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-md"><div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg"><div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-outline">save_as</span></div><div class="flex-1 min-w-0"><h4 class="font-title-lg text-title-lg text-on-surface truncate">Collar Constelación Solis</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Oro Vermeil 18K</p><div class="font-price-md text-price-md text-secondary mt-1">Q.1,450.00</div></div></div><div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg"><div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-outline">watch</span></div><div class="flex-1 min-w-0"><h4 class="font-title-lg text-title-lg text-on-surface truncate">Reloj Crono Midnight</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Edición Limitada</p><div class="font-price-md text-price-md text-secondary mt-1">Q.2,890.00</div></div></div></div><div class="p-space-lg bg-surface-container-low flex flex-col gap-space-md"><div class="flex justify-between items-center"><span class="font-body-md text-body-md text-on-surface-variant">Subtotal estimado</span><span class="font-headline-sm text-headline-sm text-on-surface">Q.4,340.00</span></div><div class="flex gap-space-sm"><a class="flex-1 text-center py-3 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" data-path="carrito" href="/carrito">Ver Carrito</a><a class="flex-1 text-center py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" data-path="checkout" href="/checkout">Pagar</a></div></div></aside><main class="w-full pt-36 bg-surface"><div class="flex flex-col w-full">
+<!-- Profile & VIP Member Header Banner -->
+<section class="relative w-full bg-primary-container text-surface overflow-hidden shadow-md">
+<!-- Ambient glowing backdrop geometry -->
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-20 w-80 h-80 rounded-full bg-surface-container-highest/10 blur-2xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop py-space-xl relative z-10">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg">
+<!-- Left: Profile Identity -->
+<div class="flex items-center gap-space-lg">
+<div class="relative shrink-0">
+<div class="w-20 h-20 lg:w-24 lg:h-24 rounded-full p-1 bg-gradient-to-tr from-secondary via-secondary-container to-surface-container-lowest shadow-xl">
+<img class="w-full h-full object-cover rounded-full" data-alt="Close-up distinguished studio portrait of a sophisticated Hispanic gentleman with sharp trimmed beard wearing a bespoke navy tailored suit and luxury lapel pin, warm soft directional lighting, editorial luxury portraiture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH-ZutEVwkArIoq7npUckTySzwsuqBXRAdcmo2vYo94WfGg_uXmiTdA0Fczn7O8tMJC46_CZJpZBwjMeWMaS07gZ5L6JEDC-mDv4bcYd5CIHsmpDI9I1mmV_wPQc4Pz0GzFgmU4EKCBOas6C1wrquWo4tiWz40WIK6qmnZO2X4wqPN4SseI8lvzr108nnbEUm7TnO7nZYFEUDYy890OE1bculBzSlfalRc11h06BHgIcrEBFB68X7O6w"/>
+</div>
+<span class="absolute bottom-0 right-0 bg-secondary text-on-secondary w-6 h-6 rounded-full flex items-center justify-center text-[11px] font-bold shadow" title="Nivel Verificado Black Tier">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-space-xs mb-1">
+<span class="bg-secondary-container/25 text-secondary-fixed text-label-sm font-label-sm px-2.5 py-0.5 rounded-full tracking-wider uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm text-secondary-fixed">workspace_premium</span>
+                Aura Privé Black Tier
+              </span>
+<span class="text-on-primary-container text-label-sm font-label-sm">· Miembro desde 2023</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-surface tracking-tight">Alejandro Castillo Villagrán</h1>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 text-on-primary-container text-body-sm font-body-sm mt-0.5">
+<span>Socio <strong class="text-surface font-semibold">#AP-90412</strong></span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-label-sm text-secondary-fixed">mail</span> a.castillo@inversionesgt.com</span>
+<span>•</span>
+<span>Ciudad de Guatemala</span>
+</div>
+</div>
+</div>
+<!-- Right: VIP Ledger & Concierge Access -->
+<div class="w-full lg:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md">
+<!-- Balance Widget -->
+<div class="bg-surface-container-low/10 backdrop-blur-md rounded-xl p-space-md flex items-center justify-between sm:justify-start gap-space-md shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary/20 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-headline-sm">account_balance_wallet</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-on-primary-container uppercase tracking-wider">Aura Credit Balance</p>
+<p class="text-price-lg font-price-lg text-surface font-semibold">Q. 1,450.00 <span class="text-label-sm font-label-sm font-normal text-secondary-fixed">($186 USD)</span></p>
+</div>
+</div>
+<!-- Private Concierge Widget -->
+<div class="bg-surface-container-low/10 backdrop-blur-md rounded-xl p-space-md flex items-center justify-between sm:justify-start gap-space-md shadow-sm">
+<div class="relative w-10 h-10 rounded-full overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of a high-end luxury client concierge woman wearing an ivory blazer with a discrete golden earpiece, smiling warmly in a minimalist marble boutique background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAgM72x-2_ARGTTKSrAUjgmza0Aav9KiwA5zNplj68Bp1O6TC5e7lHCzyHL9F2MKynNRuB2188szSypBetmI2eMPGjpk1HzbSoBP7zCGV1zxB2vgyQ2OP0F7Bn13YCQNoeibg7PB-s9ewMzZBQS99kV8RqMJF_lOpycKo0kEJAYNXC6Ro9IkFcEYM1oYhNLf5rE-C3npDVclpZHdxy8JY4WnOX4tYKm_4RcZ39FYnHiFRPTYsDQZnpiQ"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-tertiary-fixed rounded-full shadow"></span>
+</div>
+<div class="min-w-0">
+<p class="text-label-sm font-label-sm text-on-primary-container uppercase tracking-wider">Tu Concierge Privado</p>
+<p class="text-title-lg font-title-lg text-surface truncate">Lucía Valdés</p>
+</div>
+<div class="flex items-center gap-1 ml-auto">
+<a class="w-8 h-8 rounded-lg bg-surface-container-lowest/15 hover:bg-surface-container-lowest/30 flex items-center justify-center text-surface transition-colors" href="tel:+50223000000" title="Llamada Directa">
+<span class="material-symbols-outlined text-body-md">call</span>
+</a>
+<button class="w-8 h-8 rounded-lg bg-secondary hover:bg-secondary-container flex items-center justify-center text-on-secondary transition-colors" onclick="alert('Conectando vía canal cifrado con tu Concierge Lucía Valdés (Aura Privé Guatemala)...')" title="WhatsApp Cifrado" type="button">
+<span class="material-symbols-outlined text-body-md">chat</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Navigation Tabs Bar -->
+<nav aria-label="Navegación Mi Cuenta" class="sticky top-20 z-30 w-full bg-surface-container-lowest shadow-sm">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center gap-space-md overflow-x-auto scrollbar-none py-1">
+<button class="portal-tab-btn flex items-center gap-space-xs py-3 px-space-md font-title-lg text-title-lg transition-colors whitespace-nowrap text-on-surface bg-surface-container-low rounded-lg font-semibold" id="tab-btn-orders" onclick="switchPortalTab('orders')" type="button">
+<span class="material-symbols-outlined text-headline-sm text-secondary">package_2</span>
+<span>Mis Órdenes &amp; Compras</span>
+<span class="ml-1 bg-secondary text-on-secondary text-label-sm font-label-sm px-2 py-0.5 rounded-full font-bold">1 activa</span>
+</button>
+<button class="portal-tab-btn flex items-center gap-space-xs py-3 px-space-md font-title-lg text-title-lg transition-colors whitespace-nowrap text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg font-normal" id="tab-btn-addresses" onclick="switchPortalTab('addresses')" type="button">
+<span class="material-symbols-outlined text-headline-sm">location_on</span>
+<span>Direcciones Guardadas</span>
+</button>
+<button class="portal-tab-btn flex items-center gap-space-xs py-3 px-space-md font-title-lg text-title-lg transition-colors whitespace-nowrap text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg font-normal" id="tab-btn-vault" onclick="switchPortalTab('vault')" type="button">
+<span class="material-symbols-outlined text-headline-sm">account_balance</span>
+<span>Métodos de Pago &amp; Vault</span>
+</button>
+<button class="portal-tab-btn flex items-center gap-space-xs py-3 px-space-md font-title-lg text-title-lg transition-colors whitespace-nowrap text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg font-normal" id="tab-btn-guarantees" onclick="switchPortalTab('guarantees')" type="button">
+<span class="material-symbols-outlined text-headline-sm">verified_user</span>
+<span>Garantías &amp; Certificados COA</span>
+</button>
+<button class="portal-tab-btn flex items-center gap-space-xs py-3 px-space-md font-title-lg text-title-lg transition-colors whitespace-nowrap text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg font-normal" id="tab-btn-wishlist" onclick="switchPortalTab('wishlist')" type="button">
+<span class="material-symbols-outlined text-headline-sm">favorite</span>
+<span>Lista de Deseos</span>
+<span class="text-label-sm font-label-sm bg-surface-container-high px-1.5 py-0.2 rounded-full text-on-surface-variant">2</span>
+</button>
+<button class="portal-tab-btn flex items-center gap-space-xs py-3 px-space-md font-title-lg text-title-lg transition-colors whitespace-nowrap text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg font-normal" id="tab-btn-security" onclick="switchPortalTab('security')" type="button">
+<span class="material-symbols-outlined text-headline-sm">tune</span>
+<span>Seguridad &amp; Privilegios</span>
+</button>
+</div>
+</nav>
+<!-- Main Body Content Grid -->
+<div class="max-w-7xl mx-auto w-full px-margin-mobile lg:px-margin-desktop py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Tab Views (8 Cols Desktop) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- TAB 1: ORDERS & PURCHASES (ACTIVE BY DEFAULT) -->
+<div class="portal-pane flex flex-col gap-space-lg" id="tab-content-orders">
+<!-- Controls Bar: Filter & Search -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md">
+<div class="flex-1 relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-headline-sm">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-low rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all" id="order-search" oninput="filterOrders()" placeholder="Buscar por producto, # de orden o guía..." type="search"/>
+</div>
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 md:pb-0">
+<button class="order-filter-chip bg-primary text-on-primary text-label-sm font-label-sm px-3 py-2 rounded-lg whitespace-nowrap font-medium shadow-sm" onclick="setFilter('all', this)" type="button">Todas (4)</button>
+<button class="order-filter-chip bg-surface-container-low text-on-surface-variant hover:text-on-surface text-label-sm font-label-sm px-3 py-2 rounded-lg whitespace-nowrap font-medium transition-colors" onclick="setFilter('transit', this)" type="button">En Tránsito (1)</button>
+<button class="order-filter-chip bg-surface-container-low text-on-surface-variant hover:text-on-surface text-label-sm font-label-sm px-3 py-2 rounded-lg whitespace-nowrap font-medium transition-colors" onclick="setFilter('delivered', this)" type="button">Entregadas (3)</button>
+<div class="relative shrink-0 ml-1">
+<select class="appearance-none bg-surface-container-low text-on-surface text-label-sm font-label-sm py-2 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none hover:bg-surface-container transition-colors font-medium" id="order-year-select">
+<option value="2025">Año 2025</option>
+<option value="2024">Año 2024</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-outline text-body-sm">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Highlight Card: Active In-Flight Shipment -->
+<article class="order-card bg-surface-container-lowest rounded-xl p-space-lg shadow-md relative overflow-hidden flex flex-col gap-space-lg" data-status="transit">
+<!-- Top Status Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="bg-secondary text-on-secondary text-label-sm font-label-sm px-2.5 py-1 rounded font-bold uppercase tracking-wider">Orden Activa</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">#AL-892401</span>
+<span class="text-on-surface-variant text-body-sm font-body-sm">Emitida: Hoy, 09:40 AM</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Método:</span>
+<span class="text-body-sm font-body-sm font-semibold text-on-surface bg-surface-container-lowest px-2.5 py-1 rounded shadow-sm">12 VisaCuotas sin recargo</span>
+</div>
+</div>
+<!-- Visual Progress Tracker -->
+<div class="flex flex-col gap-space-xs py-space-xs">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface">
+<span class="font-semibold text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-body-md animate-pulse">local_shipping</span>
+                  En Tránsito Blindado AuraSecure
+                </span>
+<span class="text-on-surface-variant font-medium">Estimada: Mañana antes de 2:00 PM</span>
+</div>
+<!-- Bar Steps -->
+<div class="grid grid-cols-4 gap-2 pt-2">
+<div class="flex flex-col gap-1">
+<div class="h-2 rounded-full bg-secondary"></div>
+<span class="text-[11px] font-medium text-secondary">Confirmado</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-2 rounded-full bg-secondary"></div>
+<span class="text-[11px] font-medium text-secondary">Bóveda &amp; COA</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-2 rounded-full bg-secondary animate-pulse"></div>
+<span class="text-[11px] font-semibold text-secondary">Custodia en Ruta</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-2 rounded-full bg-surface-container-highest"></div>
+<span class="text-[11px] font-medium text-outline">Entregado</span>
+</div>
+</div>
+<!-- Dispatch Logistics Note -->
+<div class="mt-2 bg-surface-container-high/60 rounded-lg p-3 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary shrink-0 text-body-lg">shield</span>
+<div class="flex-1 min-w-0 text-body-sm font-body-sm text-on-surface">
+<p><strong class="font-medium">Entrega de Alta Seguridad:</strong> Guía de rastreo blindada <strong class="font-mono text-secondary">GT-BLIND-78291</strong>. Destino: Edificio Terra Esperanza, Nivel 14, Zona 10, C. de Guatemala. Se requiere DPI original al recibir.</p>
+</div>
+</div>
+</div>
+<!-- Line Items in this order -->
+<div class="flex flex-col gap-space-md">
+<h2 class="text-label-md font-label-md text-outline uppercase tracking-wider font-semibold">Artículos en esta Entrega (3 piezas)</h2>
+<!-- Item 1 -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md p-space-sm bg-surface-container-lowest rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container-low shadow-sm">
+<img class="w-full h-full object-cover" data-alt="High-end luxury gold chronograph watch with deep black enamel dial resting on black silk backdrop with warm dramatic lighting reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf4SAwK_aVlfxLToQsfbXfod88bYypsi-7TA_mvAxmrUxol6h7BVDfNvCO0K9ehmYMkulPBy4cr_b_yKrcZSw7Zy5exmsxnErTTGid1rcuH9JwtuhiVemIwj1Xsg8ekMDMC-z8d5Yj5SgMpwCr7yAxAdKePK7d75Zv-INwil-RlgGdorXGj1uW0-PW8OSwYhvTfngxm8kT0V9HS9hiyOLhNsubqi4uI6ZQtAA8cpFoOX6gLbwiKusTqQ"/>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-secondary font-semibold uppercase tracking-wide">Relojería Fina</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Cronógrafo Imperial Oro 18K</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Movimiento Suizo Automático · Calibre 4130 · Serie #CR-904</p>
+<span class="text-label-sm font-label-sm text-tertiary font-medium mt-0.5">Certificado de Autenticidad Foliado Incluido</span>
+</div>
+</div>
+<div class="text-right sm:text-right w-full sm:w-auto flex sm:flex-col justify-between items-center sm:items-end">
+<span class="text-label-sm font-label-sm text-outline sm:hidden">Precio:</span>
+<span class="font-price-md text-price-md text-on-surface font-semibold">Q. 5,450.00</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Cant: 1</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md p-space-sm bg-surface-container-lowest rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container-low shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Luxury handcrafted Italian leather tote bag in deep cognac brown resting on minimalist travertine pedestal with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRBlN_2HOzKKrjju_UIPgmh_h626rVV4Lx3CH40vmsagv_7tD0Sh-_6LsWXjRzAaPalF0tE80Zgn4gVlYsQKtWNLpwgJr6bbH3pSfdMJUhDnyIYld6qgG8LCOh5GmXLGxU9MKJIOk6BUy4T-UEz7fA4gFsCjypA1-mfpgM7ihXgmJH4CQaWacKlt1UCS3_V2MoWShKdPrr3fKSDCFAgRs6evi5I_3BRkMjjdu7GYPDxpkqqrlaztp8IA"/>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-secondary font-semibold uppercase tracking-wide">Marroquinería de Autor</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Bolso Tote Piel Florencia</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Cuero Vacuno Envejecido Natural · Herrajes Chapa Dorada</p>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Grabado personalizado iniciales "ACV"</span>
+</div>
+</div>
+<div class="text-right sm:text-right w-full sm:w-auto flex sm:flex-col justify-between items-center sm:items-end">
+<span class="text-label-sm font-label-sm text-outline sm:hidden">Precio:</span>
+<span class="font-price-md text-price-md text-on-surface font-semibold">Q. 2,650.00</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Cant: 1</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md p-space-sm bg-surface-container-lowest rounded-lg hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container-low shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Premium titanium polarized sunglasses with gold temples and dark lenses resting on pristine white marble surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhAiH0spEyCrU9heykLFy9nzoSTnuQnedZu2vjrzPtxLKiaUU9DBwZ-yQzMK-zjqyEFMNcl4-xI7LUXHuG1s8eDHd-0YoGbZY41vZ0ZPPH-GWecukoKB-lxgCCKSuepfUTVdc_cVmcVGz9PrUgokrvor_TCjj7NdOxKPYplqVPNn9MIpx_zglvq1XxqmxahHiZcFNEMpsP4n05t4LSdJwzvK4zxCDt7baIJpvbNZVxXAbAepyTIrb3Ow"/>
+</div>
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-secondary font-semibold uppercase tracking-wide">Accesorios Prestige</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Gafas Polarizadas Titanium Edition</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Titanio Japonés Forjado · Lentes Zeiss Polarizados UV400</p>
+</div>
+</div>
+<div class="text-right sm:text-right w-full sm:w-auto flex sm:flex-col justify-between items-center sm:items-end">
+<span class="text-label-sm font-label-sm text-outline sm:hidden">Precio:</span>
+<span class="font-price-md text-price-md text-on-surface font-semibold">Q. 800.00</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Cant: 1</span>
+</div>
+</div>
+</div>
+<!-- Order Footer & Action Suite -->
+<div class="pt-space-md flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md bg-surface-container-low/50 p-space-md rounded-lg">
+<div>
+<p class="text-label-sm font-label-sm text-outline uppercase tracking-wider">Total de la Orden</p>
+<p class="font-price-lg text-price-lg text-on-surface font-semibold">Q. 8,900.00 <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">(12 cuotas de Q. 741.67)</span></p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="px-4 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors flex items-center gap-1.5 shadow-sm" onclick="openTrackingModal('GT-BLIND-78291')" type="button">
+<span class="material-symbols-outlined text-body-md">radar</span>
+<span>Rastrear Envío en Vivo</span>
+</button>
+<button class="px-3.5 py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors flex items-center gap-1.5" onclick="downloadSatInvoice('892401')" title="Descargar Factura Electrónica FEL SAT" type="button">
+<span class="material-symbols-outlined text-body-md text-secondary">receipt_long</span>
+<span>Factura SAT FEL</span>
+</button>
+<button class="px-3.5 py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="alert('Abriendo expediente completo de la orden #AL-892401...')" title="Detalle técnico de la orden" type="button">
+<span>Detalle</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Historical Orders Section -->
+<div class="flex flex-col gap-space-md mt-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Historial de Compras Entregadas</h2>
+<!-- Past Order 1 -->
+<article class="order-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md transition-shadow hover:shadow-md" data-status="delivered">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-sm bg-surface-container-low/50 p-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    Entregado Satisfactoriamente
+                  </span>
+<span class="font-title-lg text-title-lg text-on-surface font-semibold">#AL-741029</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant flex items-center gap-2">
+<span>Entregado hace 2 semanas (14 Feb, 2025)</span>
+<span>·</span>
+<span class="font-semibold text-on-surface">Q. 1,450.00</span>
+</div>
+</div>
+<!-- Product snapshot -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-16 rounded-lg overflow-hidden shrink-0 bg-surface-container-low shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Exquisite gold pendant necklace with radiant solitary diamond resting gracefully on deep slate stone with sharp sunlight highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAje_W_0W8DtPXc8pfpycxcac38XL3KsJXofkeaG0MekE3vbouDJXXD7gJDZEJwYUJQZbZFji8SUKPRnrQ644qAbs-P526YnemO0qE0PR1WV7Q5gxe8Q71kgIkPIgbvqkpVcECp3rBN-xHnCSwCVEHYmJW6iVsmfF0ipVN_B3eoQ5QT0K2fdAngWXSEBZmgjQ3VoU5AvmkwxgX8H8vd1cpWZa2G_kqKVSW3WBdLG35JFGs68P4JJx0-Xw"/>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Collar Constelación Solis</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Oro Vermeil 18K &amp; Diamante Central 0.35ct · Certificado COA #49021</p>
+<span class="text-label-sm font-label-sm text-secondary font-medium">Garantía Activa: 3 años restantes</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs w-full sm:w-auto justify-end">
+<button class="px-3 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-label-sm font-label-sm transition-colors flex items-center gap-1" onclick="alert('Añadido Collar Constelación Solis a tu bolsa de compra')" type="button">
+<span class="material-symbols-outlined text-body-sm">shopping_cart</span>
+<span>Comprar de Nuevo</span>
+</button>
+<button class="px-3 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-label-sm font-label-sm transition-colors flex items-center gap-1" onclick="openCertificateModal('COA-49021', 'Collar Constelación Solis')" type="button">
+<span class="material-symbols-outlined text-body-sm text-secondary">workspace_premium</span>
+<span>Certificado COA</span>
+</button>
+<button class="px-3 py-2 rounded-lg bg-primary text-on-primary text-label-sm font-label-sm hover:bg-primary-container transition-colors flex items-center gap-1" onclick="openReviewModal('Collar Constelación Solis')" type="button">
+<span class="material-symbols-outlined text-body-sm">rate_review</span>
+<span>Dejar Reseña</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Past Order 2 -->
+<article class="order-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md transition-shadow hover:shadow-md" data-status="delivered">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs pb-space-sm bg-surface-container-low/50 p-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    Entregado Satisfactoriamente
+                  </span>
+<span class="font-title-lg text-title-lg text-on-surface font-semibold">#AL-682190</span>
+</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant flex items-center gap-2">
+<span>Entregado en Diciembre 2024</span>
+<span>·</span>
+<span class="font-semibold text-on-surface">Q. 2,100.00</span>
+</div>
+</div>
+<!-- Product snapshot -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-16 rounded-lg overflow-hidden shrink-0 bg-surface-container-low shadow-sm">
+<img class="w-full h-full object-cover" data-alt="High-end collector jewelry box finished in burgundy lacquered wood with plush velvet interior and golden keyhole lock" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPwySlQU1VfNv3fPuFqdIb0exKQi19P81IV_FfC0rhhE3RlHAHkhjGG5VAH5DTHXa8MjvQSlrKH14Ljt31TXsaRoG_76rplYla1TAPmY43AKYsgN0krK1pN-v0rTw9Ljh2FQS_K99bFld3PkxKivhhJagajtGTUvDk270sD3dxW8G98b4KbPwWBNTZWJvP2NEj5oDqwoW-3Qf4e8qvrnHEgVmbvpyAhXU54t5guA-XKhOHhfLiDdNEoA"/>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Estuche de Colección Lacre &amp; Gemas</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Madera de Cedro Laqueada · Herrajes de Latón Pulido a Mano</p>
+<span class="text-label-sm font-label-sm text-tertiary font-medium">Reseña 5 Estrellas Publicada ★★★★★</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs w-full sm:w-auto justify-end">
+<button class="px-3 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-label-sm font-label-sm transition-colors flex items-center gap-1" onclick="downloadSatInvoice('682190')" type="button">
+<span class="material-symbols-outlined text-body-sm text-secondary">receipt_long</span>
+<span>FEL DTE SAT</span>
+</button>
+<button class="px-3 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface text-label-sm font-label-sm transition-colors flex items-center gap-1" onclick="alert('Estuche de Colección temporalmente reservado para edición VIP.')" type="button">
+<span class="material-symbols-outlined text-body-sm">replay</span>
+<span>Reordenar</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</div>
+<!-- TAB 2: SAVED ADDRESSES (HIDDEN INITIALLY) -->
+<div class="portal-pane hidden flex flex-col gap-space-lg" id="tab-content-addresses">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Direcciones Guardadas de Entrega</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Ubicaciones verificadas para despacho seguro con escolta en Guatemala.</p>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors flex items-center gap-1" onclick="alert('Formulario para añadir nueva dirección de despacho')" type="button">
+<span class="material-symbols-outlined text-body-md">add_location_alt</span>
+<span>Nueva Dirección</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Address 1: Primary -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm px-2.5 py-0.5 rounded font-bold uppercase">Predeterminada</span>
+<span class="material-symbols-outlined text-secondary">apartment</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold mt-1">Residencia Zona 10 (Terra Esperanza)</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                  Diagonal 6, 12-42 Zona 10, Edificio Terra Esperanza<br/>
+                  Nivel 14, Penthouse B<br/>
+                  Ciudad de Guatemala, 01010
+                </p>
+<div class="text-label-sm font-label-sm text-outline mt-1">
+                  Contacto: Alejandro Castillo (+502 5521-9988)
+                </div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="text-label-sm font-label-sm text-on-surface hover:text-secondary font-medium transition-colors" onclick="alert('Editando dirección Zona 10...')" type="button">Editar</button>
+<span class="text-outline">·</span>
+<span class="text-label-sm font-label-sm text-secondary font-medium">Validada con Garita y Recepción</span>
+</div>
+</div>
+<!-- Address 2: Secondary -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm px-2.5 py-0.5 rounded font-medium">Corporativo</span>
+<span class="material-symbols-outlined text-outline">corporate_fare</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold mt-1">Oficina Corporativa Zona 14</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                  5ta Avenida 15-45 Zona 14, Edificio Las Américas Suites<br/>
+                  Piso 9, Oficina 902<br/>
+                  Ciudad de Guatemala, 01014
+                </p>
+<div class="text-label-sm font-label-sm text-outline mt-1">
+                  Recepción: Lunes a Viernes 8:00 AM - 5:00 PM
+                </div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="text-label-sm font-label-sm text-on-surface hover:text-secondary font-medium transition-colors" onclick="alert('Establecida como predeterminada')" type="button">Hacer Predeterminada</button>
+<span class="text-outline">·</span>
+<button class="text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface font-medium transition-colors" onclick="alert('Editando dirección Zona 14...')" type="button">Editar</button>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 3: PAYMENT METHODS & VAULT (HIDDEN INITIALLY) -->
+<div class="portal-pane hidden flex flex-col gap-space-lg" id="tab-content-vault">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">AuraLuxe Secure Vault &amp; Pagos</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Tarjetas tokenizadas con estándar PCI-DSS bancario y VisaCuotas pre-aprobadas.</p>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors flex items-center gap-1" onclick="alert('Añadir método de pago con tokenización bancaria segura')" type="button">
+<span class="material-symbols-outlined text-body-md">credit_card</span>
+<span>Añadir Tarjeta</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-primary-container text-surface rounded-xl p-space-lg shadow-md flex flex-col justify-between gap-space-lg relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-label-sm font-label-sm text-secondary-fixed uppercase tracking-wider font-semibold">Visa Infinite Privé</span>
+<h3 class="font-headline-sm text-headline-sm text-surface mt-1">•••• •••• •••• 4291</h3>
+</div>
+<span class="material-symbols-outlined text-headline-lg text-secondary-fixed">contactless</span>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<p class="text-[10px] text-on-primary-container uppercase">Titular</p>
+<p class="text-label-md font-label-md text-surface font-semibold">ALEJANDRO CASTILLO V</p>
+</div>
+<div>
+<p class="text-[10px] text-on-primary-container uppercase text-right">Vence</p>
+<p class="text-label-md font-label-md text-surface font-semibold">11 / 28</p>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between gap-space-lg">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Mastercard Black</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">•••• •••• •••• 8810</h3>
+</div>
+<span class="material-symbols-outlined text-headline-lg text-outline">credit_card</span>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<p class="text-[10px] text-outline uppercase">Titular</p>
+<p class="text-label-md font-label-md text-on-surface font-semibold">ALEJANDRO CASTILLO</p>
+</div>
+<div>
+<p class="text-[10px] text-outline uppercase text-right">Vence</p>
+<p class="text-label-md font-label-md text-on-surface font-semibold">04 / 27</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 4: GUARANTEES & COA CERTIFICATES (HIDDEN INITIALLY) -->
+<div class="portal-pane hidden flex flex-col gap-space-lg" id="tab-content-guarantees">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Certificados de Autenticidad (COA) Foliados</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Garantías digitales respaldadas por el registro de manufactura de AuraLuxe.</p>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-secondary/15 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-headline-md">verified</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Certificado #COA-49021 · Collar Constelación Solis</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Oro Vermeil 18K / Diamante Natural G-VS1 · Emitido: Febrero 2025</p>
+<span class="text-label-sm font-label-sm text-tertiary font-medium">Estado: Autenticidad Blindada Activa (Válido hasta 2028)</span>
+</div>
+</div>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest text-label-md font-label-md font-medium transition-colors" onclick="openCertificateModal('COA-49021', 'Collar Constelación Solis')" type="button">
+                Ver Documento COA
+              </button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-secondary/15 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-headline-md">verified</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Certificado #COA-31802 · Estuche de Colección Lacre</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Pieza de Ebanistería Numerada 14/100 · Emitido: Diciembre 2024</p>
+<span class="text-label-sm font-label-sm text-tertiary font-medium">Estado: Garantía Vitalicia de Madera y Herrajes</span>
+</div>
+</div>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest text-label-md font-label-md font-medium transition-colors" onclick="openCertificateModal('COA-31802', 'Estuche de Colección Lacre')" type="button">
+                Ver Documento COA
+              </button>
+</div>
+</div>
+</div>
+<!-- TAB 5: WISHLIST (HIDDEN INITIALLY) -->
+<div class="portal-pane hidden flex flex-col gap-space-lg" id="tab-content-wishlist">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Mi Lista de Deseos Exclusiva (2 Piezas)</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Piezas seleccionadas que estás siguiendo con prioridad de inventario.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-low relative">
+<img class="w-full h-full object-cover" data-alt="Luxury platinum diamond tennis bracelet gleaming over sleek dark velvet fabric with soft studio lighting reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKNb8uavc8C5yIhU4IhgA4wqxa24eOLSjlO8WrR9Bpgqs_4muP8Bf1kEHkPdBaoS-Bp-exNK3KWX8mZna_dgxPOuPQlg7IxcyNMz-AYA2k9A-fkx8L8lHYU7RcAfK5rSjhM-zl2cKsbZdlgv0GH4rJNwVhsUB9Fa_GD0iv77ym8Qu7PRfiLZW_JEe_0yTW5JPv-vWlHaMDcpN9mcm93Pl8-pXoTYepMm0FuyKCSsJJUtGDa4Ul1S0_0w"/>
+<span class="absolute top-2 right-2 bg-secondary text-on-secondary text-label-sm font-label-sm px-2 py-0.5 rounded font-bold">En Stock (2 disp.)</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Brazalete Velvet Silver 925 &amp; Zafiros</h3>
+<p class="font-price-md text-price-md text-secondary font-semibold">Q. 2,850.00</p>
+<button class="w-full py-2.5 bg-primary text-on-primary text-label-md font-label-md rounded-lg hover:bg-primary-container transition-colors mt-auto" onclick="alert('Añadido a tu carrito')" type="button">
+                Añadir al Carrito
+              </button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container-low relative">
+<img class="w-full h-full object-cover" data-alt="Luxury mechanical skeleton watch with rose gold bezel and alligator leather strap on slate stone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjzgBCMVWEx434ys08FnVU4I07Shoacho_kGZQEXHeDu8pWP52QjsDM5czSCVUlVeqRns4K-bWajPG8t6TPO7Jaid79hGKdNmWf0OoZE5_uRKgs4RdjcJR2aKM6ii7-0IgSILT5iHSC6w3brqml86eMPt13GZhMjhaO_ljw5ARDXJNOCri2o0dQf3KiHlZRvzvnR4EJqfNt0GZj1ZAPwKzCWgAQnqeONCTXW3kh9n-J7HBsslVMjKVUQ"/>
+<span class="absolute top-2 right-2 bg-primary-container text-surface text-label-sm font-label-sm px-2 py-0.5 rounded font-bold">Próximo Lanzamiento</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Reloj Esqueleto Royal Tourbillon</h3>
+<p class="font-price-md text-price-md text-secondary font-semibold">Q. 12,400.00</p>
+<button class="w-full py-2.5 bg-surface-container-high text-on-surface text-label-md font-label-md rounded-lg hover:bg-surface-container-highest transition-colors mt-auto" onclick="alert('Reserva prioritaria enviada a tu concierge Lucía')" type="button">
+                Reservar con Concierge
+              </button>
+</div>
+</div>
+</div>
+<!-- TAB 6: SECURITY & PREFERENCES (HIDDEN INITIALLY) -->
+<div class="portal-pane hidden flex flex-col gap-space-lg" id="tab-content-security">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Seguridad de la Cuenta &amp; Privacidad</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Protección biométrica, autenticación en 2 pasos y sesiones activas.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Autenticación de Dos Factores (2FA)</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Protegido mediante SMS y Llave de Seguridad FIDO2 / TouchID.</p>
+</div>
+<span class="px-2.5 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed text-label-sm font-label-sm font-bold">Activo</span>
+</div>
+<div class="flex items-center justify-between pt-space-sm">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Contraseña del Portal</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Actualizada por última vez hace 42 días.</p>
+</div>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest text-label-md font-label-md font-medium transition-colors" onclick="alert('Enlace de restablecimiento seguro enviado a tu correo a.castillo@inversionesgt.com')" type="button">
+                Cambiar Clave
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Sidebar Widgets & Privé Perks (4 Cols Desktop) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Widget 1: Aura Privé Exclusive Benefits Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-headline-sm">crown</span>
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold">Beneficios Activos Privé</h2>
+</div>
+<span class="text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded font-bold uppercase">Black Tier</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+            Como miembro de nuestro nivel más exclusivo, disfrutas de privilegios ilimitados en cada interacción:
+          </p>
+<ul class="flex flex-col gap-space-sm pt-space-xs text-body-sm font-body-sm text-on-surface">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary shrink-0 text-headline-sm">format_image_left</span>
+<span><strong class="font-semibold">Envíos Blindados Gratuitos:</strong> Custodia armada en zonas metropolitanas de Guatemala.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary shrink-0 text-headline-sm">schedule</span>
+<span><strong class="font-semibold">Preventas 48 Horas Antes:</strong> Acceso reservado a piezas únicas y tirajes limitados.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary shrink-0 text-headline-sm">diamond</span>
+<span><strong class="font-semibold">Garantía Extendida de 3 Años:</strong> Mantenimiento, pulido ultrasónico y ajuste sin costo.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary shrink-0 text-headline-sm">support_agent</span>
+<span><strong class="font-semibold">Concierge Dedicado 24/7:</strong> Atención personalizada vía WhatsApp y llamadas privadas.</span>
+</li>
+</ul>
+<div class="pt-space-xs">
+<button class="w-full py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors text-center font-medium" onclick="alert('Descargando Guía Completa de Privilegios Aura Privé (PDF Foliado)...')" type="button">
+              Ver Catálogo de Privilegios
+            </button>
+</div>
+</div>
+<!-- Widget 2: Guatemala SAT FEL Tax Invoicing Profile -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-headline-sm">receipt</span>
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold">Datos de Facturación SAT FEL</h2>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-outline">NIT Registrado:</span>
+<span class="font-mono text-body-sm font-body-sm font-semibold text-on-surface">10482910-K</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-outline">Nombre / Razón Social:</span>
+<span class="text-body-sm font-body-sm font-semibold text-on-surface text-right">Alejandro Castillo V.</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-outline">Régimen:</span>
+<span class="text-body-sm font-body-sm text-on-surface-variant">General SAT (12% IVA Incluido)</span>
+</div>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant">
+            Todas tus órdenes emiten automáticamente el DTE (Documento Tributario Electrónico) con firma digital SAT y se archivan aquí.
+          </p>
+<button class="text-label-sm font-label-sm text-secondary hover:underline font-semibold text-left" onclick="alert('Formulario de actualización de datos fiscales SAT')" type="button">
+            Modificar Datos de Facturación →
+          </button>
+</div>
+<!-- Widget 3: Account Sign Out & Session Security -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline">devices</span>
+<div class="text-label-sm font-label-sm">
+<p class="font-semibold text-on-surface">Sesión Actual Protegida</p>
+<p class="text-outline">IP: 190.56.x.x · Guatemala</p>
+</div>
+</div>
+<button class="text-label-sm font-label-sm text-error hover:bg-error-container/20 px-3 py-1.5 rounded-lg transition-colors font-medium flex items-center gap-1" onclick="confirmLogout()" type="button">
+<span class="material-symbols-outlined text-body-sm">logout</span>
+<span>Cerrar Sesión</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: LIVE TRACKING MODAL (AuraSecure GT Tracking) -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-inverse-surface/40 backdrop-blur-sm transition-opacity" id="modal-tracking">
+<div class="bg-surface-container-lowest rounded-xl shadow-2xl max-w-xl w-full p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-headline-md">local_police</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Rastreo de Custodia Blindada en Vivo</h3>
+<p class="text-label-sm font-label-sm text-outline">Guía Oficial: <strong class="font-mono text-secondary" id="modal-tracking-code">GT-BLIND-78291</strong></p>
+</div>
+</div>
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded-lg" onclick="closeTrackingModal()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Map simulation container using styling token -->
+<div class="w-full h-44 rounded-lg bg-cover bg-center relative overflow-hidden flex items-end p-3 shadow-inner" data-location="Diagonal 6, Zona 10, Guatemala City" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-90FcMEv7XX9ZX7aZlD0bzTqs0upMtpGf-fi6tCGsyH3rn5s8U8UT8j9cpuQNS7YuuexJ6HUArWjWMOctg6EXhSTET4CgpPNAVRkOH02BjksGlNYdaD9z_gaYRCeRKCRMixe_BfhyLBAifxbofd8v8xg2XCftp0ppzpxMiJgMRwMwYe_Z0Rv2D6mEHCFidori1fPgslXJHMCz5nH_XNff625g_kmClzxC3S2QWq9wOY0z7V2HPVMfRA')">
+<div class="bg-primary-container/90 backdrop-blur-md text-surface p-2.5 rounded-lg text-label-sm font-label-sm flex items-center gap-2 w-full justify-between">
+<span class="flex items-center gap-1 font-medium"><span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-ping"></span> Unidad Móvil Blindada #04 en Ruta</span>
+<span class="text-secondary-fixed font-semibold">Velocidad: 38 km/h</span>
+</div>
+</div>
+<!-- Detailed Event Timeline -->
+<div class="flex flex-col gap-3 py-1">
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 text-xs font-bold">✓</div>
+<div>
+<p class="text-body-sm font-body-sm font-semibold text-on-surface">Salida de Bóveda Central AuraLuxe</p>
+<p class="text-label-sm font-label-sm text-outline">Hoy, 10:15 AM · Precintos #8921 y #8922 verificados</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 text-xs font-bold">✓</div>
+<div>
+<p class="text-body-sm font-body-sm font-semibold text-on-surface">Custodia Asignada y en Tránsito por Periférico Sur</p>
+<p class="text-label-sm font-label-sm text-outline">Hoy, 11:30 AM · En camino hacia Zona 10</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0 text-xs font-bold">3</div>
+<div>
+<p class="text-body-sm font-body-sm font-semibold text-on-surface">Entrega con Validación Biométrica / DPI</p>
+<p class="text-label-sm font-label-sm text-outline">Estimada: Hoy 2:00 PM · Terra Esperanza, Nivel 14</p>
+</div>
+</div>
+</div>
+<div class="pt-2 flex justify-end gap-2">
+<button class="px-4 py-2 bg-surface-container-high text-on-surface text-label-md font-label-md rounded-lg hover:bg-surface-container-highest" onclick="closeTrackingModal()" type="button">
+          Cerrar
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL: CERTIFICATE OF AUTHENTICITY (COA) -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-inverse-surface/40 backdrop-blur-sm" id="modal-coa">
+<div class="bg-surface-container-lowest rounded-xl shadow-2xl max-w-lg w-full p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-headline-md">verified_user</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Certificado Digital COA</h3>
+</div>
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded-lg" onclick="closeCertificateModal()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- COA Certificate Document Mockup -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col items-center text-center gap-space-sm shadow-inner relative">
+<div class="w-12 h-12 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-headline-lg">diamond</span>
+</div>
+<span class="text-label-sm font-label-sm text-secondary tracking-widest uppercase font-semibold">AuraLuxe Haute Joaillerie</span>
+<h4 class="font-headline-md text-headline-md text-on-surface" id="coa-product-title">Collar Constelación Solis</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Foliado Oficial de Autenticidad y Calidad</p>
+<div class="w-full bg-surface-container-lowest p-space-sm rounded-lg flex justify-between text-body-sm font-body-sm text-left mt-2">
+<div>
+<p class="text-label-sm font-label-sm text-outline">Folio COA:</p>
+<p class="font-mono font-semibold text-on-surface" id="coa-folio">COA-49021</p>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-outline">Titular Registrado:</p>
+<p class="font-semibold text-on-surface">Alejandro Castillo V.</p>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-outline">Garantía:</p>
+<p class="font-semibold text-secondary">3 Años Full Cover</p>
+</div>
+</div>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-tertiary mt-2">
+<span class="material-symbols-outlined text-body-md">lock</span>
+<span>Firma Digital Criptográfica Validada en Bóveda</span>
+</div>
+</div>
+<div class="flex justify-end gap-2 pt-2">
+<button class="px-4 py-2 bg-primary text-on-primary text-label-md font-label-md rounded-lg hover:bg-primary-container transition-colors flex items-center gap-1" onclick="alert('Descargando COA en PDF de alta resolución con sello de agua...')" type="button">
+<span class="material-symbols-outlined text-body-md">download</span>
+<span>Descargar PDF</span>
+</button>
+<button class="px-4 py-2 bg-surface-container-high text-on-surface text-label-md font-label-md rounded-lg hover:bg-surface-container-highest" onclick="closeCertificateModal()" type="button">
+          Cerrar
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL: REVIEW SUBMISSION -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-inverse-surface/40 backdrop-blur-sm" id="modal-review">
+<div class="bg-surface-container-lowest rounded-xl shadow-2xl max-w-md w-full p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Escribir Reseña</h3>
+<button class="p-1 text-on-surface-variant hover:text-on-surface rounded-lg" onclick="closeReviewModal()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Califica tu experiencia con <strong class="text-on-surface" id="review-item-name">este artículo</strong>:</p>
+<div class="flex items-center gap-2 py-3">
+<button class="text-secondary text-headline-md" type="button"><span class="material-symbols-outlined text-headline-lg">star</span></button>
+<button class="text-secondary text-headline-md" type="button"><span class="material-symbols-outlined text-headline-lg">star</span></button>
+<button class="text-secondary text-headline-md" type="button"><span class="material-symbols-outlined text-headline-lg">star</span></button>
+<button class="text-secondary text-headline-md" type="button"><span class="material-symbols-outlined text-headline-lg">star</span></button>
+<button class="text-secondary text-headline-md" type="button"><span class="material-symbols-outlined text-headline-lg">star</span></button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="text-label-sm font-label-sm text-outline" for="review-comment">Tus comentarios sobre la pieza y acabados:</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary/50" id="review-comment" placeholder="Describe la artesanía, peso, brillo y presentación de la caja..." rows="3"></textarea>
+</div>
+<div class="flex justify-end gap-2 pt-2">
+<button class="px-4 py-2 bg-surface-container-high text-on-surface text-label-md font-label-md rounded-lg" onclick="closeReviewModal()" type="button">
+          Cancelar
+        </button>
+<button class="px-4 py-2 bg-primary text-on-primary text-label-md font-label-md rounded-lg hover:bg-primary-container" onclick="submitReview()" type="button">
+          Publicar Reseña
+        </button>
+</div>
+</div>
+</div>
+<script>
+    // Tab Switching Logic for Portal Sections
+    function switchPortalTab(tabKey) {
+      // Hide all panes
+      document.querySelectorAll('.portal-pane').forEach(pane => {
+        pane.classList.add('hidden');
+      });
+
+      // Show targeted pane
+      const targetPane = document.getElementById('tab-content-' + tabKey);
+      if (targetPane) {
+        targetPane.classList.remove('hidden');
+      }
+
+      // Reset button styles
+      document.querySelectorAll('.portal-tab-btn').forEach(btn => {
+        btn.classList.remove('text-on-surface', 'bg-surface-container-low', 'font-semibold');
+        btn.classList.add('text-on-surface-variant', 'font-normal');
+      });
+
+      // Highlight active button
+      const activeBtn = document.getElementById('tab-btn-' + tabKey);
+      if (activeBtn) {
+        activeBtn.classList.remove('text-on-surface-variant', 'font-normal');
+        activeBtn.classList.add('text-on-surface', 'bg-surface-container-low', 'font-semibold');
+      }
+    }
+
+    // Orders Filter by Status
+    function setFilter(filterType, btnElem) {
+      document.querySelectorAll('.order-filter-chip').forEach(chip => {
+        chip.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        chip.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      btnElem.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      btnElem.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+
+      const cards = document.querySelectorAll('.order-card');
+      cards.forEach(card => {
+        const status = card.getAttribute('data-status');
+        if (filterType === 'all' || status === filterType) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Orders Live Search
+    function filterOrders() {
+      const term = document.getElementById('order-search').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.order-card');
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(term)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Tracking Modal Controls
+    function openTrackingModal(guideCode) {
+      document.getElementById('modal-tracking-code').innerText = guideCode;
+      document.getElementById('modal-tracking').classList.remove('hidden');
+    }
+    function closeTrackingModal() {
+      document.getElementById('modal-tracking').classList.add('hidden');
+    }
+
+    // COA Modal Controls
+    function openCertificateModal(folio, productTitle) {
+      document.getElementById('coa-folio').innerText = folio;
+      document.getElementById('coa-product-title').innerText = productTitle;
+      document.getElementById('modal-coa').classList.remove('hidden');
+    }
+    function closeCertificateModal() {
+      document.getElementById('modal-coa').classList.add('hidden');
+    }
+
+    // Review Modal Controls
+    function openReviewModal(itemTitle) {
+      document.getElementById('review-item-name').innerText = itemTitle;
+      document.getElementById('modal-review').classList.remove('hidden');
+    }
+    function closeReviewModal() {
+      document.getElementById('modal-review').classList.add('hidden');
+    }
+    function submitReview() {
+      alert('¡Gracias Alejandro! Tu reseña verificada ha sido enviada al control editorial de Aura Privé.');
+      closeReviewModal();
+    }
+
+    // Action simulations
+    function downloadSatInvoice(orderId) {
+      alert('Generando factura electrónica DTE SAT oficial con firma electrónica (UUID / Autorización SAT para orden #' + orderId + ')...');
+    }
+
+    function confirmLogout() {
+      if (confirm('¿Deseas cerrar tu sesión segura en el Portal Aura Privé?')) {
+        window.location.href = '/inicio';
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-xl pb-space-lg"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase font-semibold">AuraLuxe</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Lujo accesible diseñado para trascender. Artesanía contemporánea, piedras de origen ético y envíos seguros a toda Guatemala e internacionalmente.</p><div class="flex items-center gap-space-md text-on-surface-variant"><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">verified_user</span><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">support_agent</span><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">credit_card</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Explorar Shop</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Nueva Colección</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Alta Joyería Fina</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Relojería Masculina &amp; Femenina</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Ofertas de Temporada</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Atención al Cliente</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="mi-cuenta" href="/mi-cuenta">Rastrear Mi Orden</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Tiempos de Envío en GT</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Garantía y Devoluciones</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Cuotas y Formas de Pago</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Aura Privé</span><p class="font-body-sm text-body-sm text-on-surface-variant">Suscríbete para recibir un 10% de descuento en tu primera compra y acceso exclusivo a prelanzamientos.</p><form class="flex flex-col gap-space-xs mt-space-xs" onsubmit="event.preventDefault(); alert('¡Gracias por unirte a Aura Privé!');"><input class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50 placeholder:text-outline" placeholder="Ingresa tu correo electrónico" required="" type="email"/><button class="px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" type="submit">Suscribirme</button></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="font-body-sm text-body-sm text-outline">© 2025 AuraLuxe Guatemala S.A. Todos los derechos reservados. Precios en Quetzales (Q) y Dólares Americanos (USD).</div><div class="flex items-center gap-space-md text-label-sm font-label-sm text-outline"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-body-sm">lock</span> Checkout Seguro SSL</span><span>|</span><span>Visa Cuotas</span><span>|</span><span>Mastercard</span><span>|</span><span>Transferencia Bancaria GT</span></div></div></div></footer><script>const cartBtn = document.getElementById('cart-open-btn'); const cartDrawer = document.getElementById('cart-drawer'); const cartOverlay = document.getElementById('cart-drawer-overlay'); const cartClose = document.getElementById('cart-close-btn'); function openCart() { cartOverlay.classList.remove('hidden'); setTimeout(() => { cartOverlay.classList.remove('opacity-0'); cartDrawer.classList.remove('translate-x-full'); }, 10); } function closeCart() { cartDrawer.classList.add('translate-x-full'); cartOverlay.classList.add('opacity-0'); setTimeout(() => { cartOverlay.classList.add('hidden'); }, 300); } if (cartBtn) cartBtn.addEventListener('click', openCart); if (cartClose) cartClose.addEventListener('click', closeCart); if (cartOverlay) cartOverlay.addEventListener('click', closeCart); const searchInput = document.getElementById('global-search-input'); const searchDropdown = document.getElementById('search-dropdown'); if (searchInput && searchDropdown) { searchInput.addEventListener('focus', () => searchDropdown.classList.remove('hidden')); searchInput.addEventListener('blur', () => setTimeout(() => searchDropdown.classList.add('hidden'), 200)); }</script></body></html>

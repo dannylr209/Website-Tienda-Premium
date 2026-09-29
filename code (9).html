@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>AuraLuxe — Accessible Luxury</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#0b1c30", "on-primary-container": "#7c839b", "on-secondary-fixed-variant": "#6e3900", "outline": "#76777d", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005236", "surface-variant": "#d3e4fe", "secondary": "#904d00", "surface-container-high": "#dce9ff", "surface-dim": "#cbdbf5", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002113", "surface-container-low": "#eff4ff", "on-surface": "#0b1c30", "error": "#ba1a1a", "surface": "#f8f9ff", "primary-container": "#131b2e", "on-tertiary-container": "#009668", "surface-container-lowest": "#ffffff", "surface-container": "#e5eeff", "on-surface-variant": "#45464d", "secondary-fixed": "#ffdcc3", "secondary-fixed-dim": "#ffb77d", "on-primary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-tertiary": "#ffffff", "primary-fixed": "#dae2fd", "on-secondary-fixed": "#2f1500", "inverse-surface": "#213145", "secondary-container": "#fe932c", "surface-tint": "#565e74", "on-error": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-secondary-container": "#663500", "primary": "#000000", "background": "#f8f9ff", "tertiary": "#000000", "tertiary-container": "#002113", "tertiary-fixed": "#6ffbbe", "inverse-primary": "#bec6e0", "tertiary-fixed-dim": "#4edea3", "on-primary-fixed": "#131b2e", "primary-fixed-dim": "#bec6e0", "on-primary-fixed-variant": "#3f465c", "surface-bright": "#f8f9ff", "outline-variant": "#c6c6cd" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-desktop": "3rem", "margin-mobile": "1rem", "space-xl": "2rem", "margin": "2rem" }, "fontFamily": { "headline-md": ["Outfit"], "headline-lg": ["Outfit"], "display-hero": ["Outfit"], "body-lg": ["Inter"], "label-md": ["Inter"], "display-hero-mobile": ["Outfit"], "price-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-xl": ["Outfit"], "title-lg": ["Outfit"], "label-sm": ["Inter"], "headline-sm": ["Outfit"], "headline-xl-mobile": ["Outfit"], "price-lg": ["Inter"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "price-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "500" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "price-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-surface px-margin-mobile lg:px-margin-desktop py-space-xs text-center"><div class="max-w-7xl mx-auto flex items-center justify-between text-label-sm font-label-sm"><span class="hidden sm:inline-block text-on-primary-container tracking-wide">GUATEMALA &amp; GLOBAL SHIPPING</span><p class="w-full sm:w-auto text-center font-medium tracking-wide text-surface">Envíos gratis en compras &gt; Q.500 | Cuotas sin interés Visa / Mastercard</p><div class="hidden sm:flex items-center gap-space-sm text-on-primary-container"><span class="material-symbols-outlined text-label-sm">verified</span><span>Autenticidad Garantizada</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="inicio" href="/inicio"><img alt="AuraLuxe Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XbYWKTtgfAhpa_stWrBkJNd2KJ_OhkoLxbCx0GmyoKnxqJpoqSpgzNYdiAi479I0Hu4t7aiRsRexiZImhDfvdcFInYVZDG64aTehaHxImc_6_iaM0D2nv3YL6V-j6Q_NFm8ewuUH5EZLjJLO9Cskzvy2PrBG4ftWE68UqGfwyVEogphwfvwh4a_l17w4HzNsUSCu-2gXoC-pEOpQccapJTmhncn5P4dNNT5bJZMcc3oEjbmBOJAtxKPt0"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">AuraLuxe</span></a></div><div class="hidden md:flex flex-1 max-w-md mx-space-lg relative"><div class="w-full flex items-center bg-surface-container-low rounded-lg px-space-md py-space-xs transition-all focus-within:ring-2 focus-within:ring-secondary/40 focus-within:bg-surface-container-lowest"><span class="material-symbols-outlined text-outline text-headline-sm mr-space-xs">search</span><input autocomplete="off" class="w-full bg-transparent text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none" id="global-search-input" placeholder="Buscar joyas, accesorios de lujo, bolsos..." type="search"/></div><div class="hidden absolute left-0 right-0 top-full mt-2 bg-surface-container-lowest rounded-lg shadow-[0_10px_15px_-3px_rgba(15,23,42,0.06),0_20px_25px_-5px_rgba(15,23,42,0.08)] p-space-md z-50" id="search-dropdown"><div class="text-label-sm font-label-sm text-outline mb-space-xs uppercase tracking-wider">Búsquedas populares</div><div class="flex flex-col gap-space-xs"><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Collar Diamante Aura Solitario (Q.1,850)</a><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Reloj Cronógrafo Imperial Gold (USD $420)</a><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Brazalete Velvet Silver 925</a></div></div></div><div class="flex items-center gap-space-md"><div class="relative inline-block text-left"><select class="appearance-none bg-surface-container-low text-on-surface text-label-sm font-label-sm py-1.5 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none hover:bg-surface-container transition-colors" id="currency-selector"><option value="GTQ">GTQ (Q)</option><option value="USD">USD ($)</option></select><span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-outline text-body-sm">expand_more</span></div><a class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="wishlist" href="/wishlist" title="Lista de Deseos"><span class="material-symbols-outlined text-headline-sm">favorite</span><span class="absolute top-1 right-1 bg-secondary text-on-secondary text-[10px] font-bold rounded-full h-4.5 w-4.5 min-w-[18px] flex items-center justify-center px-1" id="wishlist-badge">2</span></a><button class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" id="cart-open-btn" title="Carrito" type="button"><span class="material-symbols-outlined text-headline-sm">shopping_bag</span><span class="absolute top-1 right-1 bg-primary text-on-primary text-[10px] font-bold rounded-full h-4.5 w-4.5 min-w-[18px] flex items-center justify-center px-1" id="cart-badge">3</span></button><a class="flex items-center gap-space-xs p-1 rounded-full hover:ring-2 hover:ring-secondary/40 transition-all" data-path="mi-cuenta" href="/mi-cuenta" title="Mi Perfil"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUS7PY6UFwgghzGuUJm3Qjna2wydJu5dtmWPh-jvkHfklF6UipRg6rePOdzH2zUkXw01IrqX93uRtbPbDvh6NtUPk84oOqTdmX4ZmgI2gSET91psD187WaR4LPh0Nci-bZuBfFKNB_3Vu-60RDCQIVTo0dBPRIWPztA489rbeXF4_bWvQ6n5XhHfxkl3g5KqiFduKsEYFiLX99dfxYGqJZesYW7gobid-D75n2sKXxLK65q4QBV4VsWA"/></a></div></div><div class="bg-surface-container-lowest/80 border-t border-surface-container-low px-margin-mobile lg:px-margin-desktop"><div class="max-w-7xl mx-auto flex items-center justify-between"><nav class="flex items-center gap-space-lg overflow-x-auto py-2.5" data-active-classes="text-on-surface font-title-lg font-semibold"><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="inicio" href="/inicio">Inicio</a><a aria-current="page" class="transition-colors whitespace-nowrap text-on-surface font-title-lg font-semibold" data-path="shop" href="/shop">Colecciones</a><a aria-current="page" class="transition-colors whitespace-nowrap text-on-surface font-title-lg font-semibold" data-path="shop" href="/shop">Novedades</a><a aria-current="page" class="transition-colors whitespace-nowrap text-on-surface font-title-lg font-semibold" data-path="shop" href="/shop">Ofertas</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="faq" href="/faq">Envíos &amp; FAQ</a></nav><div class="hidden lg:flex items-center gap-space-md text-label-sm font-label-sm text-secondary"><span class="material-symbols-outlined text-label-md">local_shipping</span><span>Entrega express en 24h Ciudad de Guatemala</span></div></div></div></header><div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" id="cart-drawer-overlay"></div><aside class="fixed top-0 right-0 h-full w-full sm:w-96 max-w-full bg-surface-container-lowest shadow-[0_25px_50px_-12px_rgba(15,23,42,0.22)] z-50 flex flex-col translate-x-full transition-transform duration-300 ease-out" id="cart-drawer"><div class="p-space-lg flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-on-surface">shopping_bag</span><span class="font-headline-sm text-headline-sm text-on-surface">Tu Carrito (<span id="drawer-cart-count">3</span>)</span></div><button class="p-1 text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" id="cart-close-btn" type="button"><span class="material-symbols-outlined">close</span></button></div><div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-md"><div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg"><div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-outline">save_as</span></div><div class="flex-1 min-w-0"><h4 class="font-title-lg text-title-lg text-on-surface truncate">Collar Constelación Solis</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Oro Vermeil 18K</p><div class="font-price-md text-price-md text-secondary mt-1">Q.1,450.00</div></div></div><div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg"><div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-outline">watch</span></div><div class="flex-1 min-w-0"><h4 class="font-title-lg text-title-lg text-on-surface truncate">Reloj Crono Midnight</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Edición Limitada</p><div class="font-price-md text-price-md text-secondary mt-1">Q.2,890.00</div></div></div></div><div class="p-space-lg bg-surface-container-low flex flex-col gap-space-md"><div class="flex justify-between items-center"><span class="font-body-md text-body-md text-on-surface-variant">Subtotal estimado</span><span class="font-headline-sm text-headline-sm text-on-surface">Q.4,340.00</span></div><div class="flex gap-space-sm"><a class="flex-1 text-center py-3 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" data-path="carrito" href="/carrito">Ver Carrito</a><a class="flex-1 text-center py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" data-path="checkout" href="/checkout">Pagar</a></div></div></aside><main class="w-full pt-36 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Utility Context Bar -->
+<div class="w-full bg-surface-container-low px-margin-mobile lg:px-margin-desktop py-space-sm">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-label-sm font-label-sm text-on-surface-variant overflow-x-auto">
+<a class="hover:text-on-surface transition-colors" data-path="inicio" href="/inicio">Inicio</a>
+<span class="text-outline">/</span>
+<a class="hover:text-on-surface transition-colors" data-path="mi-cuenta" href="/mi-cuenta">Mi Cuenta Privé</a>
+<span class="text-outline">/</span>
+<span class="hover:text-on-surface transition-colors">Garantías &amp; COA</span>
+<span class="text-outline">/</span>
+<span class="text-secondary font-semibold">Retiro Blindado AuraSecure</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-3 py-1 rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Alejandro Castillo Villagrán</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold">#AP-90412</span>
+<span class="bg-primary text-on-primary text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full ml-1">Black Tier Elite</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Banner: Protocolo de Alta Custodia -->
+<section class="relative w-full bg-primary-container text-surface-bright px-margin-mobile lg:px-margin-desktop py-space-xl overflow-hidden shadow-sm">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-20 w-80 h-80 rounded-full bg-primary-fixed-variant/20 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10 flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/10 backdrop-blur-md text-secondary-fixed text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">shield</span>
+          Póliza Lloyd's Activa Q. 150,000
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/10 backdrop-blur-md text-surface-bright text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">military_tech</span>
+          Custodia de Grado Diplomático
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/10 backdrop-blur-md text-surface-bright text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-fixed">verified</span>
+          Protocolo SAT FEL &amp; Fe Notarial
+        </span>
+</div>
+<div class="max-w-3xl">
+<h1 class="font-headline-xl text-headline-xl text-surface-bright tracking-tight">
+          Solicitud de Custodia Blindada AuraSecure
+        </h1>
+<p class="font-body-lg text-body-lg text-primary-fixed mt-space-xs">
+          Traslado certificado en vehículo blindado Nivel IV con doble escolta diplomática y valija de kevlar ignífuga con precinto inviolable foliado. Trazabilidad satelital en vivo hasta nuestro Atelier Central en Zona 10.
+        </p>
+</div>
+<!-- Mode Selector Tabs -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="group flex items-center gap-space-xs px-space-md py-3 rounded-xl bg-surface-container-lowest/5 text-primary-fixed hover:bg-surface-container-lowest/10 transition-colors cursor-pointer" type="button">
+<span class="material-symbols-outlined text-headline-sm">storefront</span>
+<div class="text-left">
+<span class="block font-title-lg text-title-lg leading-tight">Cita Privada en Atelier Suite</span>
+<span class="block font-label-sm text-label-sm text-primary-fixed-dim">Recepción personalizada en Zona 10</span>
+</div>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-3 rounded-xl bg-surface-container-lowest text-on-surface shadow-md cursor-default" type="button">
+<div class="w-8 h-8 rounded-lg bg-secondary/15 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-headline-sm">local_shipping</span>
+</div>
+<div class="text-left">
+<div class="flex items-center gap-2">
+<span class="font-title-lg text-title-lg text-on-surface leading-tight">Retiro Blindado AuraSecure</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">Seleccionado · Cobertura VIP</span>
+</div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Operación táctica a domicilio u oficina ejecutiva</span>
+</div>
+</button>
+</div>
+</div>
+</section>
+<!-- Main Content Layout (Form + Sticky Summary) -->
+<div class="w-full px-margin-mobile lg:px-margin-desktop py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column (Steps 1 to 4) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- PASO 1: Selección de Pieza -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm">1</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Selección de la Pieza a Retirar</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bóveda Custodial Registrada · Cobertura Lloyd's por certificado individual</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold hidden sm:inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">lock_clock</span> Bóveda Sincronizada
+            </span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Piece 1 (Active) -->
+<label class="group relative flex flex-col sm:flex-row items-start sm:items-center justify-between p-space-md rounded-xl bg-surface-container-low transition-all cursor-pointer shadow-sm">
+<div class="flex items-start gap-space-md">
+<input checked="" class="mt-1.5 w-4 h-4 accent-secondary" name="selected_piece" type="radio" value="cronografo"/>
+<div class="w-20 h-20 rounded-lg overflow-hidden bg-surface-container shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Close up macro shot of a luxury 18k rose gold chronograph watch with sapphire crystal face on neutral background dramatic studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSNaZtvBS9NzqIbTeWLGpf9A_hW9LAgBkhZbaNCYh8mw6wyn5rlFwuz9LZmkBiS4sB30-Mjfkc4rkNNJB67hiGyiN7R0_bp5-UkB61HW8JffXAFb3a9I4sY9kGC1Yc3RHvvtDo6EKBaRXyrN3ejvTDiIz98y2POYL1xDL33CL7Z81VeQRE8F76_Gg4_Pmm_QiETCzyXUvbJ3-EieQgK6aLanBfiyjXEuyusOPFua_ruGLuvNMcVqg6xQ"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-lg text-title-lg text-on-surface group-hover:text-secondary transition-colors">Cronógrafo Imperial Oro Rosa 18K Sapphire 42mm</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-[11px] font-bold px-2 py-0.5 rounded-full">Póliza Vigente</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Certificado Oficial: #COA-AUR-892401-GT</span>
+<div class="flex items-center gap-space-md mt-1">
+<span class="font-price-md text-price-md text-secondary">Avalúo: Q. 28,500.00</span>
+<span class="font-body-sm text-body-sm text-outline">· Última revisión: Nov 2024</span>
+</div>
+</div>
+</div>
+<div class="mt-3 sm:mt-0 flex items-center gap-1 self-end sm:self-center text-label-sm font-label-sm text-on-secondary-container bg-secondary-fixed/50 px-3 py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-body-sm">check_circle</span>
+<span>Seleccionado para custodia</span>
+</div>
+</label>
+<!-- Piece 2 -->
+<label class="group relative flex flex-col sm:flex-row items-start sm:items-center justify-between p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-start gap-space-md">
+<input class="mt-1.5 w-4 h-4 accent-secondary" name="selected_piece" type="radio" value="collar"/>
+<div class="w-20 h-20 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Fine gold vermeil necklace with pavé diamond constellation pendant resting on velvet luxury jewelry display soft ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFXkNe4CRzM08bpVpo_bpDUS24Uhk7nGLeHndoQpGm_-Wza3Mk893lML-ukFWx09wNjtOfOhBtyf17DINByNZBzCyCbgLylQp4j1V7D8DVI8vI2mkflznfBu81kRQycUogtvE7zVC4kHwUhCwhl2HdxQxaILzpDiSl2K-2B7WstswZ-WJZlbl9PKzyTdlzf1a7JiailfOL-ZTe96Bgmvftazx2LnshGKHtTN2vW0_KVHidROxh-Q7szw"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-lg text-title-lg text-on-surface">Collar Constelación Solis Oro Vermeil 18K</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Certificado Oficial: #COA-AUR-741029-DIA</span>
+<div class="flex items-center gap-space-md mt-1">
+<span class="font-price-md text-price-md text-on-surface">Avalúo: Q. 8,900.00</span>
+<span class="font-body-sm text-body-sm text-outline">· Bóveda Domiciliar</span>
+</div>
+</div>
+</div>
+<span class="text-label-sm font-label-sm text-outline mt-2 sm:mt-0">Click para seleccionar</span>
+</label>
+<!-- Piece 3 -->
+<label class="group relative flex flex-col sm:flex-row items-start sm:items-center justify-between p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-start gap-space-md">
+<input class="mt-1.5 w-4 h-4 accent-secondary" name="selected_piece" type="radio" value="bolso"/>
+<div class="w-20 h-20 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Handcrafted luxury Italian full grain leather tote bag in warm terracotta sienna tone standing on polished travertine surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-pN42RRF8njGKKOjhU0nN2_zXFBwm6oEDc8O9fx8IQVcnxxK-Q-Jtu1ELkerfFPg8My0VoXjM00X_FynTzGklj3dldOpH6Dw6Et0jd8z0TCegQtAgv11ZPaD0use7fYn11wpDzK-1Mjy-zEXVkMw-9E9a2KcRkU3nOO7g7Cma1UK-WIYu635OxTQVvQH44r4_VWWuxhGRzHdl62Dc4rKuOoXcqJHUxy_3F1vfmWyvJvcMLNvlhPY_cA"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-lg text-title-lg text-on-surface">Bolso Tote Piel Siena Florencia</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Certificado Oficial: #COA-AUR-551980-LEA</span>
+<div class="flex items-center gap-space-md mt-1">
+<span class="font-price-md text-price-md text-on-surface">Avalúo: Q. 14,200.00</span>
+<span class="font-body-sm text-body-sm text-outline">· Marroquinería de Autor</span>
+</div>
+</div>
+</div>
+<span class="text-label-sm font-label-sm text-outline mt-2 sm:mt-0">Click para seleccionar</span>
+</label>
+</div>
+<!-- Pre-Custody Photo Upload Section -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">add_a_photo</span>
+<span class="font-title-lg text-title-lg text-on-surface">Cotejo Fotográfico Forense Previo (Opcional)</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Máx. 4 tomas macro</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Adjunte tomas del estado actual de bisel, carátula o corona para registrar el estado previo antes del precintado de la valija en su presencia.
+            </p>
+<div class="flex flex-wrap items-center gap-space-sm mt-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-body-md">upload_file</span>
+<span>Subir imágenes</span>
+</button>
+<span class="font-body-sm text-body-sm text-outline">Formatos permitidos: JPG, PNG, RAW (hasta 25MB)</span>
+</div>
+</div>
+</section>
+<!-- PASO 2: Punto de Retiro en Zona 10 / Zona 14 -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm">2</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Punto de Retiro Blindado</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ubicaciones verificadas bajo protocolo de seguridad diplomática</p>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-secondary hover:underline flex items-center gap-1 font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">add_location_alt</span>
+<span>+ Nueva dirección de seguridad</span>
+</button>
+</div>
+<!-- Address 1 (Selected) -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-start gap-space-sm">
+<input checked="" class="mt-1 w-4 h-4 accent-secondary" name="retire_location" type="radio"/>
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-title-lg text-title-lg text-on-surface">Residencia Principal / Penthouse</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold uppercase px-2 py-0.5 rounded-full">Predeterminada</span>
+<span class="bg-surface-container-highest text-on-surface text-[10px] font-medium px-2 py-0.5 rounded-full">Zona 10 Premium</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">fingerprint</span> Verificación Biométrica
+                    </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium mt-1">
+                    12 Calle 2-04, Edificio Terra Esperanza, Nivel 14, Penthouse Suite 1402, Zona 10, Ciudad de Guatemala.
+                  </p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-headline-md">verified_user</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest text-on-surface-variant text-body-sm font-body-sm flex items-start gap-2 mt-1">
+<span class="material-symbols-outlined text-secondary text-body-lg shrink-0">policy</span>
+<div>
+<span class="font-semibold text-on-surface">Protocolo de Custodia:</span> Anunciar en garita principal bajo clave segura. Ingreso por ascensor privado con escolta de edificio. Entrega en suite privada con cotejo de DPI físico original y firma biométrica en tablet blindada.
+              </div>
+</div>
+</div>
+<!-- Address 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center justify-between cursor-pointer">
+<div class="flex items-start gap-space-sm">
+<input class="mt-1 w-4 h-4 accent-secondary" name="retire_location" type="radio"/>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-lg text-title-lg text-on-surface">Oficina Corporativa</span>
+<span class="bg-surface-container-high text-on-surface-variant text-[10px] uppercase font-bold px-2 py-0.5 rounded-full">Zona 14 Financiera</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Torre Las Américas, Nivel 18, Sala Ejecutiva Privada, Zona 14, Ciudad de Guatemala.
+                </p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">apartment</span>
+</div>
+<!-- Address 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center justify-between cursor-pointer">
+<div class="flex items-start gap-space-sm">
+<input class="mt-1 w-4 h-4 accent-secondary" name="retire_location" type="radio"/>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-lg text-title-lg text-on-surface">Residencia de Fin de Semana</span>
+<span class="bg-surface-container-high text-on-surface-variant text-[10px] uppercase font-bold px-2 py-0.5 rounded-full">Antigua Guatemala</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Calle de los Pasos #18, Condominio San Pedro Las Huertas, Sacatepéquez.
+                </p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">holiday_village</span>
+</div>
+</section>
+<!-- PASO 3: Ventana de Custodia Armada & Horarios -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm">3</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Ventana de Custodia Armada</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Franjas estrictas de 45 minutos para garantizar máxima confidencialidad</p>
+</div>
+</div>
+<!-- Date Selector -->
+<div>
+<span class="block font-label-md text-label-md text-on-surface mb-space-xs font-semibold">Seleccione el Día de Retiro</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<button class="p-space-sm rounded-xl bg-surface-container-low text-left shadow-sm" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Hoy</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="font-title-lg text-title-lg text-on-surface mt-1">Viernes 25</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Últimos 2 cupos de ruta</span>
+</button>
+<button class="p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-left transition-colors" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Fin de Semana</span>
+</div>
+<div class="font-title-lg text-title-lg text-on-surface mt-1">Sábado 26</div>
+<span class="font-label-sm text-label-sm text-outline">Ruta Matutina</span>
+</button>
+<button class="p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-container-low text-left transition-colors" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Próxima Semana</span>
+</div>
+<div class="font-title-lg text-title-lg text-on-surface mt-1">Lunes 28</div>
+<span class="font-label-sm text-label-sm text-outline">Disponibilidad total</span>
+</button>
+</div>
+</div>
+<!-- Time Slots -->
+<div>
+<span class="block font-label-md text-label-md text-on-surface mb-space-xs font-semibold">Franja Horaria Blindada</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 accent-secondary" name="time_slot" type="radio"/>
+<div>
+<span class="font-title-lg text-title-lg text-on-surface">09:30 AM — 10:15 AM</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Ruta Zona 10 / Zona 14</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">schedule</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-space-xs">
+<input checked="" class="w-4 h-4 accent-secondary" name="time_slot" type="radio"/>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-lg text-title-lg text-on-surface">11:30 AM — 12:15 PM</span>
+<span class="bg-secondary text-on-secondary text-[10px] font-bold uppercase px-1.5 py-0.5 rounded">Ruta Óptima</span>
+</div>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Custodia Directa Prioritaria</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 accent-secondary" name="time_slot" type="radio"/>
+<div>
+<span class="font-title-lg text-title-lg text-on-surface">02:30 PM — 03:15 PM</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Ruta Vespertina 01</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">schedule</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-space-xs">
+<input class="w-4 h-4 accent-secondary" name="time_slot" type="radio"/>
+<div>
+<span class="font-title-lg text-title-lg text-on-surface">04:30 PM — 05:15 PM</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Ruta Cierre de Atelier</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">schedule</span>
+</div>
+</div>
+</div>
+<!-- Escort & Security Team Info Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-headline-md">shield_person</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-lg text-title-lg text-on-surface">Cmdte. R. Méndez</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed text-[10px] font-bold px-2 py-0.5 rounded-full">Valores Certificado</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Unidad Asignada: AuraSecure Mobile 03 (Suburban Blindaje Nivel IV)</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest px-4 py-2 rounded-xl text-left md:text-right shadow-sm w-full md:w-auto">
+<span class="block font-label-sm text-label-sm text-outline uppercase font-semibold">Código Secreto OTP de Cotejo</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-mono tracking-wider">#SEC-9942-GT</span>
+<span class="block font-body-sm text-[11px] text-on-surface-variant">El oficial pronunciará esta clave antes de ingresar</span>
+</div>
+</div>
+</section>
+<!-- PASO 4: Tratamientos Requeridos en Taller -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm">4</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Tratamientos Requeridos en Atelier</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Intervenciones autorizadas por el maestro relojero suizo</p>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 accent-secondary" type="checkbox"/>
+<div>
+<span class="font-title-lg text-title-lg text-on-surface">Inspección &amp; Calibración COSC</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Desmagnetización, amplitud de volante y ajuste cronométrico</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-tertiary-container bg-tertiary-fixed/40 px-2 py-1 rounded">Cortesía Black Tier (Q. 0.00)</span>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 accent-secondary" type="checkbox"/>
+<div>
+<span class="font-title-lg text-title-lg text-on-surface">Pulido Ultrasónico Integral &amp; Baño de Protección</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Caja de oro rosa 18K y microbiselado de precisión</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-tertiary-container bg-tertiary-fixed/40 px-2 py-1 rounded">Cortesía Black Tier (Q. 0.00)</span>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 accent-secondary" type="checkbox"/>
+<div>
+<span class="font-title-lg text-title-lg text-on-surface">Hermeticidad 10 ATM &amp; Sustitución de Empaques de Zafiro</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Prueba hidrostática en cámara hiperbárica</span>
+</div>
+</div>
+<span class="font-price-md text-price-md text-on-surface">Q. 320.00</span>
+</label>
+</div>
+<!-- Special instructions -->
+<div>
+<label class="block font-title-lg text-title-lg text-on-surface mb-1" for="instructions">
+              Instrucciones para la Escolta o Garita de Acceso
+            </label>
+<textarea class="w-full bg-surface-container-low rounded-xl p-space-md text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary/50" id="instructions" placeholder="Ej: Solicitar acceso en torre por portón 2. Presentar cédula de diplomático y preguntar por asistente ejecutivo en recepción..." rows="3"></textarea>
+</div>
+</section>
+</div>
+<!-- Right Column: Sticky Custody Order Summary -->
+<div class="lg:col-span-4 sticky top-40 flex flex-col gap-space-md">
+<div class="bg-primary-container text-surface-bright p-space-lg rounded-xl shadow-xl flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-secondary/20 blur-2xl pointer-events-none"></div>
+<!-- Order Header -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-lowest/10">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider font-semibold">Orden de Custodia Blindada</span>
+<h3 class="font-headline-sm text-headline-sm text-surface-bright">#SEC-8924-GT</h3>
+</div>
+<span class="material-symbols-outlined text-secondary-fixed text-headline-lg">lock_person</span>
+</div>
+<!-- Order Flow Steps List -->
+<div class="flex flex-col gap-space-sm text-body-sm font-body-sm">
+<div class="flex items-start justify-between">
+<span class="text-primary-fixed">Pieza en salvaguarda:</span>
+<span class="text-surface-bright font-medium text-right max-w-[180px]">Cronógrafo Imperial 18K</span>
+</div>
+<div class="flex items-start justify-between">
+<span class="text-primary-fixed">Origen de Retiro:</span>
+<span class="text-surface-bright font-medium text-right max-w-[180px]">Terra Esperanza, Penthouse N14, Zona 10</span>
+</div>
+<div class="flex items-start justify-between">
+<span class="text-primary-fixed">Destino de Taller:</span>
+<span class="text-surface-bright font-medium text-right max-w-[180px]">Atelier Sixtino II, Nivel 14, Zona 10</span>
+</div>
+<div class="flex items-start justify-between">
+<span class="text-primary-fixed">Ventana de Custodia:</span>
+<span class="text-secondary-fixed font-semibold text-right">Hoy 11:30 AM - 12:15 PM</span>
+</div>
+</div>
+<!-- Financial Breakdown -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm flex flex-col gap-2">
+<div class="flex items-center justify-between font-body-sm">
+<span class="text-primary-fixed">Logística Armada &amp; Valija Kevlar:</span>
+<div class="text-right">
+<span class="line-through text-outline text-xs block">Q. 850.00</span>
+<span class="text-secondary-fixed font-semibold">Q. 0.00 (Black Tier)</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-body-sm">
+<span class="text-primary-fixed">Servicios Especializados de Taller:</span>
+<div class="text-right">
+<span class="line-through text-outline text-xs block">Q. 1,200.00</span>
+<span class="text-secondary-fixed font-semibold">Q. 0.00 (Bonificado)</span>
+</div>
+</div>
+<div class="pt-2 border-t border-surface-container-lowest/10 flex items-center justify-between">
+<span class="font-title-lg text-title-lg text-surface-bright">Total a Facturar:</span>
+<span class="font-headline-md text-headline-md text-surface-bright">Q. 0.00</span>
+</div>
+</div>
+<!-- Insurance Micro-card -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/10 flex items-center gap-space-xs text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-headline-sm shrink-0">verified</span>
+<p class="text-primary-fixed">
+              Salvaguarda Lloyd's activa por <strong class="text-surface-bright">Q. 150,000.00</strong> desde la firma en tablet y cierre de precinto.
+            </p>
+</div>
+<!-- CTAs -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full py-3.5 px-space-md rounded-xl bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-title-lg text-title-lg text-center font-semibold transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer" id="confirm-btn" type="button">
+<span class="material-symbols-outlined">shield_with_heart</span>
+<span>Confirmar Solicitud de Retiro</span>
+</button>
+<a class="w-full py-2.5 px-space-md rounded-xl bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-surface-bright font-label-md text-label-md text-center transition-colors flex items-center justify-center gap-2" href="https://wa.me/50224102872" target="_blank">
+<span class="material-symbols-outlined text-body-lg">chat</span>
+<span>Coordinar con Concierge por WhatsApp</span>
+</a>
+</div>
+<span class="font-body-sm text-[11px] text-center text-primary-fixed-dim">
+            Servicio de Emergencia Custodial disponible 24/7 en PBX (+502) 2410-AURA
+          </span>
+</div>
+<!-- Trust Mini-Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low text-on-surface flex items-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-secondary text-headline-lg">security</span>
+<div>
+<h4 class="font-title-lg text-title-lg text-on-surface">Trazabilidad Satelital GPS</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Recibirá enlace cifrado para seguir la trayectoria en tiempo real hasta la apertura en bóveda.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Security Protocol Timeline Section -->
+<section class="w-full bg-surface-container-low px-margin-mobile lg:px-margin-desktop py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="text-center max-w-2xl mx-auto">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Protocolo de Confianza AuraSecure</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Procedimiento Notarial de 4 Fases</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Cada segundo de custodia está respaldado por grabaciones corporales y precintos de seguridad criptográfica.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Step 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center font-bold text-headline-sm">1</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mt-space-xs font-semibold">Llegada Discreta</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Vehículo blindado sin rotulación externa comercial para mantener absoluto bajo perfil en su residencia o torre ejecutiva.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center font-bold text-headline-sm">2</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mt-space-xs font-semibold">Verificación Mutua</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Intercambio de credencial diplomática del oficial con validación del código secreto OTP #SEC-9942-GT antes de la entrega.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center font-bold text-headline-sm">3</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mt-space-xs font-semibold">Precinto Foliado</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Inspección física conjunta, colocación en valija de kevlar ignífuga y cierre con precinto inviolable firmado por usted en tableta.
+          </p>
+</div>
+<!-- Step 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-primary-container text-secondary-fixed flex items-center justify-center font-bold text-headline-sm">4</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mt-space-xs font-semibold">Custodia Satelital</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Ruta escoltada con monitoreo satelital continuo hasta la apertura filmada en la Bóveda del Atelier Central en Sixtino II.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Confirmation Modal -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/50 backdrop-blur-md hidden items-center justify-center p-4" id="confirmation-modal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-space-xl shadow-2xl flex flex-col gap-space-md text-center">
+<div class="w-16 h-16 rounded-full bg-secondary/15 text-secondary flex items-center justify-center mx-auto">
+<span class="material-symbols-outlined text-display-hero">verified_user</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">AuraSecure Confirmado</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-1">Operación de Custodia Programada</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Se ha notificado al Cmdte. R. Méndez. Su vehículo blindado arribará hoy entre <strong class="text-on-surface">11:30 AM y 12:15 PM</strong> al Edificio Terra Esperanza, Penthouse 1402.
+        </p>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl text-left font-body-sm text-body-sm flex flex-col gap-1">
+<div class="flex justify-between">
+<span class="text-outline">Clave Secreta OTP:</span>
+<span class="font-mono font-bold text-secondary">#SEC-9942-GT</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">Cobertura de Póliza:</span>
+<span class="font-semibold text-on-surface">Lloyd's Q. 150,000</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">SMS &amp; Notificación:</span>
+<span class="font-medium text-on-surface">+502 5***-**89</span>
+</div>
+</div>
+<div class="flex gap-space-sm pt-space-xs">
+<button class="flex-1 py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" id="close-modal-btn" type="button">
+          Entendido, Ver Rastreo
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for confirmation modal
+  const confirmBtn = document.getElementById('confirm-btn');
+  const confirmModal = document.getElementById('confirmation-modal');
+  const closeModalBtn = document.getElementById('close-modal-btn');
+
+  if (confirmBtn && confirmModal) {
+    confirmBtn.addEventListener('click', () => {
+      confirmModal.classList.remove('hidden');
+      confirmModal.classList.add('flex');
+    });
+  }
+
+  if (closeModalBtn && confirmModal) {
+    closeModalBtn.addEventListener('click', () => {
+      confirmModal.classList.add('hidden');
+      confirmModal.classList.remove('flex');
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-xl pb-space-lg"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase font-semibold">AuraLuxe</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Lujo accesible diseñado para trascender. Artesanía contemporánea, piedras de origen ético y envíos seguros a toda Guatemala e internacionalmente.</p><div class="flex items-center gap-space-md text-on-surface-variant"><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">verified_user</span><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">support_agent</span><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">credit_card</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Explorar Shop</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Nueva Colección</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Alta Joyería Fina</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Relojería Masculina &amp; Femenina</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Ofertas de Temporada</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Atención al Cliente</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="mi-cuenta" href="/mi-cuenta">Rastrear Mi Orden</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Tiempos de Envío en GT</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Garantía y Devoluciones</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Cuotas y Formas de Pago</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Aura Privé</span><p class="font-body-sm text-body-sm text-on-surface-variant">Suscríbete para recibir un 10% de descuento en tu primera compra y acceso exclusivo a prelanzamientos.</p><form class="flex flex-col gap-space-xs mt-space-xs" onsubmit="event.preventDefault(); alert('¡Gracias por unirte a Aura Privé!');"><input class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50 placeholder:text-outline" placeholder="Ingresa tu correo electrónico" required="" type="email"/><button class="px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" type="submit">Suscribirme</button></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="font-body-sm text-body-sm text-outline">© 2025 AuraLuxe Guatemala S.A. Todos los derechos reservados. Precios en Quetzales (Q) y Dólares Americanos (USD).</div><div class="flex items-center gap-space-md text-label-sm font-label-sm text-outline"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-body-sm">lock</span> Checkout Seguro SSL</span><span>|</span><span>Visa Cuotas</span><span>|</span><span>Mastercard</span><span>|</span><span>Transferencia Bancaria GT</span></div></div></div></footer><script>const cartBtn = document.getElementById('cart-open-btn'); const cartDrawer = document.getElementById('cart-drawer'); const cartOverlay = document.getElementById('cart-drawer-overlay'); const cartClose = document.getElementById('cart-close-btn'); function openCart() { cartOverlay.classList.remove('hidden'); setTimeout(() => { cartOverlay.classList.remove('opacity-0'); cartDrawer.classList.remove('translate-x-full'); }, 10); } function closeCart() { cartDrawer.classList.add('translate-x-full'); cartOverlay.classList.add('opacity-0'); setTimeout(() => { cartOverlay.classList.add('hidden'); }, 300); } if (cartBtn) cartBtn.addEventListener('click', openCart); if (cartClose) cartClose.addEventListener('click', closeCart); if (cartOverlay) cartOverlay.addEventListener('click', closeCart); const searchInput = document.getElementById('global-search-input'); const searchDropdown = document.getElementById('search-dropdown'); if (searchInput && searchDropdown) { searchInput.addEventListener('focus', () => searchDropdown.classList.remove('hidden')); searchInput.addEventListener('blur', () => setTimeout(() => searchDropdown.classList.add('hidden'), 200)); }</script></body></html>

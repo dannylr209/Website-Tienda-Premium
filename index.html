@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>AuraLuxe — Accessible Luxury</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#0b1c30", "on-primary-container": "#7c839b", "on-secondary-fixed-variant": "#6e3900", "outline": "#76777d", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005236", "surface-variant": "#d3e4fe", "secondary": "#904d00", "surface-container-high": "#dce9ff", "surface-dim": "#cbdbf5", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002113", "surface-container-low": "#eff4ff", "on-surface": "#0b1c30", "error": "#ba1a1a", "surface": "#f8f9ff", "primary-container": "#131b2e", "on-tertiary-container": "#009668", "surface-container-lowest": "#ffffff", "surface-container": "#e5eeff", "on-surface-variant": "#45464d", "secondary-fixed": "#ffdcc3", "secondary-fixed-dim": "#ffb77d", "on-primary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-tertiary": "#ffffff", "primary-fixed": "#dae2fd", "on-secondary-fixed": "#2f1500", "inverse-surface": "#213145", "secondary-container": "#fe932c", "surface-tint": "#565e74", "on-error": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-secondary-container": "#663500", "primary": "#000000", "background": "#f8f9ff", "tertiary": "#000000", "tertiary-container": "#002113", "tertiary-fixed": "#6ffbbe", "inverse-primary": "#bec6e0", "tertiary-fixed-dim": "#4edea3", "on-primary-fixed": "#131b2e", "primary-fixed-dim": "#bec6e0", "on-primary-fixed-variant": "#3f465c", "surface-bright": "#f8f9ff", "outline-variant": "#c6c6cd" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-desktop": "3rem", "margin-mobile": "1rem", "space-xl": "2rem", "margin": "2rem" }, "fontFamily": { "headline-md": ["Outfit"], "headline-lg": ["Outfit"], "display-hero": ["Outfit"], "body-lg": ["Inter"], "label-md": ["Inter"], "display-hero-mobile": ["Outfit"], "price-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-xl": ["Outfit"], "title-lg": ["Outfit"], "label-sm": ["Inter"], "headline-sm": ["Outfit"], "headline-xl-mobile": ["Outfit"], "price-lg": ["Inter"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "price-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "500" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "price-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-surface px-margin-mobile lg:px-margin-desktop py-space-xs text-center"><div class="max-w-7xl mx-auto flex items-center justify-between text-label-sm font-label-sm"><span class="hidden sm:inline-block text-on-primary-container tracking-wide">GUATEMALA &amp; GLOBAL SHIPPING</span><p class="w-full sm:w-auto text-center font-medium tracking-wide text-surface">Envíos gratis en compras &gt; Q.500 | Cuotas sin interés Visa / Mastercard</p><div class="hidden sm:flex items-center gap-space-sm text-on-primary-container"><span class="material-symbols-outlined text-label-sm">verified</span><span>Autenticidad Garantizada</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="inicio" href="/inicio"><img alt="AuraLuxe Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XbYWKTtgfAhpa_stWrBkJNd2KJ_OhkoLxbCx0GmyoKnxqJpoqSpgzNYdiAi479I0Hu4t7aiRsRexiZImhDfvdcFInYVZDG64aTehaHxImc_6_iaM0D2nv3YL6V-j6Q_NFm8ewuUH5EZLjJLO9Cskzvy2PrBG4ftWE68UqGfwyVEogphwfvwh4a_l17w4HzNsUSCu-2gXoC-pEOpQccapJTmhncn5P4dNNT5bJZMcc3oEjbmBOJAtxKPt0"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">AuraLuxe</span></a></div><div class="hidden md:flex flex-1 max-w-md mx-space-lg relative"><div class="w-full flex items-center bg-surface-container-low rounded-lg px-space-md py-space-xs transition-all focus-within:ring-2 focus-within:ring-secondary/40 focus-within:bg-surface-container-lowest"><span class="material-symbols-outlined text-outline text-headline-sm mr-space-xs">search</span><input autocomplete="off" class="w-full bg-transparent text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none" id="global-search-input" placeholder="Buscar joyas, accesorios de lujo, bolsos..." type="search"/></div><div class="hidden absolute left-0 right-0 top-full mt-2 bg-surface-container-lowest rounded-lg shadow-[0_10px_15px_-3px_rgba(15,23,42,0.06),0_20px_25px_-5px_rgba(15,23,42,0.08)] p-space-md z-50" id="search-dropdown"><div class="text-label-sm font-label-sm text-outline mb-space-xs uppercase tracking-wider">Búsquedas populares</div><div class="flex flex-col gap-space-xs"><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Collar Diamante Aura Solitario (Q.1,850)</a><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Reloj Cronógrafo Imperial Gold (USD $420)</a><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Brazalete Velvet Silver 925</a></div></div></div><div class="flex items-center gap-space-md"><div class="relative inline-block text-left"><select class="appearance-none bg-surface-container-low text-on-surface text-label-sm font-label-sm py-1.5 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none hover:bg-surface-container transition-colors" id="currency-selector"><option value="GTQ">GTQ (Q)</option><option value="USD">USD ($)</option></select><span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-outline text-body-sm">expand_more</span></div><a class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="wishlist" href="/wishlist" title="Lista de Deseos"><span class="material-symbols-outlined text-headline-sm">favorite</span><span class="absolute top-1 right-1 bg-secondary text-on-secondary text-[10px] font-bold rounded-full h-4.5 w-4.5 min-w-[18px] flex items-center justify-center px-1" id="wishlist-badge">2</span></a><button class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" id="cart-open-btn" title="Carrito" type="button"><span class="material-symbols-outlined text-headline-sm">shopping_bag</span><span class="absolute top-1 right-1 bg-primary text-on-primary text-[10px] font-bold rounded-full h-4.5 w-4.5 min-w-[18px] flex items-center justify-center px-1" id="cart-badge">3</span></button><a class="flex items-center gap-space-xs p-1 rounded-full hover:ring-2 hover:ring-secondary/40 transition-all" data-path="mi-cuenta" href="/mi-cuenta" title="Mi Perfil"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUS7PY6UFwgghzGuUJm3Qjna2wydJu5dtmWPh-jvkHfklF6UipRg6rePOdzH2zUkXw01IrqX93uRtbPbDvh6NtUPk84oOqTdmX4ZmgI2gSET91psD187WaR4LPh0Nci-bZuBfFKNB_3Vu-60RDCQIVTo0dBPRIWPztA489rbeXF4_bWvQ6n5XhHfxkl3g5KqiFduKsEYFiLX99dfxYGqJZesYW7gobid-D75n2sKXxLK65q4QBV4VsWA"/></a></div></div><div class="bg-surface-container-lowest/80 border-t border-surface-container-low px-margin-mobile lg:px-margin-desktop"><div class="max-w-7xl mx-auto flex items-center justify-between"><nav class="flex items-center gap-space-lg overflow-x-auto py-2.5" data-active-classes="text-on-surface font-title-lg font-semibold"><a aria-current="page" class="transition-colors whitespace-nowrap text-on-surface font-title-lg font-semibold" data-path="inicio" href="/inicio">Inicio</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="shop" href="/shop">Colecciones</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="shop" href="/shop">Novedades</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="shop" href="/shop">Ofertas</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="faq" href="/faq">Envíos &amp; FAQ</a></nav><div class="hidden lg:flex items-center gap-space-md text-label-sm font-label-sm text-secondary"><span class="material-symbols-outlined text-label-md">local_shipping</span><span>Entrega express en 24h Ciudad de Guatemala</span></div></div></div></header><div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" id="cart-drawer-overlay"></div><aside class="fixed top-0 right-0 h-full w-full sm:w-96 max-w-full bg-surface-container-lowest shadow-[0_25px_50px_-12px_rgba(15,23,42,0.22)] z-50 flex flex-col translate-x-full transition-transform duration-300 ease-out" id="cart-drawer"><div class="p-space-lg flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-on-surface">shopping_bag</span><span class="font-headline-sm text-headline-sm text-on-surface">Tu Carrito (<span id="drawer-cart-count">3</span>)</span></div><button class="p-1 text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" id="cart-close-btn" type="button"><span class="material-symbols-outlined">close</span></button></div><div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-md"><div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg"><div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-outline">save_as</span></div><div class="flex-1 min-w-0"><h4 class="font-title-lg text-title-lg text-on-surface truncate">Collar Constelación Solis</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Oro Vermeil 18K</p><div class="font-price-md text-price-md text-secondary mt-1">Q.1,450.00</div></div></div><div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg"><div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-outline">watch</span></div><div class="flex-1 min-w-0"><h4 class="font-title-lg text-title-lg text-on-surface truncate">Reloj Crono Midnight</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Edición Limitada</p><div class="font-price-md text-price-md text-secondary mt-1">Q.2,890.00</div></div></div></div><div class="p-space-lg bg-surface-container-low flex flex-col gap-space-md"><div class="flex justify-between items-center"><span class="font-body-md text-body-md text-on-surface-variant">Subtotal estimado</span><span class="font-headline-sm text-headline-sm text-on-surface">Q.4,340.00</span></div><div class="flex gap-space-sm"><a class="flex-1 text-center py-3 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" data-path="carrito" href="/carrito">Ver Carrito</a><a class="flex-1 text-center py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" data-path="checkout" href="/checkout">Pagar</a></div></div></aside><main class="w-full pt-36 bg-surface"><div class="flex flex-col w-full">
+<!-- Toast Notification System -->
+<div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3 pointer-events-none" id="toast-container"></div>
+<!-- Hero Banner Immersivo con Scrim y Tipografía Editorial -->
+<section class="relative w-full -mt-36 overflow-hidden bg-primary-container text-surface">
+<!-- Scrim de fondo e imagen editorial -->
+<div class="absolute inset-0 bg-cover bg-center opacity-45 mix-blend-luminosity scale-105 transition-transform duration-1000 ease-out hover:scale-100" data-alt="Editorial luxury fashion model wearing avant-garde 18k gold jewelry and a refined Swiss timepiece. Dark atmospheric lighting with deep navy and soft bronze reflections, high-end Vogue composition, sharp focus, moody elegance, textured silk fabric and clean geometric shadows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfxrGvRAFvBVwefryNMLwuUqIj3WwUGukglQm4zrFP5vMBIF11bDzMAn1f5tJYypiX_PUBhdvMZdT6jWAylECsdlj6Y8HI9s2mZ2iXiEDXHvMf-BOCp65PCAOHWmnh04WwuLw7S65F5-JrrX2lRC9zvph5wN1MmpwOTcLlbA736GDG5Ky6LnOrVe7dT-iCfmlfT0PSeQiSFny_O-Mqc8uHSYU3D-atEOClOO9_BUaWqFVhxROvcWStSA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/80 to-transparent"></div>
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 right-0 w-80 h-80 rounded-full bg-surface-container-high/10 blur-3xl pointer-events-none"></div>
+<div class="relative max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop pt-52 pb-24 lg:pb-32 flex flex-col items-start z-10">
+<!-- Badge Nueva Temporada -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="tracking-wider uppercase font-semibold">Nueva Temporada 2025</span>
+<span class="opacity-60">•</span>
+<span>Colección Cénit</span>
+</div>
+<!-- Headline Editorial -->
+<h1 class="mt-6 font-display-hero text-display-hero lg:text-[68px] lg:leading-[76px] tracking-tight max-w-4xl text-surface font-semibold">
+        El estándar del lujo contemporáneo, <span class="italic font-normal text-secondary-fixed">ahora a tu alcance</span>.
+      </h1>
+<p class="mt-6 font-body-lg text-body-lg text-primary-fixed-dim max-w-2xl leading-relaxed">
+        Curaduría exclusiva de joyería fina, relojes suizos de precisión y accesorios creados con artesanía impecable. Adquiere piezas atemporales con entrega garantizada y financiamiento en Cuotas.
+      </p>
+<!-- CTAs Principales -->
+<div class="mt-10 flex flex-wrap items-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto px-8 py-4 rounded-lg bg-surface text-on-surface font-label-md text-label-md font-semibold tracking-wide shadow-xl hover:bg-surface-container-low transition-all duration-300 flex items-center justify-center gap-2 group" data-path="shop" href="/shop">
+<span>Explorar Colección</span>
+<span class="material-symbols-outlined text-body-md transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto px-8 py-4 rounded-lg bg-surface-container-lowest/10 backdrop-blur-md text-surface font-label-md text-label-md font-medium tracking-wide hover:bg-surface-container-lowest/20 transition-all duration-300 flex items-center justify-center gap-2" data-path="shop" href="/shop">
+<span class="material-symbols-outlined text-secondary-fixed">local_fire_department</span>
+<span>Ver Ofertas Exclusivas</span>
+</a>
+</div>
+<!-- Beneficios Clave (Guatemala y Cobertura) -->
+<div class="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 w-full pt-10">
+<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/20 text-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-headline-md">local_shipping</span>
+</div>
+<div>
+<div class="font-title-lg text-title-lg text-surface font-medium">Envíos Express GT</div>
+<div class="font-body-sm text-body-sm text-on-primary-container">En 24h Ciudad y departamentos</div>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/20 text-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-headline-md">credit_score</span>
+</div>
+<div>
+<div class="font-title-lg text-title-lg text-surface font-medium">Hasta 18 VisaCuotas</div>
+<div class="font-body-sm text-body-sm text-on-primary-container">Sin recargos ni complicaciones</div>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-lowest/5 backdrop-blur-sm">
+<div class="w-12 h-12 rounded-lg bg-secondary-container/20 text-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-headline-md">verified_user</span>
+</div>
+<div>
+<div class="font-title-lg text-title-lg text-surface font-medium">Garantía Total 30 Días</div>
+<div class="font-body-sm text-body-sm text-on-primary-container">Certificado de autenticidad</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Colecciones Destacadas (Interactive Bento Horizontal) -->
+<section class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop py-20 w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Selección Curada</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">Colecciones Emblemáticas</h2>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-on-surface hover:text-secondary font-medium transition-colors" data-path="shop" href="/shop">
+<span>Explorar todo el catálogo</span>
+<span class="material-symbols-outlined text-body-md">arrow_forward</span>
+</a>
+</div>
+<!-- Interactive Bento Grid of Categories -->
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+<!-- Item 1: Joyería Fina -->
+<a class="group relative h-96 rounded-2xl overflow-hidden shadow-md flex flex-col justify-end p-6 bg-surface-container-low transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl" data-path="shop" href="/shop">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Macro luxury photography of a solitario diamond ring and 18k solid gold chain on a matte obsidian pedestal. Warm directional sunlight creating dazzling diamond dispersion effects, soft shadows, high dynamic range." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-a8yQ-roWFEARdTQVgE5PFcXeWXdeLt3rBCXpX8uK94krNgDimTKRqFmnfdWNgK-AC4cyFD2Ae4sqOhbf0TKwlGin5-ArfnpIENdeo-IYs20UzrX_xHbhiBzhqH5cQdsjc_1s-pjCcaLjhPKEHj7RwEVYKyHBRN4WDXnwtgNkUXTHZE-aLb50dR6zuzJWUuHH6PhKRgI2YmPhhMbrRNwka1RmPkKIrv9bjmxGx0Co8BpxcnZwRxEnnA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent"></div>
+<div class="relative z-10">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary-fixed font-semibold">48 Diseños</span>
+<h3 class="font-headline-md text-headline-md text-surface font-medium">Joyería Fina</h3>
+<p class="text-body-sm font-body-sm text-primary-fixed-dim mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Oro 18k, platino y diamantes de laboratorio.</p>
+</div>
+</a>
+<!-- Item 2: Relojería Suiza -->
+<a class="group relative h-96 rounded-2xl overflow-hidden shadow-md flex flex-col justify-end p-6 bg-surface-container-low transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl" data-path="shop" href="/shop">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Close-up luxury shot of a Swiss automatic chronograph with sapphire crystal and alligator leather strap. Deep navy dial with rose gold indices resting on raw slate marble, museum lighting, ultra fine detail." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBiC9yhBeKCvKtZEoiSsafw7QNx4ypyXHbVe-2TFOH6mPT7jtnn_1WCMxRuEzYvmDL-UC8SNRCsAc3sSo8zeOtpEZJd2e11E4atiwbcMNF0wjluFjZPdUq64UHYWGWopzx2rmLk7yU3v9COuo8i7bXmDDQg4K9fOxdG9cBym76sKchnPqOve0ypoAgNKVPS2MHQMqp8Tdj18gmJnypg2nXvQEkZmRX6WrYlLRQlLv61gy6efgh-prcOvw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent"></div>
+<div class="relative z-10">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary-fixed font-semibold">22 Modelos</span>
+<h3 class="font-headline-md text-headline-md text-surface font-medium">Relojería Suiza</h3>
+<p class="text-body-sm font-body-sm text-primary-fixed-dim mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Movimientos mecánicos y cronógrafos.</p>
+</div>
+</a>
+<!-- Item 3: Bolsos de Piel -->
+<a class="group relative h-96 rounded-2xl overflow-hidden shadow-md flex flex-col justify-end p-6 bg-surface-container-low transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl" data-path="shop" href="/shop">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Editorial still life of an handcrafted Italian leather handbag in rich cognac tone with polished brass hardware. Smooth matte studio setting with gentle tonal gradients, pure artisanal luxury aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwQ-4NNzZWpOElMOP3-rhOacPVNtpqLzXIbLc9GSIIktBAl65D_FPJtoh5Vwm_KH6YsaMfsBAW9EvFrSVU1EqfMCQx6JjYYisfP5j5SfMOpG5Ep72kaVDJ9voLVgqbTiJ8VB-7EbVWrNsO3UWm-qkg0K_YLHO1FQ7IktjWe33xOWHCk0CWmQW08uQGz7AENRdPAZfHtcbd2Hb1H2T85Sir-_lJLTl8EeY1QgsJyEhaxQ8JLSsyzSt2dg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent"></div>
+<div class="relative z-10">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary-fixed font-semibold">16 Creaciones</span>
+<h3 class="font-headline-md text-headline-md text-surface font-medium">Piel Italiana</h3>
+<p class="text-body-sm font-body-sm text-primary-fixed-dim mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Curtido artesanal y acabados satinados.</p>
+</div>
+</a>
+<!-- Item 4: Perfumería de Nicho -->
+<a class="group relative h-96 rounded-2xl overflow-hidden shadow-md flex flex-col justify-end p-6 bg-surface-container-low transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl" data-path="shop" href="/shop">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Amber glass artisan perfume flacon with embossed heavy metallic cap. Dramatic spotlight casting soft amber caustics on minimalist sand texture, niche fragrance luxury vibe." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDO5VTTRVzhNWB4VAdoeG5lJTq7Jm5tpLw1jIX6nNiyV96n-IT0ZChvZmg00fHS5j7hTAnVRmtnTYPsC7yHfOR9GrKblIE66_zMqtOhwkXp88gs_o5gH9HepO81c-pUVLWawMCjOrodE-t12fxJcStBPxLAyIvekNAfZWm1DRJvu6uNgyTnrd7feBdTViu-y-QLe6tEgyycqtIT1v2LGI2AmTk13QefibiNL2YyBh2LIGl5P3ui-jko_g')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent"></div>
+<div class="relative z-10">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary-fixed font-semibold">12 Esencias</span>
+<h3 class="font-headline-md text-headline-md text-surface font-medium">Perfumería Niche</h3>
+<p class="text-body-sm font-body-sm text-primary-fixed-dim mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Extractos puros y notas olfativas complejas.</p>
+</div>
+</a>
+<!-- Item 5: Gafas de Sol -->
+<a class="group relative h-96 rounded-2xl overflow-hidden shadow-md flex flex-col justify-end p-6 bg-surface-container-low transition-all duration-500 hover:-translate-y-1.5 hover:shadow-xl" data-path="shop" href="/shop">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Architectural acetate luxury sunglasses with polarized gradient lenses displayed on architectural travertine blocks. Crisp modern shadow play, high fashion editorial lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAQlWni5MYRx9zjLL3E4b4iNCbJNJjg73gF7LEBgT-KnTnHUr2CO0lkgMtHb5oRMOz4y4ZGZN6n-GNkGvutwbI-9Qz_PpeV_nJV-Ma_Bptgg0ZKOdz9zdw6fVfLCv3SH4H5DVNRpLvlhbhe6ISrs4qBEFySJd4lo3Nr1kLcb_7tilU4HXRApAXKozSKnB3c-a_28hI2gkE4e6Xfw9bMR66We_N1i_1K9imkeQnRbj1TXIXEPicyqFT7eg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/90 via-primary-container/30 to-transparent"></div>
+<div class="relative z-10">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary-fixed font-semibold">30 Modelos</span>
+<h3 class="font-headline-md text-headline-md text-surface font-medium">Gafas de Sol</h3>
+<p class="text-body-sm font-body-sm text-primary-fixed-dim mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Acetato japonés y cristales polarizados.</p>
+</div>
+</a>
+</div>
+</section>
+<!-- Banner Promocional Flash Sale VIP 24h con Temporizador y Cupón Interactivo -->
+<section class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop mb-20 w-full">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-primary-container via-inverse-surface to-primary-container p-8 lg:p-12 shadow-xl text-surface">
+<!-- Glow ambient background -->
+<div class="absolute right-0 top-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+<div class="max-w-xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold mb-4">
+<span class="material-symbols-outlined text-sm">alarm</span>
+<span>VENTA FLASH VIP — 24 HORAS SOLAMENTE</span>
+</div>
+<h3 class="font-headline-xl text-headline-xl font-semibold text-surface leading-tight">
+            25% OFF en Piezas Seleccionadas
+          </h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim mt-2">
+            Aplica tu beneficio exclusivo antes de medianoche. Piezas numeradas con disponibilidad limitada para clientes registrados en Guatemala.
+          </p>
+</div>
+<!-- Temporizador Dinámico -->
+<div class="flex flex-col sm:flex-row items-center gap-6">
+<div class="flex items-center gap-3">
+<div class="flex flex-col items-center justify-center w-16 h-20 bg-surface-container-lowest/10 rounded-xl backdrop-blur-md">
+<span class="font-headline-lg text-headline-lg font-bold text-surface" id="timer-hours">14</span>
+<span class="text-label-sm font-label-sm text-primary-fixed-dim uppercase">Horas</span>
+</div>
+<span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold">:</span>
+<div class="flex flex-col items-center justify-center w-16 h-20 bg-surface-container-lowest/10 rounded-xl backdrop-blur-md">
+<span class="font-headline-lg text-headline-lg font-bold text-surface" id="timer-minutes">42</span>
+<span class="text-label-sm font-label-sm text-primary-fixed-dim uppercase">Min</span>
+</div>
+<span class="font-headline-lg text-headline-lg text-secondary-fixed font-bold">:</span>
+<div class="flex flex-col items-center justify-center w-16 h-20 bg-surface-container-lowest/10 rounded-xl backdrop-blur-md">
+<span class="font-headline-lg text-headline-lg font-bold text-secondary-fixed" id="timer-seconds">18</span>
+<span class="text-label-sm font-label-sm text-primary-fixed-dim uppercase">Seg</span>
+</div>
+</div>
+<!-- Cupón copiable -->
+<div class="flex flex-col gap-2 w-full sm:w-auto">
+<button class="px-6 py-4 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center justify-center gap-2 shadow-lg group cursor-pointer" id="copy-coupon-btn">
+<span class="material-symbols-outlined text-body-lg">content_copy</span>
+<span id="coupon-btn-text">Reclamar Cupón: AURA25</span>
+</button>
+<span class="text-[11px] text-center text-primary-fixed-dim">Haz clic para copiar código al portapapeles</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sección de Productos Más Deseados (Featured Products - 4 Columnas) -->
+<section class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop mb-24 w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<div class="inline-flex items-center gap-2 text-label-sm font-label-sm uppercase tracking-widest text-secondary font-semibold">
+<span class="material-symbols-outlined text-label-md">auto_awesome</span>
+<span>Curaduría de Alta Demanda</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">Los Más Deseados</h2>
+</div>
+<div class="flex items-center gap-3">
+<a class="px-5 py-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" data-path="shop" href="/shop">
+          Ver los 36 destacados
+        </a>
+</div>
+</div>
+<!-- Product Grid 4 Columns -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Product Card 1 -->
+<div class="group relative bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<!-- Visual Container -->
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-low mb-4">
+<!-- Badges -->
+<div class="absolute top-3 left-3 z-10 flex flex-col gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold shadow-sm">
+              Oferta -25%
+            </span>
+</div>
+<!-- Wishlist Toggle Button -->
+<button class="wishlist-btn absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-surface/90 backdrop-blur-md text-on-surface hover:text-secondary flex items-center justify-center transition-transform duration-200 active:scale-90 shadow-sm" onclick="toggleWishlist(this, 'Collar Constelación Solis')" title="Guardar en favoritos" type="button">
+<span class="material-symbols-outlined text-body-md">favorite_border</span>
+</button>
+<!-- Double Image Preview on Hover -->
+<a class="block w-full h-full" data-path="producto" href="/producto">
+<img alt="Collar Constelación Solis" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0" data-alt="Editorial portrait of a woman wearing an intricate 18k yellow gold celestial star pendant with a brilliant center diamond, studio backdrop, clean high fashion lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt1uvjUY-hJy9wDAEsS6EqcqZbNHSrjEqfqTt4a3bEmh3zaGtYhfNE6zrEWqz80uOatUVppxdWGQYooVpHho9BiNGUzh7Mmrj0A_By4MeTa6-eW3p-T36EwrRKogSXZDFXEB6eWZ_lDA5X1pOYBZPrOKuN0ViAv4kJr7t6oORAasVVHSNUDTV0CkD0hbitUfgq_pHcPMa3i5_tTSCgyXRgqy9WLEmgnLDpPdqvh5zHW44mOEseo8M6wg"/>
+<img alt="Collar Constelación Solis Detalle" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100" data-alt="Detailed macro product view of the gold constellation necklace resting on pure white alabaster marble showing the clasp and diamond facet brilliance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0dQP_vb7k0yOwM_FrbA9LsUt7M1NWHH-NfmJ5S5-KQ-5NC3dhbbG0JcZvipJL0lNrA6vwRAFyV_lQJCk0p2AJMP4wtMC4m0jCZviG_D68R5xU0WzfWbvrc2b1izOgLGND9PMorSZ4w2ta9YcmKDneepR28JYDetjntYK0hxxh39Hm0GSrYl3zfNffH_NVj_ia06OYgd9ygXDqNV-ZAUSLx18IMr9e5EQwxhK-YsNNBcY-IfvFMtggOA"/>
+</a>
+<!-- Quick Add Slide-up Action -->
+<div class="absolute inset-x-3 bottom-3 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-10">
+<button class="w-full py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container shadow-lg flex items-center justify-center gap-2" onclick="addToCartInteractive('Collar Constelación Solis', 'Q. 2,450.00')" type="button">
+<span class="material-symbols-outlined text-body-md">shopping_bag</span>
+<span>Añadir al Carrito</span>
+</button>
+</div>
+</div>
+<!-- Meta info -->
+<div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-outline mb-1">
+<span>Joyería Fina</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold text-on-surface">4.9</span>
+<span class="text-outline">(38)</span>
+</div>
+</div>
+<a class="font-title-lg text-title-lg text-on-surface font-semibold hover:text-secondary transition-colors line-clamp-1" data-path="producto" href="/producto">
+            Collar Constelación Solis
+          </a>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+            Oro Vermeil 18K &amp; Diamante Solitario
+          </p>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-price-md text-price-md text-on-surface font-bold">Q. 2,450.00</span>
+<span class="font-body-sm text-body-sm text-outline line-through">Q. 3,250.00</span>
+</div>
+<div class="text-[12px] text-on-tertiary-container font-medium mt-1">12 cuotas de Q. 204.16 sin interés</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group relative bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-low mb-4">
+<div class="absolute top-3 left-3 z-10 flex flex-col gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold shadow-sm">
+              Nuevo
+            </span>
+</div>
+<button class="wishlist-btn absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-surface/90 backdrop-blur-md text-on-surface hover:text-secondary flex items-center justify-center transition-transform duration-200 active:scale-90 shadow-sm" onclick="toggleWishlist(this, 'Reloj Cronógrafo Imperial Gold')" title="Guardar en favoritos" type="button">
+<span class="material-symbols-outlined text-body-md">favorite_border</span>
+</button>
+<a class="block w-full h-full" data-path="producto" href="/producto">
+<img alt="Reloj Cronógrafo Imperial Gold" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0" data-alt="Editorial close up of a luxury stainless steel gold wristwatch on the wrist of an elegant business person wearing navy Italian wool tailoring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFZ6EE6B0-BmPxxXX4n-zOtuFwMkYxe0WC9MV2T7ia8trATjd5cGU9mrdTIJtpY3vtd-SGdLc0la6eb8uGvtJuv__wakCrLWebAKFY1L-nvWiMGKBLDPNXKKbsstSlM3iQ8rekDBFLFTkWLORuMdL1VSjLzkbpm3M5V1CFYfnmUdPB-6PfKilcVFw236KBPw-dKkDH0dn2UH3B_iqHocAQQv-MuQcfmKtzy9crJr2vcPaEMzr682Qm9g"/>
+<img alt="Reloj Cronógrafo Imperial Gold Reverso" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100" data-alt="Flat lay macro of the Swiss luxury watch showing open skeleton caseback mechanism with gold rotor and rubies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgLZ22GGQ8Ggp8yNkR9SqS7lJoMZKa6FFrw_1TX3dU3WrTBt3wCFAk4FGy4U9LikNs8F6LdTANF4w88ZQHWHlqTeHk040Kko8jP2bPI5BLtgOqzfx_vWwBLUYuPP5VO-tfqMig6yXlmw0hhVmigBTznshPVOhQ6OlaGTBekpwE5qjRjpOiHSnDAk0z514luWky6DnnUmRPptMcf4UhkKamMcj574js5lPsd40G6PvV5PgrPEIETbiIZA"/>
+</a>
+<div class="absolute inset-x-3 bottom-3 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-10">
+<button class="w-full py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container shadow-lg flex items-center justify-center gap-2" onclick="addToCartInteractive('Reloj Cronógrafo Imperial Gold', 'Q. 5,800.00')" type="button">
+<span class="material-symbols-outlined text-body-md">shopping_bag</span>
+<span>Añadir al Carrito</span>
+</button>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-outline mb-1">
+<span>Relojería Suiza</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold text-on-surface">5.0</span>
+<span class="text-outline">(64)</span>
+</div>
+</div>
+<a class="font-title-lg text-title-lg text-on-surface font-semibold hover:text-secondary transition-colors line-clamp-1" data-path="producto" href="/producto">
+            Reloj Imperial Gold Chrono
+          </a>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+            Calibre Suizo Automático 41mm
+          </p>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-price-md text-price-md text-on-surface font-bold">Q. 5,800.00</span>
+</div>
+<div class="text-[12px] text-on-tertiary-container font-medium mt-1">18 cuotas de Q. 322.22 sin interés</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group relative bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-low mb-4">
+<div class="absolute top-3 left-3 z-10 flex flex-col gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold shadow-sm">
+              Oferta -20%
+            </span>
+</div>
+<button class="wishlist-btn absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-surface/90 backdrop-blur-md text-on-surface hover:text-secondary flex items-center justify-center transition-transform duration-200 active:scale-90 shadow-sm" onclick="toggleWishlist(this, 'Bolso Tote Siena en Piel Grano')" title="Guardar en favoritos" type="button">
+<span class="material-symbols-outlined text-body-md">favorite_border</span>
+</button>
+<a class="block w-full h-full" data-path="producto" href="/producto">
+<img alt="Bolso Tote Siena en Piel Grano" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0" data-alt="Editorial studio photo of a structured calfskin leather tote bag in warm taupe beige color, minimal shadows, luxurious fashion catalog style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwM3qvl2LqzuEp4r9nbW31FvDrwc5Kv5Qfn4eN1jeG_uSG2ccnlIzpLUslhnI0lK605v6uAn9BQIrYD6QPfwL7jeRbgRGD08tf0HUDPVTsnomXTnXAhwQH-t6-hav958GVykV25SM8criCEdqe4pmf-AVo-LUGV4YIg6zAAjgNLL7Sb92eo-4Q5m9-xxSXA2GuMHXS6z6OnA7gNgPEQkcXCgEKIK1mjuJrq-QT7Oc4sk72A3BBAKYbpw"/>
+<img alt="Bolso Siena Detalle Costuras" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100" data-alt="Close up image of the gold plated brass locks and handstitched seams on the Italian leather handbag." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGP_LASMTu-b-6Cme-9SXosEhKM-o-fxJ0zDI0gVZlJF19FCmxyKbeqyK-VK4MA4BFRmbv2uCLWUX-kymju-giwGuLLVPM_mbW0KfFTJeDZrFgNQrodMHxpCdJN3WaEiRrd-2EhKXXZ_Xx6ZuHfyoQn9MF09OQoLwSc1PSMB0DhxqU6u_46mWF0Z3tZqHyIoqqnSwf1rGu2dRNzQvz_nJXyURs6de5T7CbJ97dgmQlAlHEu4v2pyTfBg"/>
+</a>
+<div class="absolute inset-x-3 bottom-3 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-10">
+<button class="w-full py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container shadow-lg flex items-center justify-center gap-2" onclick="addToCartInteractive('Bolso Tote Siena en Piel Grano', 'Q. 3,190.00')" type="button">
+<span class="material-symbols-outlined text-body-md">shopping_bag</span>
+<span>Añadir al Carrito</span>
+</button>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-outline mb-1">
+<span>Piel Italiana</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold text-on-surface">4.8</span>
+<span class="text-outline">(22)</span>
+</div>
+</div>
+<a class="font-title-lg text-title-lg text-on-surface font-semibold hover:text-secondary transition-colors line-clamp-1" data-path="producto" href="/producto">
+            Bolso Tote Siena Florencia
+          </a>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+            Piel flor curtida con ceras naturales
+          </p>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-price-md text-price-md text-on-surface font-bold">Q. 3,190.00</span>
+<span class="font-body-sm text-body-sm text-outline line-through">Q. 3,990.00</span>
+</div>
+<div class="text-[12px] text-on-tertiary-container font-medium mt-1">12 cuotas de Q. 265.83 sin interés</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group relative bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-low mb-4">
+<div class="absolute top-3 left-3 z-10 flex flex-col gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold shadow-sm">
+              Edición VIP
+            </span>
+</div>
+<button class="wishlist-btn absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-surface/90 backdrop-blur-md text-on-surface hover:text-secondary flex items-center justify-center transition-transform duration-200 active:scale-90 shadow-sm" onclick="toggleWishlist(this, 'Perfume Extracto Bois Éthéré 100ml')" title="Guardar en favoritos" type="button">
+<span class="material-symbols-outlined text-body-md">favorite_border</span>
+</button>
+<a class="block w-full h-full" data-path="producto" href="/producto">
+<img alt="Perfume Bois Éthéré" class="w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0" data-alt="Artistic perfume photography of a heavy luxury crystal bottle with smoky dark liquid and gold calligraphy, surrounded by natural sandalwood sticks and vanilla beans." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBEflq96w_mHvCdxtkxfJEq85eP43vcNwQp9JMRc6oN_dJuwFwHuj-hGyCpXhKm6vxau_TIQMNSxab4Yy2HLph2UmVPsFDet1AsR9N3TjwQ3i9TVSq3Tnmrb5uQ20pkc541RfJJXlsZ8_QgBk4xSucuUQ8t-N1Uyl1tt_3nnatQvOdu3Xuj_4i_LRg_b4gTwMEhewnkcLHbzExlobgdXJ0R1u06c-8bu4KAPu9lyPG5PqpVEiVNSusqA"/>
+<img alt="Perfume Bois Éthéré Vapor" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100" data-alt="Editorial shot of the fragrance bottle open with mist vapor caught in dramatic sunlight, high aesthetic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlEM5aJixrA4r6WIYOKsGIVr1pJA8XvE9dlyE_JuSnHIYjsfx_KuOgzC5vVl9t6pJzg4mAWK6jYz5hlNrFKyvk6lW8TtjExl_azsWivi5RTnirh17Tvtx4ir_eEniSrn6dYLN5vSXVbBd1atz_HK68rZM7KV5bFInowVjPJQ0BcxdSYMii6CezYHablRi9kDTLE1ir4Ic5F5IT1dQ2LaIo23wkgDJ07GTrSRVFTs1APzevHvl4UfTmug"/>
+</a>
+<div class="absolute inset-x-3 bottom-3 translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 z-10">
+<button class="w-full py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container shadow-lg flex items-center justify-center gap-2" onclick="addToCartInteractive('Perfume Extracto Bois Éthéré 100ml', 'Q. 1,650.00')" type="button">
+<span class="material-symbols-outlined text-body-md">shopping_bag</span>
+<span>Añadir al Carrito</span>
+</button>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-outline mb-1">
+<span>Perfumería Niche</span>
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold text-on-surface">4.9</span>
+<span class="text-outline">(51)</span>
+</div>
+</div>
+<a class="font-title-lg text-title-lg text-on-surface font-semibold hover:text-secondary transition-colors line-clamp-1" data-path="producto" href="/producto">
+            Bois Éthéré Extrait de Parfum
+          </a>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1 mt-0.5">
+            Sándalo, Oud blanco &amp; Pimienta rosa
+          </p>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-price-md text-price-md text-on-surface font-bold">Q. 1,650.00</span>
+</div>
+<div class="text-[12px] text-on-tertiary-container font-medium mt-1">6 cuotas de Q. 275.00 sin interés</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sección: 'Recomendados para ti' con Algoritmo Visual y Tabs Dinámicos -->
+<section class="w-full bg-surface-container-low py-20">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-6">
+<div>
+<div class="inline-flex items-center gap-2 text-label-sm font-label-sm uppercase tracking-wider text-secondary font-semibold">
+<span class="material-symbols-outlined text-label-md">tune</span>
+<span>Algoritmo de Preferencias</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">Recomendados Para Ti</h2>
+</div>
+<!-- Filter Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 sm:pb-0" id="recom-tabs">
+<button class="px-5 py-2.5 rounded-full text-label-md font-label-md font-semibold bg-primary text-on-primary shadow-sm transition-all tab-btn" onclick="filterRecommendations('populares', this)">
+            Populares
+          </button>
+<button class="px-5 py-2.5 rounded-full text-label-md font-label-md font-medium bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm transition-all tab-btn" onclick="filterRecommendations('el', this)">
+            Para Él
+          </button>
+<button class="px-5 py-2.5 rounded-full text-label-md font-label-md font-medium bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm transition-all tab-btn" onclick="filterRecommendations('ella', this)">
+            Para Ella
+          </button>
+<button class="px-5 py-2.5 rounded-full text-label-md font-label-md font-medium bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm transition-all tab-btn" onclick="filterRecommendations('limitada', this)">
+            Edición Limitada
+          </button>
+</div>
+</div>
+<!-- Recommendations Container -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="recom-grid">
+<!-- Recom 1 -->
+<div class="recom-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all p-5 flex flex-col justify-between" data-category="populares ella">
+<div class="flex gap-4">
+<div class="w-28 h-28 rounded-xl bg-surface-container-low overflow-hidden shrink-0">
+<img alt="Aretes Perla Barroca" class="w-full h-full object-cover" data-alt="Minimalist luxury pearl earrings with geometric 18k yellow gold hooks on a smooth linen surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2kwvG9ImHc1KUTOvMDt8c7DdWwR2ri75nOkTR2ttl9dgZY0TurSreJLNk61-prGfr8AZrAbCy8HruYwsxDHo2Cn1310WRbs_ZlYUz_kJWeDbknrrl0vIiiNwFn_dQUf_1FNe54HJ-V3VhMh3H761VIVMkALhhF-p9-HmOe1h10y2JWwHaBVr7w7H6wsaHGHgKIsM_iepDyBdExZXfbmri8uI7cXwzjs1uuq3dtiNZ8UBmr9ocjaI_KA"/>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<span class="text-label-sm font-label-sm text-secondary font-medium uppercase">Joyería Orgánica</span>
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold mt-0.5">Aretes Perla Akoya Sol</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-1">Perlas cultivadas con acabado oro mate.</p>
+</div>
+<div class="font-price-md text-price-md text-on-surface font-bold">Q. 890.00</div>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-surface-container flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-on-tertiary-container flex items-center gap-1 font-medium">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+              En stock Ciudad de Guatemala
+            </span>
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-1.5" onclick="addToCartInteractive('Aretes Perla Akoya Sol', 'Q. 890.00')" type="button">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+<!-- Recom 2 -->
+<div class="recom-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all p-5 flex flex-col justify-between" data-category="populares el">
+<div class="flex gap-4">
+<div class="w-28 h-28 rounded-xl bg-surface-container-low overflow-hidden shrink-0">
+<img alt="Tarjetero Intrecciato Cuero" class="w-full h-full object-cover" data-alt="Handmade luxury woven leather cardholder wallet in deep emerald green tone with polished gold foil monogram." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCASaxzpWMiwPOEek3iDSEfpDwC3hkVAvz6_hUdEZ7kjY-K7JtybThzj2ciW3inmzv2qNET4OQsyYruy8I6lgwqpL3gRrsdNDXBTMXRb5O9lLgltoi08tQh44_uR15LKNBagFIV6_9MKuJ90wIc2RpQWxTAh0PVnpRkvF11BO4cF4Zb2a4DW-7ewwL98OBxo8UKybRZkqeCXGoI3YcPbvCixGsNvmg112pSPlkXvzC6u0-Bm-bJrxdgvg"/>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<span class="text-label-sm font-label-sm text-secondary font-medium uppercase">Marroquinería</span>
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold mt-0.5">Billetera Slim Intrecciato</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-1">Piel de becerro curtida al vegetal.</p>
+</div>
+<div class="font-price-md text-price-md text-on-surface font-bold">Q. 650.00</div>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-surface-container flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-on-tertiary-container flex items-center gap-1 font-medium">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+              Disponible en 2 tonos
+            </span>
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-1.5" onclick="addToCartInteractive('Billetera Slim Intrecciato', 'Q. 650.00')" type="button">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+<!-- Recom 3 -->
+<div class="recom-item bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all p-5 flex flex-col justify-between" data-category="populares limitada">
+<div class="flex gap-4">
+<div class="w-28 h-28 rounded-xl bg-surface-container-low overflow-hidden shrink-0">
+<img alt="Lentes Titanio Aviador" class="w-full h-full object-cover" data-alt="Luxury titanium frame minimalist aviator sunglasses reflecting soft golden hour sunlight, sharp luxury craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbp9BkyMa-042kNtZg3Rl3N5CGnsacG1SnE__mN7uT_xQmw4zBNKG4tE9RW5EGZviQGwWFeCmkSMCc6VRHjf4myT054q-xQmw7M-boziFMp4hOKfVqEKgDDgqVLu62yufu-kMRYxLrsT9IslOzGB6D_WtYfnmWTwWqyl1TwAj1Pdj4aSDrh4-eV01vy9q8KLrEzswgOqtvytwrcK9LD4xOWZnlCzJ1ltf9TKwqxw2FplBntuCXxKUqnA"/>
+</div>
+<div class="flex flex-col justify-between flex-1">
+<div>
+<span class="text-label-sm font-label-sm text-secondary font-medium uppercase">Gafas de Diseño</span>
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold mt-0.5">Aviador Titanio Ultralight</h4>
+<p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-1">Protección UV400 y polarizado japonés.</p>
+</div>
+<div class="font-price-md text-price-md text-on-surface font-bold">Q. 1,480.00</div>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-surface-container flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-secondary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">workspace_premium</span>
+              Solo 4 unidades restantes
+            </span>
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-1.5" onclick="addToCartInteractive('Aviador Titanio Ultralight', 'Q. 1,480.00')" type="button">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bloque de Confianza y Reseñas de Clientes Verificados -->
+<section class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop py-24 w-full">
+<div class="flex flex-col items-center text-center mb-16">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold mb-3">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span>+1,400 Clientes Satisfechos en Guatemala &amp; Centroamérica</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-semibold">Experiencias AuraLuxe</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-2">
+        La confianza de quienes ya visten y coleccionan nuestras piezas más codiciadas.
+      </p>
+</div>
+<!-- Carrusel Interactivo de Testimonios -->
+<div class="relative">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="reviews-track">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div>
+<div class="flex items-center gap-1 text-secondary mb-4">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              "El empaque es verdaderamente digno de una boutique en París o Milán. El collar Solis superó todas mis expectativas: el brillo del diamante y el certificado de garantía son 100% legítimos. El envío a Zona 14 llegó el mismo día."
+            </p>
+</div>
+<div class="mt-8 flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center font-title-lg text-title-lg text-primary font-bold">
+              SC
+            </div>
+<div>
+<div class="font-title-lg text-title-lg text-on-surface font-medium">Sofía Castillo</div>
+<div class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span>Comprador Verificado</span>
+<span class="material-symbols-outlined text-xs text-on-tertiary-container">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div>
+<div class="flex items-center gap-1 text-secondary mb-4">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              "Adquirí el Cronógrafo Imperial en 12 VisaCuotas y el proceso en checkout fue sumamente ágil y transparente. El reloj se siente sustancioso, el calibre responde con precisión impecable. Un servicio al cliente ejemplar."
+            </p>
+</div>
+<div class="mt-8 flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center font-title-lg text-title-lg text-primary font-bold">
+              RA
+            </div>
+<div>
+<div class="font-title-lg text-title-lg text-on-surface font-medium">Rodrigo Asturias</div>
+<div class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span>Comprador Verificado</span>
+<span class="material-symbols-outlined text-xs text-on-tertiary-container">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm flex flex-col justify-between transition-all hover:shadow-md">
+<div>
+<div class="flex items-center gap-1 text-secondary mb-4">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              "Buscaba un bolso que no tuviera logomanía ruidosa sino calidad silenciosa. El bolso Siena en piel genuina es espectacular. La textura, el forro aterciopelado y las costuras manuales justifican cada centavo."
+            </p>
+</div>
+<div class="mt-8 flex items-center gap-3">
+<div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center font-title-lg text-title-lg text-primary font-bold">
+              VM
+            </div>
+<div>
+<div class="font-title-lg text-title-lg text-on-surface font-medium">Valeria Morales</div>
+<div class="font-label-sm text-label-sm text-outline flex items-center gap-1">
+<span>Comprador Verificado</span>
+<span class="material-symbols-outlined text-xs text-on-tertiary-container">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sección Newsletter VIP con Descuento Inmediato del 15% -->
+<section class="w-full bg-primary-container text-surface py-20 relative overflow-hidden">
+<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-4xl mx-auto px-margin-mobile lg:px-margin-desktop relative z-10 text-center flex flex-col items-center">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed font-semibold">Membresía Exclusiva</span>
+<h2 class="font-headline-xl text-headline-xl font-semibold text-surface mt-2">Únete al Círculo Aura Privé</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim max-w-xl mt-3">
+        Accede a catálogos secretos, lanzamientos con prelación de 48 horas y un bono de bienvenida del 15% aplicable de inmediato.
+      </p>
+<!-- Formulario Funcional con Estado de Éxito -->
+<form class="mt-8 w-full max-w-lg flex flex-col sm:flex-row gap-3" id="vip-newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+<input class="flex-1 px-5 py-4 rounded-xl bg-surface-container-lowest/10 backdrop-blur-md text-surface placeholder:text-primary-fixed-dim focus:outline-none focus:bg-surface-container-lowest/20 focus:ring-2 focus:ring-secondary text-body-md font-body-md transition-all" id="vip-email-input" placeholder="Escribe tu correo personal..." required="" type="email"/>
+<button class="px-8 py-4 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center justify-center gap-2 shadow-lg shrink-0 cursor-pointer" type="submit">
+<span>Obtener 15% OFF</span>
+<span class="material-symbols-outlined text-body-md">north_east</span>
+</button>
+</form>
+<!-- Panel de Éxito Revelado Dinámicamente -->
+<div class="hidden mt-6 p-6 rounded-2xl bg-surface-container-lowest/15 backdrop-blur-md max-w-md w-full text-center flex flex-col items-center gap-3 animate-fade-in" id="newsletter-success-box">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">check</span>
+</div>
+<div>
+<h4 class="font-title-lg text-title-lg text-surface font-semibold">¡Bienvenido a Aura Privé!</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mt-1">Usa tu código exclusivo en tu orden de hoy:</p>
+<div class="mt-3 inline-block px-4 py-2 rounded-lg bg-surface text-on-surface font-price-md text-price-md font-bold tracking-widest uppercase select-all shadow-md">
+            PRIVE15-WELCOME
+          </div>
+</div>
+</div>
+<div class="mt-8 flex items-center gap-6 text-label-sm font-label-sm text-primary-fixed-dim">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">lock</span> 100% Libre de Spam</span>
+<span>•</span>
+<span>Cancela cuando quieras</span>
+<span>•</span>
+<span>Privacidad Protegida</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Inline Interactive Script for Instant Feedback -->
+<script>
+  // Countdown Timer Simulation
+  (function initTimer() {
+    let hours = 14;
+    let minutes = 42;
+    let seconds = 18;
+
+    const elH = document.getElementById('timer-hours');
+    const elM = document.getElementById('timer-minutes');
+    const elS = document.getElementById('timer-seconds');
+
+    setInterval(() => {
+      if (seconds > 0) {
+        seconds--;
+      } else {
+        seconds = 59;
+        if (minutes > 0) {
+          minutes--;
+        } else {
+          minutes = 59;
+          if (hours > 0) hours--;
+        }
+      }
+
+      if (elH) elH.textContent = String(hours).padStart(2, '0');
+      if (elM) elM.textContent = String(minutes).padStart(2, '0');
+      if (elS) elS.textContent = String(seconds).padStart(2, '0');
+    }, 1000);
+  })();
+
+  // Toast System
+  function showToast(message, icon = 'shopping_bag') {
+    const container = document.getElementById('toast-container');
+    if (!container) return;
+
+    const toast = document.createElement('div');
+    toast.className = 'pointer-events-auto flex items-center gap-3 px-5 py-4 rounded-xl bg-on-surface text-surface shadow-2xl text-body-sm font-body-sm transform translate-y-4 opacity-0 transition-all duration-300';
+    toast.innerHTML = `
+      <span class="material-symbols-outlined text-secondary-fixed text-headline-sm">${icon}</span>
+      <div class="flex flex-col">
+        <span class="font-semibold text-surface">${message}</span>
+        <span class="text-xs text-primary-fixed-dim">Actualizado en tu sesión</span>
+      </div>
+    `;
+
+    container.appendChild(toast);
+
+    setTimeout(() => {
+      toast.classList.remove('translate-y-4', 'opacity-0');
+    }, 10);
+
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'translate-y-2');
+      setTimeout(() => toast.remove(), 300);
+    }, 3500);
+  }
+
+  // Add to Cart Interactive Function
+  function addToCartInteractive(productName, price) {
+    // Update header cart badge
+    const badge = document.getElementById('cart-badge');
+    const drawerCount = document.getElementById('drawer-cart-count');
+    if (badge) {
+      const current = parseInt(badge.textContent || '0', 10);
+      badge.textContent = current + 1;
+      badge.classList.add('scale-125');
+      setTimeout(() => badge.classList.remove('scale-125'), 200);
+    }
+    if (drawerCount) {
+      const cur = parseInt(drawerCount.textContent || '0', 10);
+      drawerCount.textContent = cur + 1;
+    }
+
+    showToast(`Añadido: ${productName} (${price})`, 'check_circle');
+  }
+
+  // Wishlist Interactive Toggle
+  function toggleWishlist(button, productName) {
+    const icon = button.querySelector('.material-symbols-outlined');
+    const wishlistBadge = document.getElementById('wishlist-badge');
+    let count = parseInt(wishlistBadge ? wishlistBadge.textContent || '0' : '0', 10);
+
+    if (icon.textContent.trim() === 'favorite_border') {
+      icon.textContent = 'favorite';
+      icon.classList.add('text-error');
+      button.classList.add('scale-110');
+      setTimeout(() => button.classList.remove('scale-110'), 200);
+      if (wishlistBadge) wishlistBadge.textContent = count + 1;
+      showToast(`Guardado en tus favoritos: ${productName}`, 'favorite');
+    } else {
+      icon.textContent = 'favorite_border';
+      icon.classList.remove('text-error');
+      if (wishlistBadge && count > 0) wishlistBadge.textContent = count - 1;
+      showToast(`Eliminado de favoritos: ${productName}`, 'favorite_border');
+    }
+  }
+
+  // Copy Coupon Code
+  const copyBtn = document.getElementById('copy-coupon-btn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      const couponCode = 'AURA25';
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(couponCode);
+      }
+      const label = document.getElementById('coupon-btn-text');
+      if (label) {
+        const originalText = label.textContent;
+        label.textContent = '¡CUPÓN COPIADO: AURA25!';
+        showToast('Cupón AURA25 copiado al portapapeles. Aplícalo en el checkout.', 'content_copy');
+        setTimeout(() => {
+          label.textContent = originalText;
+        }, 3000);
+      }
+    });
+  }
+
+  // Recommendations Filter Tabs
+  function filterRecommendations(category, activeBtn) {
+    const tabs = document.querySelectorAll('#recom-tabs .tab-btn');
+    tabs.forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      btn.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+    });
+
+    activeBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+    activeBtn.classList.add('bg-primary', 'text-on-primary');
+
+    const items = document.querySelectorAll('#recom-grid .recom-item');
+    items.forEach(item => {
+      const cats = item.getAttribute('data-category') || '';
+      if (category === 'populares' || cats.includes(category)) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  // VIP Newsletter Handling
+  function handleNewsletterSubmit(e) {
+    e.preventDefault();
+    const input = document.getElementById('vip-email-input');
+    const successBox = document.getElementById('newsletter-success-box');
+    const form = document.getElementById('vip-newsletter-form');
+
+    if (input && input.value) {
+      form.classList.add('hidden');
+      if (successBox) successBox.classList.remove('hidden');
+      showToast('¡Bienvenido a Aura Privé! Código de 15% disponible.', 'mail');
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-xl pb-space-lg"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase font-semibold">AuraLuxe</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Lujo accesible diseñado para trascender. Artesanía contemporánea, piedras de origen ético y envíos seguros a toda Guatemala e internacionalmente.</p><div class="flex items-center gap-space-md text-on-surface-variant"><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">verified_user</span><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">support_agent</span><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">credit_card</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Explorar Shop</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Nueva Colección</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Alta Joyería Fina</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Relojería Masculina &amp; Femenina</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Ofertas de Temporada</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Atención al Cliente</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="mi-cuenta" href="/mi-cuenta">Rastrear Mi Orden</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Tiempos de Envío en GT</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Garantía y Devoluciones</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Cuotas y Formas de Pago</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Aura Privé</span><p class="font-body-sm text-body-sm text-on-surface-variant">Suscríbete para recibir un 10% de descuento en tu primera compra y acceso exclusivo a prelanzamientos.</p><form class="flex flex-col gap-space-xs mt-space-xs" onsubmit="event.preventDefault(); alert('¡Gracias por unirte a Aura Privé!');"><input class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50 placeholder:text-outline" placeholder="Ingresa tu correo electrónico" required="" type="email"/><button class="px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" type="submit">Suscribirme</button></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="font-body-sm text-body-sm text-outline">© 2025 AuraLuxe Guatemala S.A. Todos los derechos reservados. Precios en Quetzales (Q) y Dólares Americanos (USD).</div><div class="flex items-center gap-space-md text-label-sm font-label-sm text-outline"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-body-sm">lock</span> Checkout Seguro SSL</span><span>|</span><span>Visa Cuotas</span><span>|</span><span>Mastercard</span><span>|</span><span>Transferencia Bancaria GT</span></div></div></div></footer><script>const cartBtn = document.getElementById('cart-open-btn'); const cartDrawer = document.getElementById('cart-drawer'); const cartOverlay = document.getElementById('cart-drawer-overlay'); const cartClose = document.getElementById('cart-close-btn'); function openCart() { cartOverlay.classList.remove('hidden'); setTimeout(() => { cartOverlay.classList.remove('opacity-0'); cartDrawer.classList.remove('translate-x-full'); }, 10); } function closeCart() { cartDrawer.classList.add('translate-x-full'); cartOverlay.classList.add('opacity-0'); setTimeout(() => { cartOverlay.classList.add('hidden'); }, 300); } if (cartBtn) cartBtn.addEventListener('click', openCart); if (cartClose) cartClose.addEventListener('click', closeCart); if (cartOverlay) cartOverlay.addEventListener('click', closeCart); const searchInput = document.getElementById('global-search-input'); const searchDropdown = document.getElementById('search-dropdown'); if (searchInput && searchDropdown) { searchInput.addEventListener('focus', () => searchDropdown.classList.remove('hidden')); searchInput.addEventListener('blur', () => setTimeout(() => searchDropdown.classList.add('hidden'), 200)); }</script></body></html>

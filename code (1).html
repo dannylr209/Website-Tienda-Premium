@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>AuraLuxe — Accessible Luxury</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#0b1c30", "on-primary-container": "#7c839b", "on-secondary-fixed-variant": "#6e3900", "outline": "#76777d", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005236", "surface-variant": "#d3e4fe", "secondary": "#904d00", "surface-container-high": "#dce9ff", "surface-dim": "#cbdbf5", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002113", "surface-container-low": "#eff4ff", "on-surface": "#0b1c30", "error": "#ba1a1a", "surface": "#f8f9ff", "primary-container": "#131b2e", "on-tertiary-container": "#009668", "surface-container-lowest": "#ffffff", "surface-container": "#e5eeff", "on-surface-variant": "#45464d", "secondary-fixed": "#ffdcc3", "secondary-fixed-dim": "#ffb77d", "on-primary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-tertiary": "#ffffff", "primary-fixed": "#dae2fd", "on-secondary-fixed": "#2f1500", "inverse-surface": "#213145", "secondary-container": "#fe932c", "surface-tint": "#565e74", "on-error": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-secondary-container": "#663500", "primary": "#000000", "background": "#f8f9ff", "tertiary": "#000000", "tertiary-container": "#002113", "tertiary-fixed": "#6ffbbe", "inverse-primary": "#bec6e0", "tertiary-fixed-dim": "#4edea3", "on-primary-fixed": "#131b2e", "primary-fixed-dim": "#bec6e0", "on-primary-fixed-variant": "#3f465c", "surface-bright": "#f8f9ff", "outline-variant": "#c6c6cd" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-desktop": "3rem", "margin-mobile": "1rem", "space-xl": "2rem", "margin": "2rem" }, "fontFamily": { "headline-md": ["Outfit"], "headline-lg": ["Outfit"], "display-hero": ["Outfit"], "body-lg": ["Inter"], "label-md": ["Inter"], "display-hero-mobile": ["Outfit"], "price-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-xl": ["Outfit"], "title-lg": ["Outfit"], "label-sm": ["Inter"], "headline-sm": ["Outfit"], "headline-xl-mobile": ["Outfit"], "price-lg": ["Inter"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "price-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "500" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "price-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-surface px-margin-mobile lg:px-margin-desktop py-space-xs text-center"><div class="max-w-7xl mx-auto flex items-center justify-between text-label-sm font-label-sm"><span class="hidden sm:inline-block text-on-primary-container tracking-wide">GUATEMALA &amp; GLOBAL SHIPPING</span><p class="w-full sm:w-auto text-center font-medium tracking-wide text-surface">Envíos gratis en compras &gt; Q.500 | Cuotas sin interés Visa / Mastercard</p><div class="hidden sm:flex items-center gap-space-sm text-on-primary-container"><span class="material-symbols-outlined text-label-sm">verified</span><span>Autenticidad Garantizada</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="inicio" href="/inicio"><img alt="AuraLuxe Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XbYWKTtgfAhpa_stWrBkJNd2KJ_OhkoLxbCx0GmyoKnxqJpoqSpgzNYdiAi479I0Hu4t7aiRsRexiZImhDfvdcFInYVZDG64aTehaHxImc_6_iaM0D2nv3YL6V-j6Q_NFm8ewuUH5EZLjJLO9Cskzvy2PrBG4ftWE68UqGfwyVEogphwfvwh4a_l17w4HzNsUSCu-2gXoC-pEOpQccapJTmhncn5P4dNNT5bJZMcc3oEjbmBOJAtxKPt0"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">AuraLuxe</span></a></div><div class="hidden md:flex flex-1 max-w-md mx-space-lg relative"><div class="w-full flex items-center bg-surface-container-low rounded-lg px-space-md py-space-xs transition-all focus-within:ring-2 focus-within:ring-secondary/40 focus-within:bg-surface-container-lowest"><span class="material-symbols-outlined text-outline text-headline-sm mr-space-xs">search</span><input autocomplete="off" class="w-full bg-transparent text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none" id="global-search-input" placeholder="Buscar joyas, accesorios de lujo, bolsos..." type="search"/></div><div class="hidden absolute left-0 right-0 top-full mt-2 bg-surface-container-lowest rounded-lg shadow-[0_10px_15px_-3px_rgba(15,23,42,0.06),0_20px_25px_-5px_rgba(15,23,42,0.08)] p-space-md z-50" id="search-dropdown"><div class="text-label-sm font-label-sm text-outline mb-space-xs uppercase tracking-wider">Búsquedas populares</div><div class="flex flex-col gap-space-xs"><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Collar Diamante Aura Solitario (Q.1,850)</a><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Reloj Cronógrafo Imperial Gold (USD $420)</a><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Brazalete Velvet Silver 925</a></div></div></div><div class="flex items-center gap-space-md"><div class="relative inline-block text-left"><select class="appearance-none bg-surface-container-low text-on-surface text-label-sm font-label-sm py-1.5 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none hover:bg-surface-container transition-colors" id="currency-selector"><option value="GTQ">GTQ (Q)</option><option value="USD">USD ($)</option></select><span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-outline text-body-sm">expand_more</span></div><a class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="wishlist" href="/wishlist" title="Lista de Deseos"><span class="material-symbols-outlined text-headline-sm">favorite</span><span class="absolute top-1 right-1 bg-secondary text-on-secondary text-[10px] font-bold rounded-full h-4.5 w-4.5 min-w-[18px] flex items-center justify-center px-1" id="wishlist-badge">2</span></a><button class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" id="cart-open-btn" title="Carrito" type="button"><span class="material-symbols-outlined text-headline-sm">shopping_bag</span><span class="absolute top-1 right-1 bg-primary text-on-primary text-[10px] font-bold rounded-full h-4.5 w-4.5 min-w-[18px] flex items-center justify-center px-1" id="cart-badge">3</span></button><a class="flex items-center gap-space-xs p-1 rounded-full hover:ring-2 hover:ring-secondary/40 transition-all" data-path="mi-cuenta" href="/mi-cuenta" title="Mi Perfil"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUS7PY6UFwgghzGuUJm3Qjna2wydJu5dtmWPh-jvkHfklF6UipRg6rePOdzH2zUkXw01IrqX93uRtbPbDvh6NtUPk84oOqTdmX4ZmgI2gSET91psD187WaR4LPh0Nci-bZuBfFKNB_3Vu-60RDCQIVTo0dBPRIWPztA489rbeXF4_bWvQ6n5XhHfxkl3g5KqiFduKsEYFiLX99dfxYGqJZesYW7gobid-D75n2sKXxLK65q4QBV4VsWA"/></a></div></div><div class="bg-surface-container-lowest/80 border-t border-surface-container-low px-margin-mobile lg:px-margin-desktop"><div class="max-w-7xl mx-auto flex items-center justify-between"><nav class="flex items-center gap-space-lg overflow-x-auto py-2.5" data-active-classes="text-on-surface font-title-lg font-semibold"><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="inicio" href="/inicio">Inicio</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="shop" href="/shop">Colecciones</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="shop" href="/shop">Novedades</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="shop" href="/shop">Ofertas</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="faq" href="/faq">Envíos &amp; FAQ</a></nav><div class="hidden lg:flex items-center gap-space-md text-label-sm font-label-sm text-secondary"><span class="material-symbols-outlined text-label-md">local_shipping</span><span>Entrega express en 24h Ciudad de Guatemala</span></div></div></div></header><div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" id="cart-drawer-overlay"></div><aside class="fixed top-0 right-0 h-full w-full sm:w-96 max-w-full bg-surface-container-lowest shadow-[0_25px_50px_-12px_rgba(15,23,42,0.22)] z-50 flex flex-col translate-x-full transition-transform duration-300 ease-out" id="cart-drawer"><div class="p-space-lg flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-on-surface">shopping_bag</span><span class="font-headline-sm text-headline-sm text-on-surface">Tu Carrito (<span id="drawer-cart-count">3</span>)</span></div><button class="p-1 text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" id="cart-close-btn" type="button"><span class="material-symbols-outlined">close</span></button></div><div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-md"><div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg"><div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-outline">save_as</span></div><div class="flex-1 min-w-0"><h4 class="font-title-lg text-title-lg text-on-surface truncate">Collar Constelación Solis</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Oro Vermeil 18K</p><div class="font-price-md text-price-md text-secondary mt-1">Q.1,450.00</div></div></div><div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg"><div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-outline">watch</span></div><div class="flex-1 min-w-0"><h4 class="font-title-lg text-title-lg text-on-surface truncate">Reloj Crono Midnight</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Edición Limitada</p><div class="font-price-md text-price-md text-secondary mt-1">Q.2,890.00</div></div></div></div><div class="p-space-lg bg-surface-container-low flex flex-col gap-space-md"><div class="flex justify-between items-center"><span class="font-body-md text-body-md text-on-surface-variant">Subtotal estimado</span><span class="font-headline-sm text-headline-sm text-on-surface">Q.4,340.00</span></div><div class="flex gap-space-sm"><a class="flex-1 text-center py-3 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" data-path="carrito" href="/carrito">Ver Carrito</a><a class="flex-1 text-center py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" data-path="checkout" href="/checkout">Pagar</a></div></div></aside><main class="w-full pt-36 bg-surface"><div class="flex flex-col w-full pb-space-xl">
+<!-- Dynamic Notification Bar for Dispatched Offers / Free Shipping status -->
+<div class="w-full bg-surface-container-high py-space-sm px-margin-mobile lg:px-margin-desktop">
+<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-xs text-on-surface">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-headline-sm animate-pulse">local_shipping</span>
+<span class="font-body-sm text-body-sm font-medium">¡Calificas para <strong>Envío Express Gratuito</strong> a toda Guatemala!</span>
+</div>
+<div class="flex items-center gap-space-md text-label-sm font-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-label-sm text-secondary">lock</span> Transacción 100% Segura</span>
+<span class="hidden md:inline">|</span>
+<span class="hidden md:inline">Garantía Certificada AuraLuxe 3 Años</span>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto w-full px-margin-mobile lg:px-margin-desktop mt-space-lg">
+<!-- Progress Breadcrumb (3-Steps Flow) -->
+<nav aria-label="Progreso de Checkout" class="w-full mb-space-xl">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md md:p-space-lg">
+<div class="grid grid-cols-3 gap-space-xs md:gap-space-md items-center">
+<!-- Step 1: Carrito (Active) -->
+<div class="flex items-center gap-space-sm relative">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm shrink-0 shadow-md">
+              1
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">Paso 01</span>
+<span class="font-title-lg text-title-lg text-on-surface font-semibold truncate">Mi Bolsa</span>
+</div>
+<div class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 text-surface-container-highest">
+<span class="material-symbols-outlined text-headline-md">arrow_forward_ios</span>
+</div>
+</div>
+<!-- Step 2: Datos y Envío (Pending) -->
+<div class="flex items-center gap-space-sm opacity-60 relative">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-headline-sm text-headline-sm shrink-0">
+              2
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest font-medium">Paso 02</span>
+<span class="font-title-lg text-title-lg text-on-surface font-medium truncate">Envío &amp; Facturación</span>
+</div>
+<div class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 text-surface-container-highest">
+<span class="material-symbols-outlined text-headline-md">arrow_forward_ios</span>
+</div>
+</div>
+<!-- Step 3: Pago y Confirmación (Pending) -->
+<div class="flex items-center gap-space-sm opacity-60">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-headline-sm text-headline-sm shrink-0">
+              3
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest font-medium">Paso 03</span>
+<span class="font-title-lg text-title-lg text-on-surface font-medium truncate">Pago &amp; Orden</span>
+</div>
+</div>
+</div>
+<!-- Progress Track -->
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-space-md overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500 w-1/3"></div>
+</div>
+</div>
+</nav>
+<!-- Main Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: Items & Offer Add-ons (7 cols) -->
+<section class="lg:col-span-7 xl:col-span-8 flex flex-col gap-space-lg">
+<!-- Header & Batch Actions -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Revisión de Artículos</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Tu Bolsa de Compras (<span id="cart-total-count">3</span>)</h1>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-on-surface-variant hover:text-error hover:bg-surface-container transition-colors text-label-md font-label-md" id="btn-clear-cart" type="button">
+<span class="material-symbols-outlined text-label-md">delete_sweep</span>
+<span>Vaciar bolsa</span>
+</button>
+</div>
+<!-- Product Items List -->
+<div class="flex flex-col gap-space-md" id="cart-items-container">
+<!-- ITEM 1: Reloj Cronógrafo -->
+<article class="cart-item-row bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-sm flex flex-col sm:flex-row gap-space-md relative transition-all" data-price="4850" id="item-card-1">
+<!-- Product Image -->
+<div class="w-full sm:w-32 h-36 sm:h-32 rounded-lg bg-surface-container-low shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-300" data-alt="Close up luxury chronograph watch with rose gold bezel and premium textured black leather strap resting on dark textured slate stone with warm cinematic lighting studio product shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3YEc3UKCHR8ehAnuIPCpZiKTk2lz342s00yzDlg75mdG9yiaTlxz4Of9FvIZB8AzwqugL6EDjx88bbcX58iZFSZXGoKjohdhSrzc5mILz2U-wNUka4hbImSEKKWT9sQYns2mqBhY_E4a_Mgd28hChUoGSjg9vMh0SbL_t81vbxXC3yjrAXXYs-JP3YV2SPua-xVIIe3QtYBpKV_OrpqytlL3ScFb2rCx-JAnkLZvkBSn4VdJeP9JFFw"/>
+<span class="absolute top-2 left-2 bg-primary text-on-primary text-[10px] font-label-sm px-2 py-0.5 rounded-full font-semibold">Exclusivo</span>
+</div>
+<!-- Product Details -->
+<div class="flex-1 flex flex-col justify-between">
+<div class="flex justify-between items-start gap-space-sm">
+<div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Alta Relojería</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Reloj Cronógrafo Automático Imperial</h3>
+<div class="flex flex-wrap items-center gap-2 mt-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="bg-surface-container px-2 py-0.5 rounded">Caja: Oro Rosa 18K</span>
+<span class="bg-surface-container px-2 py-0.5 rounded">Correa: Piel Negra</span>
+<span class="text-secondary font-medium">Ref: AUR-7821</span>
+</div>
+</div>
+<button class="text-outline hover:text-error transition-colors p-1.5 rounded-lg hover:bg-surface-container" data-remove="1" title="Eliminar artículo" type="button">
+<span class="material-symbols-outlined text-headline-sm">delete_outline</span>
+</button>
+</div>
+<!-- Price & Quantity Controls -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low/50 rounded-lg p-space-sm">
+<!-- Stepper -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button aria-label="Disminuir cantidad" class="w-8 h-8 rounded flex items-center justify-center text-on-surface hover:bg-surface-container text-body-md transition-colors font-bold" data-action="decrement" data-target="1" type="button">
+<span class="material-symbols-outlined text-label-md">remove</span>
+</button>
+<span class="w-8 text-center font-headline-sm text-headline-sm font-semibold text-on-surface" id="qty-1">1</span>
+<button aria-label="Aumentar cantidad" class="w-8 h-8 rounded flex items-center justify-center text-on-surface hover:bg-surface-container text-body-md transition-colors font-bold" data-action="increment" data-target="1" type="button">
+<span class="material-symbols-outlined text-label-md">add</span>
+</button>
+</div>
+<!-- Unit & Row Subtotal -->
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-outline">Unitario: Q. 4,850.00</div>
+<div class="font-price-lg text-price-lg text-on-surface font-semibold">
+<span id="subtotal-1">Q. 4,850.00</span>
+</div>
+</div>
+</div>
+<!-- Secondary Row Actions -->
+<div class="flex items-center gap-space-md mt-space-xs text-label-sm font-label-sm text-on-surface-variant">
+<button class="btn-wishlist-action hover:text-secondary flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-label-sm">favorite_border</span>
+<span>Mover a Deseos</span>
+</button>
+<span>•</span>
+<button class="btn-save-later hover:text-on-surface flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-label-sm">bookmark_border</span>
+<span>Guardar para después</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 2: Bolso Tote Piel Graneada -->
+<article class="cart-item-row bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-sm flex flex-col sm:flex-row gap-space-md relative transition-all" data-price="2900" id="item-card-2">
+<!-- Product Image -->
+<div class="w-full sm:w-32 h-36 sm:h-32 rounded-lg bg-surface-container-low shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-300" data-alt="Italian calfskin cognac leather tote bag resting on minimal architectural podium with soft natural daylight elegant luxury accessories fashion photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9vj12kAJn0xE98KJLEzZ49w1VbFCcKvUNTi_fQjkw0mtmv9DKey0U36xyYAG4-trFDRKSKW0ZKyIpWwM3lLPNCmqjUyjzN6c3C3OmR4YNrKt2_hB51-lgD-uMO89DubMAutdMkuMVIzBmGrPBd0naoclecgjV8zolSxlZSMAsSBjFRNWhD_2LjPW4N6FFujB2ogPrLoaCuRR8vwzh_dgPsoIpQgRxK42lzxCZVoDG0O-UNZbEjbzt8w"/>
+<span class="absolute top-2 left-2 bg-secondary text-on-secondary text-[10px] font-label-sm px-2 py-0.5 rounded-full font-semibold">Bestseller</span>
+</div>
+<!-- Product Details -->
+<div class="flex-1 flex flex-col justify-between">
+<div class="flex justify-between items-start gap-space-sm">
+<div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Marroquinería Artesanal</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Bolso Tote Piel Graneada Florencia</h3>
+<div class="flex flex-wrap items-center gap-2 mt-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="bg-surface-container px-2 py-0.5 rounded">Color: Cognac Heritage</span>
+<span class="bg-surface-container px-2 py-0.5 rounded">Herrajes: Baño de Oro</span>
+<span class="text-secondary font-medium">Ref: AUR-3104</span>
+</div>
+</div>
+<button class="text-outline hover:text-error transition-colors p-1.5 rounded-lg hover:bg-surface-container" data-remove="2" title="Eliminar artículo" type="button">
+<span class="material-symbols-outlined text-headline-sm">delete_outline</span>
+</button>
+</div>
+<!-- Price & Quantity Controls -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low/50 rounded-lg p-space-sm">
+<!-- Stepper -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button aria-label="Disminuir cantidad" class="w-8 h-8 rounded flex items-center justify-center text-on-surface hover:bg-surface-container text-body-md transition-colors font-bold" data-action="decrement" data-target="2" type="button">
+<span class="material-symbols-outlined text-label-md">remove</span>
+</button>
+<span class="w-8 text-center font-headline-sm text-headline-sm font-semibold text-on-surface" id="qty-2">1</span>
+<button aria-label="Aumentar cantidad" class="w-8 h-8 rounded flex items-center justify-center text-on-surface hover:bg-surface-container text-body-md transition-colors font-bold" data-action="increment" data-target="2" type="button">
+<span class="material-symbols-outlined text-label-md">add</span>
+</button>
+</div>
+<!-- Unit & Row Subtotal -->
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-outline">Unitario: Q. 2,900.00</div>
+<div class="font-price-lg text-price-lg text-on-surface font-semibold">
+<span id="subtotal-2">Q. 2,900.00</span>
+</div>
+</div>
+</div>
+<!-- Secondary Row Actions -->
+<div class="flex items-center gap-space-md mt-space-xs text-label-sm font-label-sm text-on-surface-variant">
+<button class="btn-wishlist-action hover:text-secondary flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-label-sm">favorite_border</span>
+<span>Mover a Deseos</span>
+</button>
+<span>•</span>
+<button class="btn-save-later hover:text-on-surface flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-label-sm">bookmark_border</span>
+<span>Guardar para después</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ITEM 3: Gafas Aviador -->
+<article class="cart-item-row bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-sm flex flex-col sm:flex-row gap-space-md relative transition-all" data-price="1650" id="item-card-3">
+<!-- Product Image -->
+<div class="w-full sm:w-32 h-36 sm:h-32 rounded-lg bg-surface-container-low shrink-0 overflow-hidden relative">
+<img class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-300" data-alt="Luxury titanium frame aviator sunglasses with subtle gold gradient polarized lenses on minimal off-white pedestal refined contemporary aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA63S-SO25uoAKKBxUUyztQcAUHkOFsBtVdRcPDBhp5JgOuQXvGhlc0HW8aItEczKSfhC6uuMYPAZyUevvUnFtCSbxW-DFqkxlP_WYK2y9mdsmaFXZqxDcnwq3RxGz7iH3-RBxiHCkm4JMdOdW_ALLDa37UONzCI0LWnYTh5ibGxWJPeLzUwIhjgfqZUBAf5VI99QW9YAVdVtnWEs7AIbgmEIffSmIJSZDVMWDO2RhEd2sX1A5k5qoOlw"/>
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary text-[10px] font-label-sm px-2 py-0.5 rounded-full font-semibold">Polarized</span>
+</div>
+<!-- Product Details -->
+<div class="flex-1 flex flex-col justify-between">
+<div class="flex justify-between items-start gap-space-sm">
+<div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Óptica de Precisión</div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Gafas Aviador Polarizadas Titanium</h3>
+<div class="flex flex-wrap items-center gap-2 mt-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="bg-surface-container px-2 py-0.5 rounded">Armazón: Titanio Japonés</span>
+<span class="bg-surface-container px-2 py-0.5 rounded">Lente: Ámbar UV400</span>
+<span class="text-secondary font-medium">Ref: AUR-1944</span>
+</div>
+</div>
+<button class="text-outline hover:text-error transition-colors p-1.5 rounded-lg hover:bg-surface-container" data-remove="3" title="Eliminar artículo" type="button">
+<span class="material-symbols-outlined text-headline-sm">delete_outline</span>
+</button>
+</div>
+<!-- Price & Quantity Controls -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low/50 rounded-lg p-space-sm">
+<!-- Stepper -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest rounded-lg p-1 shadow-sm">
+<button aria-label="Disminuir cantidad" class="w-8 h-8 rounded flex items-center justify-center text-on-surface hover:bg-surface-container text-body-md transition-colors font-bold" data-action="decrement" data-target="3" type="button">
+<span class="material-symbols-outlined text-label-md">remove</span>
+</button>
+<span class="w-8 text-center font-headline-sm text-headline-sm font-semibold text-on-surface" id="qty-3">1</span>
+<button aria-label="Aumentar cantidad" class="w-8 h-8 rounded flex items-center justify-center text-on-surface hover:bg-surface-container text-body-md transition-colors font-bold" data-action="increment" data-target="3" type="button">
+<span class="material-symbols-outlined text-label-md">add</span>
+</button>
+</div>
+<!-- Unit & Row Subtotal -->
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-outline">Unitario: Q. 1,650.00</div>
+<div class="font-price-lg text-price-lg text-on-surface font-semibold">
+<span id="subtotal-3">Q. 1,650.00</span>
+</div>
+</div>
+</div>
+<!-- Secondary Row Actions -->
+<div class="flex items-center gap-space-md mt-space-xs text-label-sm font-label-sm text-on-surface-variant">
+<button class="btn-wishlist-action hover:text-secondary flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-label-sm">favorite_border</span>
+<span>Mover a Deseos</span>
+</button>
+<span>•</span>
+<button class="btn-save-later hover:text-on-surface flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-label-sm">bookmark_border</span>
+<span>Guardar para después</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Empty Cart Fallback State (Hidden by default) -->
+<div class="hidden bg-surface-container-lowest rounded-xl p-space-xl text-center flex-col items-center justify-center gap-space-md shadow-sm" id="empty-cart-state">
+<div class="w-20 h-20 rounded-full bg-surface-container-low flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-display-hero">shopping_bag</span>
+</div>
+<div class="max-w-md">
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Tu bolsa de compras está vacía</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Explora nuestras exclusivas colecciones de alta joyería, marroquinería y relojes finos.</p>
+</div>
+<a class="mt-space-sm px-space-xl py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" data-path="shop" href="/shop">
+            Explorar Catálogo de Lujo
+          </a>
+</div>
+<!-- Coupon / Promo Voucher Box -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-sm">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="material-symbols-outlined text-secondary text-headline-sm">redeem</span>
+<span class="font-title-lg text-title-lg text-on-surface font-semibold">Código de Cortesía o Certificado de Regalo</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-sm">
+<div class="relative flex-1">
+<input class="w-full uppercase px-space-md py-3 rounded-lg bg-surface-container-low text-on-surface text-body-sm font-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/50 placeholder:text-outline tracking-wider font-semibold" id="coupon-input" placeholder="Ingresa 'LUXE15' o tu código" type="text"/>
+</div>
+<button class="px-space-xl py-3 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-sm font-semibold" id="coupon-apply-btn" type="button">
+              Aplicar Descuento
+            </button>
+</div>
+<!-- Coupon Notification Output -->
+<div class="hidden mt-space-sm p-space-sm rounded-lg flex items-center justify-between text-body-sm font-body-sm" id="coupon-feedback"></div>
+</div>
+<!-- Complementary Add-ons ('Completa tu look') -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold tracking-wider">Aura Curation</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Completa tu Colección</h3>
+</div>
+<span class="material-symbols-outlined text-outline">auto_awesome</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Addon 1 -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-low rounded-xl">
+<div class="w-20 h-20 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="High-end cylindrical leather watch travel roll case dark brown velvet interior studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC01u-r-zAAb0mT4Vlt9C6tM62iWUxOcRFzESXHAYjyrmiGBuvgj3JzWdvu0QoefzCBOfOwOGluELcHoVRQ-3LEIYEaA1Kbqs5zM5AC8hkb8WRkJeZQvuTu9mnbXL7785lzKTnYBeUvRvC1Rmg2tHvij_UdRXKgxONVg7OlvE7_Wi4mu_TyxjG3OftVZGyTz7Nof9LOVhTpwrvYh291FMTyoFKV-mdlgg-dJXNq5u59iD51H9V7ZsO_tA"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold truncate">Estuche de Viaje para Relojes</h4>
+<div class="font-label-sm text-label-sm text-outline">Cuero Italiano Genuino</div>
+<div class="font-price-md text-price-md text-secondary font-semibold mt-1">Q. 350.00</div>
+</div>
+<button class="btn-addon-add p-2.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-primary hover:text-on-primary transition-colors shadow-sm" data-addon-name="Estuche de Viaje para Relojes" data-addon-price="350" title="Añadir a la bolsa" type="button">
+<span class="material-symbols-outlined text-title-lg">add_shopping_cart</span>
+</button>
+</div>
+<!-- Addon 2 -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-low rounded-xl">
+<div class="w-20 h-20 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Luxury leather care kit balm wooden brush microfibre cloth in sleek minimalist packaging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx43NdS11-DCfRn9n64TavSYo1vjjMAe4Q_HdhOPd3_fzucqIwuGArGvd5wCKpUAAH8PGGTEcnKAZdFivuUNV9DEJT3LSeY9Nv2kiO1P1IV2sTEW3bya15GW_NdOUbBpgxpJMuHN_sjRNqVQyOYKdYVnyyAiVh44qEhDykbYFc9sk-liGHjrmtZ49XIVEdx9g1Cajj0EPyxONDcwc8OgtHGY9erK_DXKcUCIWqpTwFZkf7qjLuyC-8ZQ"/>
+</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold truncate">Kit de Cuidado de Piel Italiana</h4>
+<div class="font-label-sm text-label-sm text-outline">Bálsamo &amp; Cera de Abeja</div>
+<div class="font-price-md text-price-md text-secondary font-semibold mt-1">Q. 195.00</div>
+</div>
+<button class="btn-addon-add p-2.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-primary hover:text-on-primary transition-colors shadow-sm" data-addon-name="Kit de Cuidado de Piel Italiana" data-addon-price="195" title="Añadir a la bolsa" type="button">
+<span class="material-symbols-outlined text-title-lg">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Continue Shopping Direct Link -->
+<div class="flex items-center justify-start pt-space-xs">
+<a class="inline-flex items-center gap-space-xs text-on-surface-variant hover:text-secondary font-label-md text-label-md transition-colors font-medium" data-path="shop" href="/shop">
+<span class="material-symbols-outlined text-headline-sm">arrow_back</span>
+<span>Continuar Explorando Catálogo</span>
+</a>
+</div>
+</section>
+<!-- RIGHT COLUMN: Order Summary Card (Sticky Desktop) (5 cols) -->
+<aside class="lg:col-span-5 xl:col-span-4 lg:sticky lg:top-36 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Resumen de tu Pedido</h2>
+<span class="material-symbols-outlined text-secondary">verified</span>
+</div>
+<!-- Summary Metric Calculations -->
+<div class="flex flex-col gap-space-sm text-body-md font-body-md text-on-surface-variant">
+<div class="flex justify-between items-center">
+<span>Subtotal de Artículos</span>
+<span class="font-semibold text-on-surface" id="summary-subtotal">Q. 9,400.00</span>
+</div>
+<!-- Discount Row -->
+<div class="flex justify-between items-center text-on-tertiary-container bg-surface-container-low p-2 rounded-lg" id="discount-row">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm">loyalty</span>
+<span id="discount-label">Descuento de Cortesía:</span>
+</span>
+<span class="font-semibold" id="summary-discount">- Q. 500.00</span>
+</div>
+<!-- Shipping Row -->
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-1.5">
+<span>Envío Express Guatemala</span>
+<span class="material-symbols-outlined text-outline text-body-sm cursor-help" title="Entrega en 24h Ciudad de Guatemala y 48h Departamentos vía Cargo Expreso">info</span>
+</div>
+<span class="text-on-tertiary-container font-semibold uppercase tracking-wider text-label-sm font-label-sm bg-surface-container px-2 py-0.5 rounded">¡Gratis!</span>
+</div>
+<!-- Tax IVA Row -->
+<div class="flex justify-between items-center text-body-sm font-body-sm text-outline">
+<span>Impuestos incluidos (12% IVA)</span>
+<span id="summary-tax">Q. 1,071.42</span>
+</div>
+<!-- Divider -->
+<div class="h-px bg-surface-container w-full my-space-xs"></div>
+<!-- Final Grand Total -->
+<div class="flex justify-between items-baseline pt-space-xs">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Total a Pagar</span>
+<span class="text-label-sm font-label-sm text-outline">Precios finales en Quetzales</span>
+</div>
+<div class="text-right">
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold" id="summary-grand-total">
+                  Q. 8,900.00
+                </div>
+</div>
+</div>
+<!-- Visa Cuotas Micro-Callout -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between gap-space-xs mt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-body-md">credit_score</span>
+<span class="font-body-sm text-body-sm text-on-surface">O financia hasta en <strong>12 cuotas</strong> de:</span>
+</div>
+<span class="font-price-md text-price-md text-secondary font-bold" id="summary-installment">Q. 741.66</span>
+</div>
+</div>
+<!-- Checkout Primary CTA -->
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<a class="w-full text-center py-4 px-space-lg rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold tracking-wide uppercase hover:bg-primary-container transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-space-sm" data-path="checkout" href="/checkout" id="btn-main-checkout">
+<span class="material-symbols-outlined text-headline-sm">lock</span>
+<span>Proceder al Checkout Seguro</span>
+</a>
+<p class="text-center font-label-sm text-label-sm text-outline mt-1">Sin cargos ocultos • Cancelación antes de despacho garantizada</p>
+</div>
+<!-- Fast Instant Payment Options -->
+<div class="flex flex-col gap-space-xs pt-space-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider text-center">O paga al instante con</span>
+<div class="grid grid-cols-2 gap-space-xs">
+<!-- Cuotas Visa GT -->
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface font-semibold text-label-sm font-label-sm" onclick="window.location.href='/checkout';" type="button">
+<span class="material-symbols-outlined text-body-md text-secondary">payments</span>
+<span>Cuotas Visa</span>
+</button>
+<!-- Mastercard -->
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface font-semibold text-label-sm font-label-sm" onclick="window.location.href='/checkout';" type="button">
+<span class="material-symbols-outlined text-body-md text-secondary">credit_card</span>
+<span>Mastercard</span>
+</button>
+<!-- BAC Credomatic -->
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface font-semibold text-label-sm font-label-sm" onclick="window.location.href='/checkout';" type="button">
+<span class="material-symbols-outlined text-body-md text-secondary">account_balance</span>
+<span>BAC Tasa 0%</span>
+</button>
+<!-- Apple Pay -->
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-surface-container-highest hover:bg-surface-container text-on-surface font-semibold text-label-sm font-label-sm" onclick="window.location.href='/checkout';" type="button">
+<span class="material-symbols-outlined text-body-md">smartphone</span>
+<span>Apple Pay</span>
+</button>
+</div>
+</div>
+<!-- Guarantee Trust Seal Badges -->
+<div class="pt-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-body-md">security</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Cifrado SSL de 256-Bits</span>
+<span class="font-body-sm text-body-sm text-outline">Datos bancarios tokenizados y confidenciales</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-body-md">published_with_changes</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">30 Días de Garantía de Devolución</span>
+<span class="font-body-sm text-body-sm text-outline">Sin preguntas si el producto no supera expectativas</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-body-md">contact_support</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Soporte Concierge 24/7</span>
+<span class="font-body-sm text-body-sm text-outline">Atención personalizada en Guatemala &amp; Global</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Concierge Help Note -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center gap-space-md">
+<span class="material-symbols-outlined text-secondary text-headline-md">support_agent</span>
+<div class="flex-1">
+<div class="font-title-lg text-title-lg text-on-surface font-semibold">¿Deseas asesoría telefónica?</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Llama a nuestro Concierge al +(502) 2333-AURA o escribe por WhatsApp.</p>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<!-- Client-side Interactive Cart Engine Script -->
+<script>
+    (function() {
+      // Cart items state
+      const cartItems = {
+        1: { name: "Reloj Cronógrafo Automático Imperial", price: 4850, qty: 1 },
+        2: { name: "Bolso Tote Piel Graneada Florencia", price: 2900, qty: 1 },
+        3: { name: "Gafas Aviador Polarizadas Titanium", price: 1650, qty: 1 }
+      };
+
+      let discountAmount = 500; // Baseline VIP coupon promo
+      let activeCoupon = "VIP500";
+
+      const formatQ = (val) => "Q. " + val.toLocaleString('es-GT', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+      function recalculateTotals() {
+        let subtotal = 0;
+        let totalQty = 0;
+
+        for (const id in cartItems) {
+          const item = cartItems[id];
+          subtotal += item.price * item.qty;
+          totalQty += item.qty;
+        }
+
+        // Check if cart is empty
+        const itemsContainer = document.getElementById('cart-items-container');
+        const emptyState = document.getElementById('empty-cart-state');
+        const checkoutBtn = document.getElementById('btn-main-checkout');
+
+        if (totalQty === 0) {
+          itemsContainer.classList.add('hidden');
+          emptyState.classList.remove('hidden');
+          checkoutBtn.classList.add('opacity-50', 'pointer-events-none');
+          discountAmount = 0;
+        } else {
+          itemsContainer.classList.remove('hidden');
+          emptyState.classList.add('hidden');
+          checkoutBtn.classList.remove('opacity-50', 'pointer-events-none');
+        }
+
+        const grandTotal = Math.max(0, subtotal - discountAmount);
+        const ivaTax = grandTotal * 0.12;
+        const installment12 = grandTotal > 0 ? (grandTotal / 12) : 0;
+
+        // Update DOM displays
+        const counterElem = document.getElementById('cart-total-count');
+        if (counterElem) counterElem.textContent = totalQty;
+
+        const subtotalElem = document.getElementById('summary-subtotal');
+        if (subtotalElem) subtotalElem.textContent = formatQ(subtotal);
+
+        const discountElem = document.getElementById('summary-discount');
+        if (discountElem) discountElem.textContent = "- " + formatQ(discountAmount);
+
+        const taxElem = document.getElementById('summary-tax');
+        if (taxElem) taxElem.textContent = formatQ(ivaTax);
+
+        const grandElem = document.getElementById('summary-grand-total');
+        if (grandElem) grandElem.textContent = formatQ(grandTotal);
+
+        const installElem = document.getElementById('summary-installment');
+        if (installElem) installElem.textContent = formatQ(installment12);
+
+        // Header Cart Badge Sync
+        const headerBadge = document.getElementById('cart-badge');
+        if (headerBadge) headerBadge.textContent = totalQty;
+        const drawerCount = document.getElementById('drawer-cart-count');
+        if (drawerCount) drawerCount.textContent = totalQty;
+      }
+
+      // Quantity adjustments
+      document.addEventListener('click', function(e) {
+        const btn = e.target.closest('button');
+        if (!btn) return;
+
+        const action = btn.getAttribute('data-action');
+        const targetId = btn.getAttribute('data-target');
+
+        if (action && targetId && cartItems[targetId]) {
+          if (action === 'increment') {
+            cartItems[targetId].qty += 1;
+          } else if (action === 'decrement') {
+            if (cartItems[targetId].qty > 1) {
+              cartItems[targetId].qty -= 1;
+            } else {
+              // Confirm remove
+              if (confirm("¿Deseas eliminar este artículo de tu bolsa?")) {
+                delete cartItems[targetId];
+                const card = document.getElementById('item-card-' + targetId);
+                if (card) card.remove();
+              }
+            }
+          }
+
+          if (cartItems[targetId]) {
+            const qtySpan = document.getElementById('qty-' + targetId);
+            const subtotalSpan = document.getElementById('subtotal-' + targetId);
+            if (qtySpan) qtySpan.textContent = cartItems[targetId].qty;
+            if (subtotalSpan) subtotalSpan.textContent = formatQ(cartItems[targetId].price * cartItems[targetId].qty);
+          }
+
+          recalculateTotals();
+        }
+
+        // Direct Item Deletion
+        const removeId = btn.getAttribute('data-remove');
+        if (removeId && cartItems[removeId]) {
+          if (confirm("¿Estás seguro de que deseas eliminar '" + cartItems[removeId].name + "' de tu bolsa de compras?")) {
+            delete cartItems[removeId];
+            const card = document.getElementById('item-card-' + removeId);
+            if (card) {
+              card.style.opacity = '0';
+              card.style.transform = 'scale(0.95)';
+              setTimeout(() => {
+                card.remove();
+                recalculateTotals();
+              }, 200);
+            } else {
+              recalculateTotals();
+            }
+          }
+        }
+
+        // 1-Click Complementary Add-ons
+        const addonName = btn.getAttribute('data-addon-name');
+        const addonPrice = btn.getAttribute('data-addon-price');
+        if (addonName && addonPrice) {
+          const newId = 'addon-' + Date.now();
+          const priceNum = parseFloat(addonPrice);
+          cartItems[newId] = { name: addonName, price: priceNum, qty: 1 };
+
+          // Prepend new element to cart list
+          const container = document.getElementById('cart-items-container');
+          const newArticle = document.createElement('article');
+          newArticle.id = 'item-card-' + newId;
+          newArticle.className = "cart-item-row bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row gap-space-md relative transition-all border-l-4 border-secondary";
+          newArticle.innerHTML = `
+            <div class="w-full sm:w-24 h-24 rounded-lg bg-surface-container-low shrink-0 flex items-center justify-center">
+              <span class="material-symbols-outlined text-headline-lg text-secondary">check_circle</span>
+            </div>
+            <div class="flex-1 flex flex-col justify-between">
+              <div class="flex justify-between items-start">
+                <div>
+                  <span class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Complemento Agregado</span>
+                  <h4 class="font-title-lg text-title-lg text-on-surface font-semibold">${addonName}</h4>
+                </div>
+                <button type="button" data-remove="${newId}" class="text-outline hover:text-error p-1 rounded">
+                  <span class="material-symbols-outlined">delete_outline</span>
+                </button>
+              </div>
+              <div class="flex justify-between items-center mt-2">
+                <span class="font-label-sm text-label-sm text-on-surface-variant">Cantidad: 1</span>
+                <span class="font-price-md text-price-md text-on-surface font-semibold">${formatQ(priceNum)}</span>
+              </div>
+            </div>
+          `;
+          container.prepend(newArticle);
+
+          // Success feedback on button
+          btn.innerHTML = `<span class="material-symbols-outlined text-on-tertiary-container text-title-lg">check</span>`;
+          btn.classList.add('bg-surface-container-high', 'pointer-events-none');
+          recalculateTotals();
+        }
+      });
+
+      // Clear all items button
+      const clearBtn = document.getElementById('btn-clear-cart');
+      if (clearBtn) {
+        clearBtn.addEventListener('click', function() {
+          if (confirm("¿Deseas vaciar completamente todos los artículos de tu bolsa?")) {
+            for (const key in cartItems) {
+              delete cartItems[key];
+            }
+            const container = document.getElementById('cart-items-container');
+            if (container) container.innerHTML = '';
+            recalculateTotals();
+          }
+        });
+      }
+
+      // Wishlist / Save Later Notifications
+      document.querySelectorAll('.btn-wishlist-action').forEach(b => {
+        b.addEventListener('click', () => {
+          alert('¡Artículo guardado con éxito en tu Lista de Deseos!');
+        });
+      });
+
+      document.querySelectorAll('.btn-save-later').forEach(b => {
+        b.addEventListener('click', () => {
+          alert('Artículo archivado en tu sección "Guardados para después".');
+        });
+      });
+
+      // Coupon System
+      const couponInput = document.getElementById('coupon-input');
+      const couponBtn = document.getElementById('coupon-apply-btn');
+      const couponFeedback = document.getElementById('coupon-feedback');
+
+      if (couponBtn && couponInput && couponFeedback) {
+        couponBtn.addEventListener('click', function() {
+          const val = couponInput.value.trim().toUpperCase();
+          if (val === 'LUXE15') {
+            // Calculate 15% discount
+            let sub = 0;
+            for (const id in cartItems) {
+              sub += cartItems[id].price * cartItems[id].qty;
+            }
+            discountAmount = sub * 0.15;
+            activeCoupon = 'LUXE15';
+
+            couponFeedback.className = "mt-space-sm p-space-sm rounded-lg flex items-center justify-between text-body-sm font-body-sm bg-surface-container text-on-tertiary-container";
+            couponFeedback.innerHTML = `
+              <div class="flex items-center gap-1.5 font-medium">
+                <span class="material-symbols-outlined text-body-md">check_circle</span>
+                <span>¡Cupón <strong>LUXE15</strong> aplicado! 15% de ahorro activo.</span>
+              </div>
+              <span class="font-semibold">- ${formatQ(discountAmount)}</span>
+            `;
+            couponFeedback.classList.remove('hidden');
+            recalculateTotals();
+          } else if (val === '') {
+            couponFeedback.className = "mt-space-sm p-space-sm rounded-lg flex items-center gap-1.5 text-body-sm font-body-sm bg-error-container text-on-error-container";
+            couponFeedback.innerHTML = `<span class="material-symbols-outlined text-body-md">error</span><span>Por favor ingresa un código válido.</span>`;
+            couponFeedback.classList.remove('hidden');
+          } else {
+            couponFeedback.className = "mt-space-sm p-space-sm rounded-lg flex items-center gap-1.5 text-body-sm font-body-sm bg-error-container text-on-error-container";
+            couponFeedback.innerHTML = `<span class="material-symbols-outlined text-body-md">cancel</span><span>El código "<strong>${val}</strong>" no es válido o ya ha expirado.</span>`;
+            couponFeedback.classList.remove('hidden');
+          }
+        });
+      }
+
+      // Initial sync on screen load
+      recalculateTotals();
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-xl pb-space-lg"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase font-semibold">AuraLuxe</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Lujo accesible diseñado para trascender. Artesanía contemporánea, piedras de origen ético y envíos seguros a toda Guatemala e internacionalmente.</p><div class="flex items-center gap-space-md text-on-surface-variant"><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">verified_user</span><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">support_agent</span><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">credit_card</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Explorar Shop</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Nueva Colección</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Alta Joyería Fina</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Relojería Masculina &amp; Femenina</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Ofertas de Temporada</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Atención al Cliente</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="mi-cuenta" href="/mi-cuenta">Rastrear Mi Orden</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Tiempos de Envío en GT</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Garantía y Devoluciones</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Cuotas y Formas de Pago</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Aura Privé</span><p class="font-body-sm text-body-sm text-on-surface-variant">Suscríbete para recibir un 10% de descuento en tu primera compra y acceso exclusivo a prelanzamientos.</p><form class="flex flex-col gap-space-xs mt-space-xs" onsubmit="event.preventDefault(); alert('¡Gracias por unirte a Aura Privé!');"><input class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50 placeholder:text-outline" placeholder="Ingresa tu correo electrónico" required="" type="email"/><button class="px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" type="submit">Suscribirme</button></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="font-body-sm text-body-sm text-outline">© 2025 AuraLuxe Guatemala S.A. Todos los derechos reservados. Precios en Quetzales (Q) y Dólares Americanos (USD).</div><div class="flex items-center gap-space-md text-label-sm font-label-sm text-outline"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-body-sm">lock</span> Checkout Seguro SSL</span><span>|</span><span>Visa Cuotas</span><span>|</span><span>Mastercard</span><span>|</span><span>Transferencia Bancaria GT</span></div></div></div></footer><script>const cartBtn = document.getElementById('cart-open-btn'); const cartDrawer = document.getElementById('cart-drawer'); const cartOverlay = document.getElementById('cart-drawer-overlay'); const cartClose = document.getElementById('cart-close-btn'); function openCart() { cartOverlay.classList.remove('hidden'); setTimeout(() => { cartOverlay.classList.remove('opacity-0'); cartDrawer.classList.remove('translate-x-full'); }, 10); } function closeCart() { cartDrawer.classList.add('translate-x-full'); cartOverlay.classList.add('opacity-0'); setTimeout(() => { cartOverlay.classList.add('hidden'); }, 300); } if (cartBtn) cartBtn.addEventListener('click', openCart); if (cartClose) cartClose.addEventListener('click', closeCart); if (cartOverlay) cartOverlay.addEventListener('click', closeCart); const searchInput = document.getElementById('global-search-input'); const searchDropdown = document.getElementById('search-dropdown'); if (searchInput && searchDropdown) { searchInput.addEventListener('focus', () => searchDropdown.classList.remove('hidden')); searchInput.addEventListener('blur', () => setTimeout(() => searchDropdown.classList.add('hidden'), 200)); }</script></body></html>

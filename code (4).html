@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>AuraLuxe — Accessible Luxury</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-background": "#0b1c30", "on-primary-container": "#7c839b", "on-secondary-fixed-variant": "#6e3900", "outline": "#76777d", "on-error-container": "#93000a", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#005236", "surface-variant": "#d3e4fe", "secondary": "#904d00", "surface-container-high": "#dce9ff", "surface-dim": "#cbdbf5", "on-secondary": "#ffffff", "on-tertiary-fixed": "#002113", "surface-container-low": "#eff4ff", "on-surface": "#0b1c30", "error": "#ba1a1a", "surface": "#f8f9ff", "primary-container": "#131b2e", "on-tertiary-container": "#009668", "surface-container-lowest": "#ffffff", "surface-container": "#e5eeff", "on-surface-variant": "#45464d", "secondary-fixed": "#ffdcc3", "secondary-fixed-dim": "#ffb77d", "on-primary": "#ffffff", "surface-container-highest": "#d3e4fe", "on-tertiary": "#ffffff", "primary-fixed": "#dae2fd", "on-secondary-fixed": "#2f1500", "inverse-surface": "#213145", "secondary-container": "#fe932c", "surface-tint": "#565e74", "on-error": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-secondary-container": "#663500", "primary": "#000000", "background": "#f8f9ff", "tertiary": "#000000", "tertiary-container": "#002113", "tertiary-fixed": "#6ffbbe", "inverse-primary": "#bec6e0", "tertiary-fixed-dim": "#4edea3", "on-primary-fixed": "#131b2e", "primary-fixed-dim": "#bec6e0", "on-primary-fixed-variant": "#3f465c", "surface-bright": "#f8f9ff", "outline-variant": "#c6c6cd" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-desktop": "3rem", "margin-mobile": "1rem", "space-xl": "2rem", "margin": "2rem" }, "fontFamily": { "headline-md": ["Outfit"], "headline-lg": ["Outfit"], "display-hero": ["Outfit"], "body-lg": ["Inter"], "label-md": ["Inter"], "display-hero-mobile": ["Outfit"], "price-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-xl": ["Outfit"], "title-lg": ["Outfit"], "label-sm": ["Inter"], "headline-sm": ["Outfit"], "headline-xl-mobile": ["Outfit"], "price-lg": ["Inter"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "price-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "500" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "price-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary-container text-surface px-margin-mobile lg:px-margin-desktop py-space-xs text-center"><div class="max-w-7xl mx-auto flex items-center justify-between text-label-sm font-label-sm"><span class="hidden sm:inline-block text-on-primary-container tracking-wide">GUATEMALA &amp; GLOBAL SHIPPING</span><p class="w-full sm:w-auto text-center font-medium tracking-wide text-surface">Envíos gratis en compras &gt; Q.500 | Cuotas sin interés Visa / Mastercard</p><div class="hidden sm:flex items-center gap-space-sm text-on-primary-container"><span class="material-symbols-outlined text-label-sm">verified</span><span>Autenticidad Garantizada</span></div></div></div><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm" data-path="inicio" href="/inicio"><img alt="AuraLuxe Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XbYWKTtgfAhpa_stWrBkJNd2KJ_OhkoLxbCx0GmyoKnxqJpoqSpgzNYdiAi479I0Hu4t7aiRsRexiZImhDfvdcFInYVZDG64aTehaHxImc_6_iaM0D2nv3YL6V-j6Q_NFm8ewuUH5EZLjJLO9Cskzvy2PrBG4ftWE68UqGfwyVEogphwfvwh4a_l17w4HzNsUSCu-2gXoC-pEOpQccapJTmhncn5P4dNNT5bJZMcc3oEjbmBOJAtxKPt0"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface uppercase">AuraLuxe</span></a></div><div class="hidden md:flex flex-1 max-w-md mx-space-lg relative"><div class="w-full flex items-center bg-surface-container-low rounded-lg px-space-md py-space-xs transition-all focus-within:ring-2 focus-within:ring-secondary/40 focus-within:bg-surface-container-lowest"><span class="material-symbols-outlined text-outline text-headline-sm mr-space-xs">search</span><input autocomplete="off" class="w-full bg-transparent text-body-sm font-body-sm text-on-surface placeholder:text-outline focus:outline-none" id="global-search-input" placeholder="Buscar joyas, accesorios de lujo, bolsos..." type="search"/></div><div class="hidden absolute left-0 right-0 top-full mt-2 bg-surface-container-lowest rounded-lg shadow-[0_10px_15px_-3px_rgba(15,23,42,0.06),0_20px_25px_-5px_rgba(15,23,42,0.08)] p-space-md z-50" id="search-dropdown"><div class="text-label-sm font-label-sm text-outline mb-space-xs uppercase tracking-wider">Búsquedas populares</div><div class="flex flex-col gap-space-xs"><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Collar Diamante Aura Solitario (Q.1,850)</a><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Reloj Cronógrafo Imperial Gold (USD $420)</a><a class="text-body-sm font-body-sm text-on-surface hover:text-secondary py-1 transition-colors" data-path="shop" href="/shop">Brazalete Velvet Silver 925</a></div></div></div><div class="flex items-center gap-space-md"><div class="relative inline-block text-left"><select class="appearance-none bg-surface-container-low text-on-surface text-label-sm font-label-sm py-1.5 pl-3 pr-8 rounded-lg cursor-pointer focus:outline-none hover:bg-surface-container transition-colors" id="currency-selector"><option value="GTQ">GTQ (Q)</option><option value="USD">USD ($)</option></select><span class="material-symbols-outlined pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-outline text-body-sm">expand_more</span></div><a class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="wishlist" href="/wishlist" title="Lista de Deseos"><span class="material-symbols-outlined text-headline-sm">favorite</span><span class="absolute top-1 right-1 bg-secondary text-on-secondary text-[10px] font-bold rounded-full h-4.5 w-4.5 min-w-[18px] flex items-center justify-center px-1" id="wishlist-badge">2</span></a><button class="relative p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" id="cart-open-btn" title="Carrito" type="button"><span class="material-symbols-outlined text-headline-sm">shopping_bag</span><span class="absolute top-1 right-1 bg-primary text-on-primary text-[10px] font-bold rounded-full h-4.5 w-4.5 min-w-[18px] flex items-center justify-center px-1" id="cart-badge">3</span></button><a class="flex items-center gap-space-xs p-1 rounded-full hover:ring-2 hover:ring-secondary/40 transition-all" data-path="mi-cuenta" href="/mi-cuenta" title="Mi Perfil"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUS7PY6UFwgghzGuUJm3Qjna2wydJu5dtmWPh-jvkHfklF6UipRg6rePOdzH2zUkXw01IrqX93uRtbPbDvh6NtUPk84oOqTdmX4ZmgI2gSET91psD187WaR4LPh0Nci-bZuBfFKNB_3Vu-60RDCQIVTo0dBPRIWPztA489rbeXF4_bWvQ6n5XhHfxkl3g5KqiFduKsEYFiLX99dfxYGqJZesYW7gobid-D75n2sKXxLK65q4QBV4VsWA"/></a></div></div><div class="bg-surface-container-lowest/80 border-t border-surface-container-low px-margin-mobile lg:px-margin-desktop"><div class="max-w-7xl mx-auto flex items-center justify-between"><nav class="flex items-center gap-space-lg overflow-x-auto py-2.5" data-active-classes="text-on-surface font-title-lg font-semibold"><a aria-current="page" class="transition-colors whitespace-nowrap text-on-surface font-title-lg font-semibold" data-path="inicio" href="/inicio">Inicio</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="shop" href="/shop">Colecciones</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="shop" href="/shop">Novedades</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="shop" href="/shop">Ofertas</a><a class="text-label-md font-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="faq" href="/faq">Envíos &amp; FAQ</a></nav><div class="hidden lg:flex items-center gap-space-md text-label-sm font-label-sm text-secondary"><span class="material-symbols-outlined text-label-md">local_shipping</span><span>Entrega express en 24h Ciudad de Guatemala</span></div></div></div></header><div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300" id="cart-drawer-overlay"></div><aside class="fixed top-0 right-0 h-full w-full sm:w-96 max-w-full bg-surface-container-lowest shadow-[0_25px_50px_-12px_rgba(15,23,42,0.22)] z-50 flex flex-col translate-x-full transition-transform duration-300 ease-out" id="cart-drawer"><div class="p-space-lg flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-on-surface">shopping_bag</span><span class="font-headline-sm text-headline-sm text-on-surface">Tu Carrito (<span id="drawer-cart-count">3</span>)</span></div><button class="p-1 text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" id="cart-close-btn" type="button"><span class="material-symbols-outlined">close</span></button></div><div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-md"><div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg"><div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-outline">save_as</span></div><div class="flex-1 min-w-0"><h4 class="font-title-lg text-title-lg text-on-surface truncate">Collar Constelación Solis</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Oro Vermeil 18K</p><div class="font-price-md text-price-md text-secondary mt-1">Q.1,450.00</div></div></div><div class="flex items-center gap-space-md p-space-sm bg-surface-container-lowest rounded-lg"><div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-outline">watch</span></div><div class="flex-1 min-w-0"><h4 class="font-title-lg text-title-lg text-on-surface truncate">Reloj Crono Midnight</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Edición Limitada</p><div class="font-price-md text-price-md text-secondary mt-1">Q.2,890.00</div></div></div></div><div class="p-space-lg bg-surface-container-low flex flex-col gap-space-md"><div class="flex justify-between items-center"><span class="font-body-md text-body-md text-on-surface-variant">Subtotal estimado</span><span class="font-headline-sm text-headline-sm text-on-surface">Q.4,340.00</span></div><div class="flex gap-space-sm"><a class="flex-1 text-center py-3 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" data-path="carrito" href="/carrito">Ver Carrito</a><a class="flex-1 text-center py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" data-path="checkout" href="/checkout">Pagar</a></div></div></aside><main class="w-full pt-36 bg-surface"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Element -->
+<div class="relative w-full max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop py-space-md">
+<div class="absolute -top-12 -left-20 w-96 h-96 bg-surface-container-highest/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/3 -right-24 w-80 h-80 bg-secondary-fixed/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- 1. VIP PRIVÉ PROFILE BANNER -->
+<section class="w-full bg-surface-container-lowest rounded-xl p-space-md lg:p-space-lg shadow-sm mb-space-lg relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-full bg-gradient-to-l from-surface-container-low via-transparent to-transparent pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg relative z-10">
+<!-- User Info -->
+<div class="flex items-center gap-space-md">
+<div class="relative shrink-0">
+<img class="w-20 h-20 lg:w-24 lg:h-24 rounded-full object-cover shadow-md" data-alt="Sophisticated portrait of a Latin American male executive in his late thirties wearing an understated tailored navy blazer against an architectural modernist gallery background with warm amber tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASb5CeKL1_6VpyhXKYtt_qnQiDUms55RTVUKYFVar2NYruEVIYg1l-46UKbw4OEL8bVfWg8CnCQOGLuJx2t5bUb41J8UY2uu0fy58FT0ejyxaFs63-e5qjzNOXnqxHo047b2XuyzG1K-87_XnYk6zjo2M1wnMxNv3r7FqjX9HiAr-FtApv_gksIFKTvdq2FqPA-AGmgZgFbkCCGpcerYjRY5t_-3fFvXVd_T5MIf515mVYeh_oiDU29Q"/>
+<span class="absolute bottom-0 right-0 bg-secondary text-on-secondary text-[10px] font-label-sm uppercase tracking-wider px-2 py-0.5 rounded-full shadow-sm">Black</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1 flex-wrap">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">Socio #AP-90412</span>
+<span class="text-outline text-label-sm">•</span>
+<span class="inline-flex items-center gap-1 bg-surface-container text-on-surface px-2 py-0.5 rounded-full text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-xs text-secondary">workspace_premium</span> Black Tier Elite
+              </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Alejandro Castillo Villagrán</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-sm text-outline">location_on</span> Ciudad de Guatemala, Guatemala
+            </p>
+</div>
+</div>
+<!-- Metric & Concierge Pill Combo -->
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-md w-full lg:w-auto">
+<!-- Aura Credit Balance -->
+<div class="bg-surface-container-low px-space-md py-space-sm rounded-xl flex flex-col justify-center flex-1 sm:flex-initial min-w-[190px]">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">monetization_on</span> Aura Credit Balance
+            </span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-md text-headline-md text-on-surface font-semibold">Q. 1,450.00</span>
+<span class="font-body-sm text-body-sm text-outline">($186 USD)</span>
+</div>
+<span class="text-[11px] text-on-tertiary-container font-label-sm font-medium mt-0.5 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span> Vigencia permanente VIP
+            </span>
+</div>
+<!-- Private Concierge Contact Card -->
+<div class="bg-primary-container text-surface px-space-md py-space-sm rounded-xl flex items-center gap-space-sm flex-1 sm:flex-initial min-w-[240px] shadow-sm">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover" data-alt="Refined elegant headshot of an executive client advisor woman in a minimalist high-end studio setting with subtle warm backlight and bespoke tailoring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmJNLmLYWXcHoUZ18kBSUG3Z7I5yvD-QPuGwiS69XaBu7GltwtNnriz2dDA8fdTGpLSVmD4oYimXgdyrGc0OxgMie_A0DdEjS0fUubbLAdJ2dccJIoHWZ9rBbCfDYidWginZaPPmn9OY7TMer8uUfVZPTyrDH6lrFjkKzY_3DcxTvDITbzrOm6jNGMozOdEPRFP3xfWeaBctW2_1Vcm6_xhyuo4DTpsy-Bsf5GFLJMKsHDsHQj5Mjbgg"/>
+<span class="absolute top-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="text-[11px] uppercase tracking-wider text-on-primary-container font-label-sm">Concierge Privado</span>
+<span class="font-title-lg text-title-lg text-surface truncate">Lucía Valdés</span>
+<div class="flex items-center gap-2 mt-1">
+<a class="inline-flex items-center justify-center p-1 rounded-full bg-surface/10 hover:bg-surface/20 text-surface transition-colors" href="tel:+50223004000" title="Llamada Directa VIP">
+<span class="material-symbols-outlined text-sm">call</span>
+</a>
+<a class="inline-flex items-center justify-center p-1 rounded-full bg-surface/10 hover:bg-surface/20 text-surface transition-colors" href="https://wa.me/50250000000" target="_blank" title="Chat WhatsApp Seguro">
+<span class="material-symbols-outlined text-sm">chat</span>
+</a>
+<span class="text-[11px] text-on-primary-container ml-1">En línea</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. NAVIGATION TABS (Mi Cuenta Portal) -->
+<nav class="w-full mb-space-lg overflow-x-auto pb-1">
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1.5 rounded-xl w-max min-w-full md:min-w-0">
+<a class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" href="/mi-cuenta/pedidos">
+<span class="material-symbols-outlined text-headline-sm">inventory_2</span>
+<span class="font-label-md text-label-md font-medium">Mis Órdenes &amp; Compras</span>
+<span class="bg-surface-container-high text-on-surface text-[11px] font-bold px-2 py-0.5 rounded-full">4</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md font-semibold" href="#direcciones-section">
+<span class="material-symbols-outlined text-headline-sm text-secondary">location_on</span>
+<span>Direcciones Guardadas</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container/50 transition-colors" href="#vault-section">
+<span class="material-symbols-outlined text-headline-sm">lock</span>
+<span class="font-label-md text-label-md font-medium">Métodos de Pago &amp; Vault</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" href="/mi-cuenta/garantias">
+<span class="material-symbols-outlined text-headline-sm">verified</span>
+<span class="font-label-md text-label-md font-medium">Garantías &amp; Certificados COA</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" href="/wishlist">
+<span class="material-symbols-outlined text-headline-sm">favorite</span>
+<span class="font-label-md text-label-md font-medium">Lista de Deseos</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed text-[11px] font-semibold px-2 py-0.5 rounded-full">2</span>
+</a>
+</div>
+</nav>
+<!-- MAIN GRID CONTAINER: 8 Cols Content + 4 Cols Security/Tax Sidebar -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT / CENTRAL COLUMN (Direcciones + Bóveda de Pagos) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- ========================================== -->
+<!-- SECCIÓN 1: DIRECCIONES GUARDADAS           -->
+<!-- ========================================== -->
+<section class="flex flex-col gap-space-md" id="direcciones-section">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">local_shipping</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Direcciones Guardadas</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Gestione sus puntos de entrega con custodia garantizada y protocolos confidenciales.</p>
+</div>
+<button class="inline-flex items-center gap-2 bg-primary text-on-primary px-space-md py-2.5 rounded-lg font-label-md text-label-md hover:bg-primary-container shadow-sm transition-all" onclick="toggleAddressModal(true)" type="button">
+<span class="material-symbols-outlined text-base">add_location_alt</span>
+<span>+ Agregar Nueva Dirección</span>
+</button>
+</div>
+<!-- Cards Stack -->
+<div class="flex flex-col gap-space-md">
+<!-- a) Dirección Principal -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden transition-all hover:shadow-md">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex flex-col sm:flex-row items-start justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="bg-secondary text-on-secondary text-label-sm font-label-sm font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">shield_with_heart</span> PREDETERMINADA / SEGURIDAD ALTA
+                  </span>
+<span class="text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant px-2.5 py-1 rounded-full">
+                    Zona 10 Premium
+                  </span>
+</div>
+<div class="flex items-center gap-1 text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Verificación Biométrica Activa</span>
+</div>
+</div>
+<div class="mt-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Residencia Principal / Penthouse</h3>
+<p class="font-body-md text-body-md text-on-surface font-medium mt-1">
+                  12 Calle 2-04, Edificio Terra Esperanza, Nivel 14, Penthouse Suite 1402, Zona 10, Ciudad de Guatemala, 01010.
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-xs mt-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-outline">person</span>
+<span>Destinatario: <strong class="text-on-surface">Alejandro Castillo Villagrán</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-outline">phone_iphone</span>
+<span>Celular VIP: <strong class="text-on-surface">+502 5492-8810</strong></span>
+</div>
+</div>
+<!-- Protocol note -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">lock_person</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface">Protocolo de Custodia:</strong> Anunciar en garita principal bajo custodia blindada. Previa cita con mayordomía. Requiere cotejo de DPI físico original del mensajero y destinatario.
+                  </div>
+</div>
+<!-- Actions Bar -->
+<div class="mt-space-md pt-space-sm flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-xs text-label-sm text-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-base">radio_button_checked</span>
+<span>Dirección predeterminada para envíos en 24h</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors flex items-center gap-1" onclick="alert('Abriendo editor de instrucciones especiales')" type="button">
+<span class="material-symbols-outlined text-sm">badge</span> Instrucciones de Guardia
+                    </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-variant transition-colors flex items-center gap-1" onclick="alert('Editar Penthouse Suite 1402')" type="button">
+<span class="material-symbols-outlined text-sm">edit</span> Editar
+                    </button>
+</div>
+</div>
+</div>
+</div>
+<!-- b) Dirección Secundaria: Oficina -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm transition-all hover:shadow-md">
+<div class="flex flex-col sm:flex-row items-start justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="bg-surface-container text-on-surface text-label-sm font-label-sm font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                    OFICINA CORPORATIVA
+                  </span>
+<span class="text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant px-2.5 py-1 rounded-full">
+                    Zona 14 Financiera
+                  </span>
+</div>
+<span class="text-label-sm font-label-sm text-outline flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span> Lunes a Viernes (8:30 - 17:30)
+                </span>
+</div>
+<div class="mt-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Grupo Financiero &amp; Inversiones</h3>
+<p class="font-body-md text-body-md text-on-surface font-medium mt-1">
+                  Avenida Las Américas 18-42, Torre Las Américas, Nivel 18, Oficina 1805, Zona 14, Ciudad de Guatemala.
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-xs mt-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-outline">support_agent</span>
+<span>Destinatario: Alejandro Castillo / Asistente Sofía Méndez</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base text-outline">call</span>
+<span>Línea Directa: +502 4150-9876</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-end gap-space-xs flex-wrap">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors" onclick="alert('Establecida como predeterminada')" type="button">
+                    Hacer Predeterminada
+                  </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" onclick="alert('Editando dirección de oficina')" type="button">
+                    Editar
+                  </button>
+<button class="px-3 py-1.5 rounded-lg text-error hover:bg-error-container/40 font-label-sm text-label-sm transition-colors" onclick="confirm('¿Desea archivar esta dirección?')" type="button">
+                    Eliminar
+                  </button>
+</div>
+</div>
+</div>
+<!-- c) Dirección Vacacional: Antigua Guatemala -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm transition-all hover:shadow-md">
+<div class="flex flex-col sm:flex-row items-start justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="bg-surface-container text-on-surface text-label-sm font-label-sm font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                    RESIDENCIA DE FIN DE SEMANA
+                  </span>
+<span class="text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant px-2.5 py-1 rounded-full">
+                    Sacatepéquez
+                  </span>
+</div>
+<span class="text-label-sm font-label-sm text-secondary flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-sm">directions_car</span> Concierge Driver Fin de Semana
+                </span>
+</div>
+<div class="mt-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Villa Antigua</h3>
+<p class="font-body-md text-body-md text-on-surface font-medium mt-1">
+                  5a Avenida Sur No. 24, La Antigua Guatemala, Sacatepéquez, 03001.
+                </p>
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-outline text-base">local_shipping</span>
+<span>Ruta blindada coordinada vía Guatex Especial o Chofer Privado AuraLuxe los viernes y sábados.</span>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-end gap-space-xs flex-wrap">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors" onclick="alert('Establecida como predeterminada')" type="button">
+                    Hacer Predeterminada
+                  </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" onclick="alert('Editando Villa Antigua')" type="button">
+                    Editar
+                  </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECCIÓN 2: MÉTODOS DE PAGO & AURALUXE VAULT-->
+<!-- ========================================== -->
+<section class="flex flex-col gap-space-md pt-space-md" id="vault-section">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">encrypted</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">AuraLuxe Vault &amp; Métodos de Pago</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Tarjetas digitalizadas en bóveda blindada HSM Nivel 3 con soporte VisaCuotas y ACH Inmediato.</p>
+</div>
+<button class="inline-flex items-center gap-2 bg-primary text-on-primary px-space-md py-2.5 rounded-lg font-label-md text-label-md hover:bg-primary-container shadow-sm transition-all" onclick="togglePaymentModal(true)" type="button">
+<span class="material-symbols-outlined text-base">add_card</span>
+<span>+ Vincular Nueva Tarjeta o Cuenta</span>
+</button>
+</div>
+<!-- VAULT DIGITAL CARDS -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- a) Tarjeta Digital AuraLuxe Principal (Visa Signature Black) -->
+<div class="bg-gradient-to-br from-primary via-primary-container to-on-background text-surface p-space-lg rounded-xl shadow-md relative overflow-hidden flex flex-col justify-between min-h-[260px]">
+<!-- Background metallic texture subtle glow -->
+<div class="absolute -right-8 -top-8 w-44 h-44 bg-secondary/15 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Card Top -->
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-2xl">diamond</span>
+<span class="font-headline-sm text-headline-sm uppercase tracking-widest text-surface font-semibold">AuraLuxe</span>
+<span class="text-[10px] bg-secondary text-on-secondary px-2 py-0.5 rounded-full font-label-sm uppercase tracking-wider ml-1">Vault VIP</span>
+</div>
+<!-- Contactless Icon -->
+<span class="material-symbols-outlined text-on-primary-container text-2xl">contactless</span>
+</div>
+<!-- EMV Chip & Number -->
+<div class="my-space-md relative z-10">
+<!-- Gold EMV Chip visual -->
+<div class="w-11 h-8 rounded bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-500 mb-3 shadow-inner flex items-center justify-center">
+<div class="w-8 h-5 border-y border-amber-800/40"></div>
+</div>
+<div class="font-headline-md text-headline-md tracking-widest text-surface font-mono">
+                  •••• •••• •••• 4291
+                </div>
+<div class="flex items-center gap-4 mt-2 font-label-sm text-label-sm text-on-primary-container">
+<span>EXP: <strong class="text-surface font-mono">11/28</strong></span>
+<span>CVV: <strong class="text-secondary font-mono tracking-widest">*** HSM</strong></span>
+</div>
+</div>
+<!-- Card Bottom -->
+<div class="flex items-end justify-between relative z-10 pt-space-xs">
+<div>
+<span class="text-[10px] uppercase text-on-primary-container font-label-sm block">Titular Autorizado</span>
+<span class="font-title-lg text-title-lg text-surface uppercase tracking-wide">Alejandro Castillo</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm italic font-bold tracking-tighter text-surface">VISA</span>
+<span class="text-[10px] font-label-sm tracking-widest text-secondary uppercase font-semibold">SIGNATURE</span>
+</div>
+</div>
+</div>
+<!-- Card A Details & Controls -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="bg-on-tertiary-container/10 text-on-tertiary-container text-label-sm font-label-sm font-semibold px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span> Tarjeta Predeterminada 1-Click
+                  </span>
+<span class="text-label-sm font-label-sm text-outline">Visa Signature Crédito</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold">Beneficios AuraLuxe Activos</h4>
+<ul class="mt-space-sm flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">verified</span>
+<span>VisaCuotas sin recargo hasta <strong class="text-on-surface">18 cuotas</strong> en compras &gt; Q.1,000</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">shield</span>
+<span>Protección contra fraude <strong class="text-on-surface">3D Secure 2.0</strong> bancaria</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">receipt_long</span>
+<span>Factura SAT FEL vinculada automáticamente a NIT: 10482910-K</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-md pt-space-sm flex flex-col gap-2">
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" onclick="alert('Configuración de cuotas preferidas guardada')" type="button">
+<span class="material-symbols-outlined text-base">tune</span> Configurar Cuotas Preferidas
+                </button>
+<div class="flex items-center gap-2">
+<button class="flex-1 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors" onclick="alert('Editar Facturación Asociada')" type="button">
+                    Editar Facturación
+                  </button>
+<button class="py-1.5 px-3 rounded-lg text-error hover:bg-error-container/40 font-label-sm text-label-sm transition-colors" onclick="confirm('¿Desea desvincular esta tarjeta?')" type="button">
+                    Eliminar
+                  </button>
+</div>
+</div>
+</div>
+</div>
+<!-- b) Tarjeta Secundaria: Mastercard Black Corporativa -->
+<div class="bg-surface-container-lowest p-space-md lg:p-space-lg rounded-xl shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-9 rounded-lg bg-inverse-surface text-surface flex items-center justify-center shadow-inner shrink-0 relative">
+<!-- Mastercard intersecting circles stylized -->
+<div class="w-5 h-5 rounded-full bg-error/90 -mr-2"></div>
+<div class="w-5 h-5 rounded-full bg-secondary-container/90"></div>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-title-lg text-title-lg text-on-surface font-semibold">Mastercard Black Corporativa</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm px-2 py-0.5 rounded-full font-medium">MasterCuotas &amp; Gastos Fiscales</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Terminada en <strong class="font-mono text-on-surface">•••• 8830</strong> | Vence: <span class="font-mono">09/27</span> | Titular: ALEJANDRO CASTILLO (CORPORATIVO)
+                </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" onclick="alert('Mastercard Black establecida como método predeterminado')" type="button">
+                Hacer Predeterminada
+              </button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" onclick="alert('Editar tarjeta')" title="Editar" type="button">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-error hover:bg-error-container/40 transition-colors" onclick="confirm('¿Eliminar método?')" title="Eliminar" type="button">
+<span class="material-symbols-outlined text-base">delete</span>
+</button>
+</div>
+</div>
+<!-- c) Cuentas Bancarias Vinculadas (ACH Inmediato Guatemala) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">account_balance</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Cuentas Bancarias Vinculadas (ACH Inmediato Guatemala)</h3>
+</div>
+<span class="bg-surface-container text-on-surface text-label-sm font-label-sm px-2.5 py-1 rounded-full font-medium">
+                Cero comisión interbancaria
+              </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Banco Industrial -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">BANCO INDUSTRIAL (BI)</span>
+<span class="inline-flex items-center gap-1 text-[11px] font-label-sm text-on-tertiary-container bg-surface-container-lowest px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-xs">check</span> SAT FEL Token Activo
+                    </span>
+</div>
+<div class="font-title-lg text-title-lg text-on-surface font-medium">Monetaria Empresarial GTQ</div>
+<div class="font-mono text-body-md text-body-md text-on-surface mt-1">No. 074-••••••-2</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Habilitada para órdenes de alta joyería y subastas privadas de montos superiores a Q.25,000.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-outline">Verificación ACH Inmediata</span>
+<button class="text-label-sm font-label-sm text-secondary hover:underline font-semibold" onclick="alert('Detalle de cuenta BI')" type="button">Configurar</button>
+</div>
+</div>
+<!-- BAC Credomatic -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">BAC CREDOMATIC</span>
+<span class="inline-flex items-center gap-1 text-[11px] font-label-sm text-on-tertiary-container bg-surface-container-lowest px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-xs">check</span> Verificada
+                    </span>
+</div>
+<div class="font-title-lg text-title-lg text-on-surface font-medium">Cuenta Ahorros en Dólares (USD)</div>
+<div class="font-mono text-body-md text-body-md text-on-surface mt-1">No. 902-••••••-8</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Tarifa preferencial de tipo de cambio AuraLuxe aplicada al momento del desembolso.</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-outline">Liquidación T+0</span>
+<button class="text-label-sm font-label-sm text-secondary hover:underline font-semibold" onclick="alert('Detalle de cuenta BAC')" type="button">Configurar</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN: SIDEBAR DE SEGURIDAD & FACTURACIÓN SAT -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- SAT FEL TAX DATA CARD -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">receipt_long</span>
+<h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Datos Fiscales SAT FEL</h3>
+</div>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-on-surface" onclick="alert('Editar datos de facturación')" title="Editar Datos Fiscales">edit</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-2">
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant font-label-sm text-label-sm">NIT Guatemala:</span>
+<span class="font-mono font-semibold text-on-surface">10482910-K</span>
+</div>
+<div class="flex justify-between items-start text-body-sm">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Razón Social:</span>
+<span class="font-medium text-on-surface text-right">Alejandro Castillo V.</span>
+</div>
+<div class="flex justify-between items-center text-body-sm">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Régimen:</span>
+<span class="text-on-surface text-right font-body-sm text-body-sm">General 12% IVA</span>
+</div>
+<div class="flex justify-between items-start text-body-sm">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Correo DTE:</span>
+<span class="font-mono text-body-sm text-body-sm text-on-surface text-right truncate max-w-[170px]">tributario@castillov.gt</span>
+</div>
+</div>
+<!-- SAT Toggle Switch -->
+<div class="flex items-start gap-space-sm pt-2">
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-0.5">
+<input checked="" class="sr-only peer" id="auto-fel-switch" type="checkbox"/>
+<div class="w-10 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+<label class="cursor-pointer text-body-sm text-body-sm text-on-surface leading-tight" for="auto-fel-switch">
+              Emitir automáticamente factura electrónica DTE certificada con cada compra en AuraLuxe.
+            </label>
+</div>
+</div>
+<!-- HSM LEVEL 3 SECURITY & VAULT GUARANTEE -->
+<div class="bg-primary-container text-surface p-space-lg rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center gap-2 text-secondary-fixed">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+<h3 class="font-title-lg text-title-lg font-semibold text-surface">Bóveda Cifrada HSM Nivel 3</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+            Sus instrumentos de pago están tokenizados directamente a través de Visa Token Service (VTS) y Cybersource. AuraLuxe nunca retiene números completos ni códigos CVV en servidores locales.
+          </p>
+<!-- Security Badges -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-surface">
+<span class="material-symbols-outlined text-secondary text-base">lock</span>
+<span>PCI-DSS Nivel 1 Compliant</span>
+</div>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-surface">
+<span class="material-symbols-outlined text-secondary text-base">key</span>
+<span>Tokens Criptográficos Dinámicos 3DS2</span>
+</div>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-surface">
+<span class="material-symbols-outlined text-secondary text-base">fingerprint</span>
+<span>Auditoría biométrica para compras &gt; Q.10,000</span>
+</div>
+</div>
+<!-- Device Session Activity -->
+<div class="bg-surface/5 p-space-sm rounded-lg mt-2">
+<div class="flex items-center justify-between text-[11px] font-label-sm text-on-primary-container">
+<span>Dispositivo Principal</span>
+<span class="text-secondary-fixed">Activo ahora</span>
+</div>
+<div class="font-body-sm text-body-sm text-surface font-medium mt-0.5">iPhone 16 Pro Max • Safari iOS</div>
+<div class="text-[11px] text-on-primary-container font-mono mt-0.5">IP: 190.148.82.*** (Guatemala City)</div>
+</div>
+<button class="text-center py-2 px-3 rounded-lg bg-surface/10 hover:bg-surface/15 text-surface font-label-sm text-label-sm transition-colors" onclick="alert('Abriendo log de accesos y certificados criptográficos')" type="button">
+            Ver Registro de Cifrado y Auditoría
+          </button>
+</div>
+<!-- SPECIAL PACKAGING / CONCIERGE PREFERENCES -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">redeem</span>
+<h4 class="font-title-lg text-title-lg text-on-surface font-semibold">Empaque Sovereign Privé</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Todas sus órdenes con entrega en Guatemala incluyen estuche rígido de madera laqueada, cinta satinada negra y tarjeta manuscrita con lacre dorado.
+          </p>
+<div class="mt-2 flex items-center justify-between bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface">Discreción exterior sin marcas</span>
+<span class="text-label-sm font-label-sm font-semibold text-secondary">Activado</span>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<!-- INTERACTIVE MODAL: AGREGAR NUEVA DIRECCIÓN (Hidden by default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300 p-space-md" id="modal-address">
+<div class="bg-surface-container-lowest rounded-xl max-w-xl w-full p-space-lg shadow-xl flex flex-col gap-space-md max-h-[921px] overflow-y-auto">
+<div class="flex items-center justify-between border-b border-surface-container pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">add_location_alt</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Agregar Nueva Dirección VIP</h3>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface" onclick="toggleAddressModal(false)" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); alert('Nueva dirección registrada con éxito.'); toggleAddressModal(false);">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface font-medium block mb-1">Nombre / Alias de la Dirección *</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none" placeholder="Ej. Casa de Playa Marina del Sur, Oficina Zona 15" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface font-medium block mb-1">Departamento *</label>
+<select class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none">
+<option>Guatemala</option>
+<option>Sacatepéquez</option>
+<option>Quetzaltenango</option>
+<option>Escuintla</option>
+<option>Santa Rosa</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface font-medium block mb-1">Municipio / Zona *</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none" placeholder="Ej. Zona 10, Zona 14, Antigua Guatemala" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface font-medium block mb-1">Dirección Exacta (Calle, Avenida, Edificio, Nivel, Suite) *</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none" placeholder="Ingrese detalles exactos para el mensajero de seguridad blindada" required="" rows="2"></textarea>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface font-medium block mb-1">Nombre Completo del Receptor *</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none" required="" type="text" value="Alejandro Castillo Villagrán"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface font-medium block mb-1">Teléfono Directo de Contacto *</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none" required="" type="tel" value="+502 5492-8810"/>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface font-medium block mb-1">Protocolo Especial de Garita o Mayordomía</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none" placeholder="Ej. Solicitar documento oficial, dejar en recepción de Torre 2" type="text"/>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<input class="w-4 h-4 rounded text-secondary focus:ring-secondary" id="modal-predet" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface" for="modal-predet">Definir como mi dirección predeterminada de compra</label>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="toggleAddressModal(false)" type="button">
+            Cancelar
+          </button>
+<button class="px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" type="submit">
+            Guardar Dirección
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- INTERACTIVE MODAL: VINCULAR PAGO O CUENTA (Hidden by default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300 p-space-md" id="modal-payment">
+<div class="bg-surface-container-lowest rounded-xl max-w-xl w-full p-space-lg shadow-xl flex flex-col gap-space-md max-h-[921px] overflow-y-auto">
+<div class="flex items-center justify-between border-b border-surface-container pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">encrypted</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Vincular a la Bóveda HSM</h3>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface" onclick="togglePaymentModal(false)" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); alert('Método tokenizado y vinculado con éxito en la bóveda.'); togglePaymentModal(false);">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface font-medium block mb-1">Tipo de Método de Pago *</label>
+<div class="grid grid-cols-2 gap-space-sm">
+<label class="flex items-center gap-2 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input checked="" class="text-primary" name="pay-type" type="radio"/>
+<span class="font-label-md text-label-md text-on-surface">Tarjeta Visa / MC</span>
+</label>
+<label class="flex items-center gap-2 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input class="text-primary" name="pay-type" type="radio"/>
+<span class="font-label-md text-label-md text-on-surface">Cuenta Bancaria ACH</span>
+</label>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface font-medium block mb-1">Nombre en la Tarjeta / Titular de la Cuenta *</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface text-body-sm uppercase focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none" required="" type="text" value="ALEJANDRO CASTILLO"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface font-medium block mb-1">Número de Tarjeta (Cifrado Dinámico) *</label>
+<div class="relative flex items-center">
+<input class="w-full h-11 pl-3 pr-10 rounded-lg bg-surface-container-low text-on-surface font-mono text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none" maxlength="19" placeholder="4000 1234 5678 9010" required="" type="text"/>
+<span class="material-symbols-outlined absolute right-3 text-outline text-lg">credit_card</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface font-medium block mb-1">Vencimiento (MM/AA) *</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-mono text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none" maxlength="5" placeholder="12/28" required="" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface font-medium block mb-1">Código de Seguridad (CVV) *</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-mono text-body-sm focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 outline-none" maxlength="4" placeholder="•••" required="" type="password"/>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-sm shrink-0 mt-0.5">lock</span>
+<span class="text-[12px] font-body-sm text-on-surface-variant">El CVV se utiliza exclusivamente para la autenticación biométrica instantánea con su banco emisor y se destruye de memoria de inmediato.</span>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="togglePaymentModal(false)" type="button">
+            Cancelar
+          </button>
+<button class="px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" type="submit">
+            Cifrar &amp; Guardar
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Micro-interactions Script -->
+<script>
+    function toggleAddressModal(show) {
+      const modal = document.getElementById('modal-address');
+      if (!modal) return;
+      if (show) {
+        modal.classList.remove('hidden');
+        setTimeout(() => modal.classList.remove('opacity-0'), 10);
+      } else {
+        modal.classList.add('opacity-0');
+        setTimeout(() => modal.classList.add('hidden'), 300);
+      }
+    }
+
+    function togglePaymentModal(show) {
+      const modal = document.getElementById('modal-payment');
+      if (!modal) return;
+      if (show) {
+        modal.classList.remove('hidden');
+        setTimeout(() => modal.classList.remove('opacity-0'), 10);
+      } else {
+        modal.classList.add('opacity-0');
+        setTimeout(() => modal.classList.add('hidden'), 300);
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-xl pb-space-lg"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase font-semibold">AuraLuxe</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Lujo accesible diseñado para trascender. Artesanía contemporánea, piedras de origen ético y envíos seguros a toda Guatemala e internacionalmente.</p><div class="flex items-center gap-space-md text-on-surface-variant"><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">verified_user</span><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">support_agent</span><span class="material-symbols-outlined cursor-pointer hover:text-on-surface">credit_card</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Explorar Shop</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Nueva Colección</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Alta Joyería Fina</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Relojería Masculina &amp; Femenina</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="shop" href="/shop">Ofertas de Temporada</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Atención al Cliente</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="mi-cuenta" href="/mi-cuenta">Rastrear Mi Orden</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Tiempos de Envío en GT</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Garantía y Devoluciones</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="faq" href="/faq">Cuotas y Formas de Pago</a></div><div class="flex flex-col gap-space-sm"><span class="font-title-lg text-title-lg text-on-surface font-semibold mb-space-xs">Aura Privé</span><p class="font-body-sm text-body-sm text-on-surface-variant">Suscríbete para recibir un 10% de descuento en tu primera compra y acceso exclusivo a prelanzamientos.</p><form class="flex flex-col gap-space-xs mt-space-xs" onsubmit="event.preventDefault(); alert('¡Gracias por unirte a Aura Privé!');"><input class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface text-body-sm font-body-sm focus:outline-none focus:ring-2 focus:ring-secondary/50 placeholder:text-outline" placeholder="Ingresa tu correo electrónico" required="" type="email"/><button class="px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" type="submit">Suscribirme</button></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="font-body-sm text-body-sm text-outline">© 2025 AuraLuxe Guatemala S.A. Todos los derechos reservados. Precios en Quetzales (Q) y Dólares Americanos (USD).</div><div class="flex items-center gap-space-md text-label-sm font-label-sm text-outline"><span class="flex items-center gap-1"><span class="material-symbols-outlined text-body-sm">lock</span> Checkout Seguro SSL</span><span>|</span><span>Visa Cuotas</span><span>|</span><span>Mastercard</span><span>|</span><span>Transferencia Bancaria GT</span></div></div></div></footer><script>const cartBtn = document.getElementById('cart-open-btn'); const cartDrawer = document.getElementById('cart-drawer'); const cartOverlay = document.getElementById('cart-drawer-overlay'); const cartClose = document.getElementById('cart-close-btn'); function openCart() { cartOverlay.classList.remove('hidden'); setTimeout(() => { cartOverlay.classList.remove('opacity-0'); cartDrawer.classList.remove('translate-x-full'); }, 10); } function closeCart() { cartDrawer.classList.add('translate-x-full'); cartOverlay.classList.add('opacity-0'); setTimeout(() => { cartOverlay.classList.add('hidden'); }, 300); } if (cartBtn) cartBtn.addEventListener('click', openCart); if (cartClose) cartClose.addEventListener('click', closeCart); if (cartOverlay) cartOverlay.addEventListener('click', closeCart); const searchInput = document.getElementById('global-search-input'); const searchDropdown = document.getElementById('search-dropdown'); if (searchInput && searchDropdown) { searchInput.addEventListener('focus', () => searchDropdown.classList.remove('hidden')); searchInput.addEventListener('blur', () => setTimeout(() => searchDropdown.classList.add('hidden'), 200)); }</script></body></html>
